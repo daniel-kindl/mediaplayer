@@ -1,6 +1,6 @@
 # Recommended repository settings
 
-These settings are **not applied** by the bootstrap. A maintainer must apply them in GitHub Settings. They are documented here so that the configuration is reviewable.
+This file records the repository settings. The pull request settings and the branch rulesets (`protect-main`, `protect-dev`) are applied. Apply the remaining General settings in GitHub Settings if they are not on yet.
 
 ## General
 
@@ -14,7 +14,7 @@ These settings are **not applied** by the bootstrap. A maintainer must apply the
 
 ## Branch rulesets
 
-Apply one ruleset to `main` and one to `dev`:
+One ruleset applies to `main` (`protect-main`) and one to `dev` (`protect-dev`):
 
 | Setting | `main` | `dev` |
 | --- | --- | --- |
@@ -26,7 +26,8 @@ Apply one ruleset to `main` and one to `dev`:
 | Block force pushes | yes | yes |
 | Block deletion | yes | yes |
 | Require linear history | yes | yes |
-| Bypass list | none | none |
+| Allowed merge methods | squash | squash |
+| Bypass list | repository admin (always) | repository admin (always) |
 
 Required status checks:
 
@@ -41,7 +42,7 @@ Required approvals are 0 because the project has one maintainer, and GitHub does
 
 ## Exceptions
 
-Nobody bypasses the rules. If an emergency needs a bypass, open an issue that records the reason, the change, and the follow-up, before the bypass.
+The repository admin (the owner) can bypass the rulesets. Use the bypass for small, low-risk changes or emergencies. Agents do not bypass the rules: their work lands through a pull request with green CI.
 
 ## Labels
 
