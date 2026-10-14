@@ -7,6 +7,6 @@
     <TestingPlatformCommandLineArguments>$(TestingPlatformCommandLineArguments) --ignore-exit-code 8</TestingPlatformCommandLineArguments>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\MediaPlayer.Application\MediaPlayer.Application.csproj" />
+    <ProjectReference Include="..\..\src\Sonumio.Core\Sonumio.Core.csproj" />
   </ItemGroup>
 </Project>

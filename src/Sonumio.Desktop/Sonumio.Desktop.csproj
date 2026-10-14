@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sonumio.Application\Sonumio.Application.csproj" />
+    <ProjectReference Include="..\Sonumio.Playback.LibVLC\Sonumio.Playback.LibVLC.csproj" />
+    <ProjectReference Include="..\Sonumio.Infrastructure\Sonumio.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>

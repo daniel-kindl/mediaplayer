@@ -1,4 +1,4 @@
-namespace MediaPlayer.Desktop;
+namespace Sonumio.Desktop;
 
 /// <summary>
 /// Empty entry point. It exists only so the executable project compiles.

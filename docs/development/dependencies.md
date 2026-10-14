@@ -13,7 +13,7 @@ All versions are in `Directory.Packages.props` (Central Package Management, tran
 Transitive packages are listed in the lock files. Check them with:
 
 ```bash
-dotnet package list --project MediaPlayer.slnx --include-transitive
+dotnet package list --project Sonumio.slnx --include-transitive
 ```
 
 ## Planned (NOT installed)

@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Sonumio.Application/Sonumio.Application.csproj" />
+    <Project Path="src/Sonumio.Core/Sonumio.Core.csproj" />
+    <Project Path="src/Sonumio.Desktop/Sonumio.Desktop.csproj" />
+    <Project Path="src/Sonumio.Infrastructure/Sonumio.Infrastructure.csproj" />
+    <Project Path="src/Sonumio.Playback.LibVLC/Sonumio.Playback.LibVLC.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Sonumio.Application.Tests/Sonumio.Application.Tests.csproj" />
+    <Project Path="tests/Sonumio.Core.Tests/Sonumio.Core.Tests.csproj" />
+    <Project Path="tests/Sonumio.Integration.Tests/Sonumio.Integration.Tests.csproj" />
+    <Project Path="tests/Sonumio.Playback.Tests/Sonumio.Playback.Tests.csproj" />
+  </Folder>
+</Solution>

@@ -8,7 +8,7 @@ The project is in pre-release (M0). Only the latest commit on `main` receives se
 
 Do not open a public issue for a vulnerability.
 
-Use GitHub private vulnerability reporting: **Security** tab > **Report a vulnerability** on https://github.com/daniel-kindl/mediaplayer. If that is not available, contact the maintainer through the GitHub profile https://github.com/daniel-kindl.
+Use GitHub private vulnerability reporting: **Security** tab > **Report a vulnerability** on https://github.com/daniel-kindl/sonumio. If that is not available, contact the maintainer through the GitHub profile https://github.com/daniel-kindl.
 
 Include:
 

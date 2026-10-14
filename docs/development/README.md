@@ -17,7 +17,7 @@ No libVLC or Avalonia installation is needed in M0.
 | --- | --- | --- |
 | .NET SDK | 10.0.402 (`rollForward: latestPatch`) | `global.json` |
 | C# | 14.0 | `Directory.Build.props` |
-| Solution format | `.slnx` | `MediaPlayer.slnx` |
+| Solution format | `.slnx` | `Sonumio.slnx` |
 | .NET analyzers | AnalysisLevel 10.0, AnalysisMode All | `Directory.Build.props`, `.globalconfig` |
 | Code style | IDE rules, enforced in build | `.editorconfig` |
 | Formatting | `dotnet format` (SDK) | `.editorconfig` |
@@ -47,9 +47,9 @@ Suppressions and reasons are in `.globalconfig` and `.editorconfig` (`[tests/**.
 ## Build and verification
 
 ```bash
-dotnet restore MediaPlayer.slnx --locked-mode
-dotnet build MediaPlayer.slnx -c Release --no-restore --warnaserror
-dotnet test --solution MediaPlayer.slnx -c Release --no-build
+dotnet restore Sonumio.slnx --locked-mode
+dotnet build Sonumio.slnx -c Release --no-restore --warnaserror
+dotnet test --solution Sonumio.slnx -c Release --no-build
 ./eng/verify.sh            # or: pwsh ./eng/verify.ps1
 ```
 

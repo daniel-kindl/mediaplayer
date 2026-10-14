@@ -6,27 +6,27 @@ Status: proposed for M0. No module contains code yet. This document defines resp
 
 | Project | Responsibility | Must not contain |
 | --- | --- | --- |
-| `MediaPlayer.Core` | Domain types and rules that do not depend on any technology. | IO, UI, libVLC, threading primitives tied to a UI framework. |
-| `MediaPlayer.Application` | Use cases. It coordinates Core and defines the ports (interfaces) that adapters implement. | Avalonia, libVLC, direct file system or OS calls. |
-| `MediaPlayer.Playback.LibVLC` | Adapter that implements Application playback ports with LibVLCSharp. | UI code. Business rules. |
-| `MediaPlayer.Infrastructure` | Adapters for the OS, file system, settings storage, and other IO. | UI code. libVLC. |
-| `MediaPlayer.Desktop` | Avalonia application shell and composition root. It wires adapters to ports. | Business rules. Direct libVLC calls outside the adapter. |
+| `Sonumio.Core` | Domain types and rules that do not depend on any technology. | IO, UI, libVLC, threading primitives tied to a UI framework. |
+| `Sonumio.Application` | Use cases. It coordinates Core and defines the ports (interfaces) that adapters implement. | Avalonia, libVLC, direct file system or OS calls. |
+| `Sonumio.Playback.LibVLC` | Adapter that implements Application playback ports with LibVLCSharp. | UI code. Business rules. |
+| `Sonumio.Infrastructure` | Adapters for the OS, file system, settings storage, and other IO. | UI code. libVLC. |
+| `Sonumio.Desktop` | Avalonia application shell and composition root. It wires adapters to ports. | Business rules. Direct libVLC calls outside the adapter. |
 
 Ports are added only in the issue that needs them (for example, the playback contracts issue). M0 bootstrap adds no interfaces.
 
 ## Dependency direction
 
 ```
-            MediaPlayer.Desktop
+            Sonumio.Desktop
            /        |          \
           v         v           v
  Playback.LibVLC  Infrastructure  |
           \         |            /
            v        v           v
-          MediaPlayer.Application
+          Sonumio.Application
                     |
                     v
-             MediaPlayer.Core
+             Sonumio.Core
 ```
 
 Dependencies point inward. Allowed project references:
@@ -43,7 +43,7 @@ Core is transitively visible to all outer projects.
 
 ## Enforcement
 
-`tests/MediaPlayer.Integration.Tests/ArchitectureTests.cs` reads the `.csproj` files and fails when:
+`tests/Sonumio.Integration.Tests/ArchitectureTests.cs` reads the `.csproj` files and fails when:
 
 - a project in `src/` is not in the table above,
 - a project references a project that the table does not allow,

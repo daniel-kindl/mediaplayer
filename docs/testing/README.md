@@ -11,10 +11,10 @@
 
 | Project | Tests for | Kind |
 | --- | --- | --- |
-| `MediaPlayer.Core.Tests` | `MediaPlayer.Core` | Unit |
-| `MediaPlayer.Application.Tests` | `MediaPlayer.Application` | Unit |
-| `MediaPlayer.Playback.Tests` | `MediaPlayer.Playback.LibVLC` | Unit; native-library tests are `Integration` |
-| `MediaPlayer.Integration.Tests` | Cross-module, file system, native, architecture | Integration, Architecture |
+| `Sonumio.Core.Tests` | `Sonumio.Core` | Unit |
+| `Sonumio.Application.Tests` | `Sonumio.Application` | Unit |
+| `Sonumio.Playback.Tests` | `Sonumio.Playback.LibVLC` | Unit; native-library tests are `Integration` |
+| `Sonumio.Integration.Tests` | Cross-module, file system, native, architecture | Integration, Architecture |
 
 ## Categories
 
@@ -29,8 +29,8 @@ Use the xUnit trait `Category`:
 Run one category (xUnit v3 on Microsoft.Testing.Platform):
 
 ```bash
-dotnet test --solution MediaPlayer.slnx -c Release --no-build --filter-trait "Category=Architecture"
-dotnet test --solution MediaPlayer.slnx -c Release --no-build --filter-not-trait "Category=Integration"
+dotnet test --solution Sonumio.slnx -c Release --no-build --filter-trait "Category=Architecture"
+dotnet test --solution Sonumio.slnx -c Release --no-build --filter-not-trait "Category=Integration"
 ```
 
 Note: a filter can make a project run zero tests. Projects that already have tests then return exit code 8. Use filters for local work. The verification script runs all tests without a filter.

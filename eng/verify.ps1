@@ -9,7 +9,7 @@ $PSNativeCommandUseErrorActionPreference = $true
 $repositoryRoot = Resolve-Path (Join-Path $PSScriptRoot '..')
 Set-Location $repositoryRoot
 
-$solution = 'MediaPlayer.slnx'
+$solution = 'Sonumio.slnx'
 $configuration = 'Release'
 $resultsDirectory = Join-Path $repositoryRoot 'TestResults'
 

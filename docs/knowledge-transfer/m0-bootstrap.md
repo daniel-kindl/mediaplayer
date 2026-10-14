@@ -53,7 +53,7 @@ See the pull request description for the full command output. Summary from the b
 | CI verify, macos-x64 (macos-15-intel) | PASS: SDK 10.0.402, 0 warnings, 8/8 tests, architecture check |
 | CI pr-title, dependency-review | PASS |
 
-CI evidence: workflow run https://github.com/daniel-kindl/mediaplayer/actions/runs/38525816201 (pull request #7).
+CI evidence: workflow run https://github.com/daniel-kindl/sonumio/actions/runs/38525816201 (pull request #7).
 
 ## Known limitations
 
