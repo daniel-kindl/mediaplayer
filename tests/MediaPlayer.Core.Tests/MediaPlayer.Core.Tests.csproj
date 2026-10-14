@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!--
+      This project has no tests yet because no production code exists.
+      Exit code 8 means "zero tests ran". Remove this line in the issue that adds the first test.
+    -->
+    <TestingPlatformCommandLineArguments>$(TestingPlatformCommandLineArguments) --ignore-exit-code 8</TestingPlatformCommandLineArguments>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\MediaPlayer.Core\MediaPlayer.Core.csproj" />
+  </ItemGroup>
+</Project>

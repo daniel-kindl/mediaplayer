@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.cs text eol=lf diff=csharp
+*.sh text eol=lf
+*.ps1 text eol=lf
+*.png binary
+*.jpg binary
+*.ico binary
