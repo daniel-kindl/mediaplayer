@@ -47,11 +47,17 @@ See the pull request description for the full command output. Summary from the b
 | Negative check: `var`, block namespace, lowercase constant, missing modifier | Build fails with IDE0008, IDE0161, IDE1006, IDE0040 |
 | Negative check: CRLF line ending | `dotnet format` fails (ENDOFLINE) |
 | actionlint 1.7.12 on workflows | PASS |
-| CI on GitHub (4 platforms) | See the pull request checks |
+| CI verify, linux-x64 (ubuntu-24.04) | PASS: SDK 10.0.402, 0 warnings, 8/8 tests, architecture check |
+| CI verify, windows-x64 (windows-2025, verify.ps1) | PASS: SDK 10.0.402, 0 warnings, 8/8 tests, architecture check |
+| CI verify, macos-arm64 (macos-15) | PASS: SDK 10.0.402, 0 warnings, 8/8 tests, architecture check |
+| CI verify, macos-x64 (macos-15-intel) | PASS: SDK 10.0.402, 0 warnings, 8/8 tests, architecture check |
+| CI pr-title, dependency-review | PASS |
+
+CI evidence: workflow run https://github.com/daniel-kindl/mediaplayer/actions/runs/38525816201 (pull request #7).
 
 ## Known limitations
 
-- Windows and macOS were not run locally. CI covers them.
+- Windows and macOS were not run locally (NOT RUN locally). CI ran them and passed.
 - No coverage threshold yet. There is no production code.
 - No SBOM yet. Lock files are the inventory.
 - Branch protection and repository settings are documented, not applied.
