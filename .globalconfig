@@ -1,0 +1,11 @@
+is_global = true
+
+# Zero-warning policy. Every suppression needs a reason.
+
+# CA1707: conflicts with the required UPPER_SNAKE_CASE constant convention
+# and with Method_Scenario_Result test names.
+dotnet_diagnostic.CA1707.severity = none
+
+# CA2007: ConfigureAwait is not relevant for a desktop app with a UI
+# synchronization context; library code may re-enable it per project.
+dotnet_diagnostic.CA2007.severity = none

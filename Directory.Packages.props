@@ -1,0 +1,18 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
+  </PropertyGroup>
+  <ItemGroup Label="Build infrastructure">
+    <PackageVersion Include="Nerdbank.GitVersioning" Version="3.10.94" />
+  </ItemGroup>
+  <ItemGroup Label="Testing">
+    <PackageVersion Include="xunit.v3" Version="4.0.2" />
+    <PackageVersion Include="coverlet.MTP" Version="10.1.0" />
+  </ItemGroup>
+  <!--
+    Planned, NOT installed (see docs/development/dependencies.md):
+    Avalonia 12.x, LibVLCSharp 3.x, VideoLAN.LibVLC.* 3.0.x.
+    Add them only in the milestone issue that implements them.
+  -->
+</Project>
