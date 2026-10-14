@@ -5,7 +5,7 @@ using System.Linq;
 using System.Xml.Linq;
 using Xunit;
 
-namespace MediaPlayer.Integration.Tests;
+namespace Sonumio.Integration.Tests;
 
 /// <summary>
 /// Enforces the project dependency direction documented in docs/architecture/README.md.
@@ -14,15 +14,15 @@ namespace MediaPlayer.Integration.Tests;
 [Trait("Category", "Architecture")]
 public sealed class ArchitectureTests
 {
-    private const string SOLUTION_FILE_NAME = "MediaPlayer.slnx";
+    private const string SOLUTION_FILE_NAME = "Sonumio.slnx";
 
     private static readonly Dictionary<string, string[]> _allowedProjectReferences = new(StringComparer.Ordinal)
     {
-        ["MediaPlayer.Core"] = [],
-        ["MediaPlayer.Application"] = ["MediaPlayer.Core"],
-        ["MediaPlayer.Playback.LibVLC"] = ["MediaPlayer.Application"],
-        ["MediaPlayer.Infrastructure"] = ["MediaPlayer.Application"],
-        ["MediaPlayer.Desktop"] = ["MediaPlayer.Application", "MediaPlayer.Infrastructure", "MediaPlayer.Playback.LibVLC"],
+        ["Sonumio.Core"] = [],
+        ["Sonumio.Application"] = ["Sonumio.Core"],
+        ["Sonumio.Playback.LibVLC"] = ["Sonumio.Application"],
+        ["Sonumio.Infrastructure"] = ["Sonumio.Application"],
+        ["Sonumio.Desktop"] = ["Sonumio.Application", "Sonumio.Infrastructure", "Sonumio.Playback.LibVLC"],
     };
 
     private static readonly string[] _uiAndNativePackagePrefixes = ["Avalonia", "LibVLCSharp", "VideoLAN."];
@@ -45,11 +45,11 @@ public sealed class ArchitectureTests
     /// </summary>
     /// <param name="projectName">The production project name.</param>
     [Theory]
-    [InlineData("MediaPlayer.Core")]
-    [InlineData("MediaPlayer.Application")]
-    [InlineData("MediaPlayer.Playback.LibVLC")]
-    [InlineData("MediaPlayer.Infrastructure")]
-    [InlineData("MediaPlayer.Desktop")]
+    [InlineData("Sonumio.Core")]
+    [InlineData("Sonumio.Application")]
+    [InlineData("Sonumio.Playback.LibVLC")]
+    [InlineData("Sonumio.Infrastructure")]
+    [InlineData("Sonumio.Desktop")]
     public void SourceProject_ReferencesOnlyAllowedProjects(string projectName)
     {
         string[] references = [.. LoadProject(projectName).Descendants("ProjectReference")
@@ -64,8 +64,8 @@ public sealed class ArchitectureTests
     /// </summary>
     /// <param name="projectName">The production project name.</param>
     [Theory]
-    [InlineData("MediaPlayer.Core")]
-    [InlineData("MediaPlayer.Application")]
+    [InlineData("Sonumio.Core")]
+    [InlineData("Sonumio.Application")]
     public void InnerProject_HasNoUiOrNativePlaybackPackages(string projectName)
     {
         IEnumerable<string> packages = LoadProject(projectName).Descendants("PackageReference")

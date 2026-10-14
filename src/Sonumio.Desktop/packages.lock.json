@@ -8,25 +8,25 @@
         "resolved": "3.10.94",
         "contentHash": "sn6gFIx6bwFj3Me0XGmek3gLZi/MZC8C4tRLwslXGeBcXcVxvFpZyDrQA93G8TiYgxTS7J7triKB7hj5wXzSxA=="
       },
-      "mediaplayer.application": {
+      "sonumio.application": {
         "type": "Project",
         "dependencies": {
-          "MediaPlayer.Core": "[1.0.0, )"
+          "Sonumio.Core": "[1.0.0, )"
         }
       },
-      "mediaplayer.core": {
+      "sonumio.core": {
         "type": "Project"
       },
-      "mediaplayer.infrastructure": {
+      "sonumio.infrastructure": {
         "type": "Project",
         "dependencies": {
-          "MediaPlayer.Application": "[1.0.0, )"
+          "Sonumio.Application": "[1.0.0, )"
         }
       },
-      "mediaplayer.playback.libvlc": {
+      "sonumio.playback.libvlc": {
         "type": "Project",
         "dependencies": {
-          "MediaPlayer.Application": "[1.0.0, )"
+          "Sonumio.Application": "[1.0.0, )"
         }
       }
     }

@@ -228,8 +228,20 @@
           "xunit.v3.runner.common": "[4.0.2]"
         }
       },
-      "mediaplayer.core": {
+      "sonumio.application": {
+        "type": "Project",
+        "dependencies": {
+          "Sonumio.Core": "[1.0.0, )"
+        }
+      },
+      "sonumio.core": {
         "type": "Project"
+      },
+      "sonumio.playback.libvlc": {
+        "type": "Project",
+        "dependencies": {
+          "Sonumio.Application": "[1.0.0, )"
+        }
       }
     }
   }

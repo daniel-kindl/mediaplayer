@@ -7,11 +7,11 @@
 | `type:chore` | Tooling, CI, maintenance |
 | `type:docs` | Documentation only |
 | `type:audit` | Investigation or review, no product code |
-| `area:core` | MediaPlayer.Core |
-| `area:application` | MediaPlayer.Application |
-| `area:playback` | MediaPlayer.Playback.LibVLC |
-| `area:infrastructure` | MediaPlayer.Infrastructure |
-| `area:desktop` | MediaPlayer.Desktop (Avalonia) |
+| `area:core` | Sonumio.Core |
+| `area:application` | Sonumio.Application |
+| `area:playback` | Sonumio.Playback.LibVLC |
+| `area:infrastructure` | Sonumio.Infrastructure |
+| `area:desktop` | Sonumio.Desktop (Avalonia) |
 | `area:build` | Build, CI, verification |
 | `area:licensing` | Licenses and redistribution |
 | `priority:high`, `priority:normal`, `priority:low` | Priority |

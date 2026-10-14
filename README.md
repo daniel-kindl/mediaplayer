@@ -1,10 +1,10 @@
-# MediaPlayer
+# Sonumio
 
-MediaPlayer is a temporary name. The project will be a lightweight, privacy-first, desktop media player, as an alternative to VLC media player. It uses .NET 10, Avalonia UI, and LibVLCSharp/libVLC.
+Sonumio is a lightweight, privacy-first, desktop media player, as an alternative to VLC media player. It uses .NET 10, Avalonia UI, and LibVLCSharp/libVLC.
 
 ## Development status
 
-**Milestone M0, bootstrap only.** The repository contains build, test, and verification infrastructure. It does not contain a media player yet. The application does not play media and does not open a window. See the [M0 issues](https://github.com/daniel-kindl/mediaplayer/issues) for planned work.
+**Milestone M0, bootstrap only.** The repository contains build, test, and verification infrastructure. It does not contain a media player yet. The application does not play media and does not open a window. See the [M0 issues](https://github.com/daniel-kindl/sonumio/issues) for planned work.
 
 ## Supported platforms
 
@@ -26,8 +26,8 @@ MediaPlayer is a temporary name. The project will be a lightweight, privacy-firs
 ## Bootstrap
 
 ```bash
-git clone https://github.com/daniel-kindl/mediaplayer.git
-cd mediaplayer
+git clone https://github.com/daniel-kindl/sonumio.git
+cd sonumio
 dotnet --version            # must satisfy global.json
 dotnet restore --locked-mode
 ```
@@ -35,13 +35,13 @@ dotnet restore --locked-mode
 ## Build
 
 ```bash
-dotnet build MediaPlayer.slnx -c Release --no-restore --warnaserror
+dotnet build Sonumio.slnx -c Release --no-restore --warnaserror
 ```
 
 ## Test
 
 ```bash
-dotnet test --solution MediaPlayer.slnx -c Release --no-build
+dotnet test --solution Sonumio.slnx -c Release --no-build
 ```
 
 ## Verify

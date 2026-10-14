@@ -4,7 +4,7 @@ Rules for AI agents and humans who change this repository. These rules are manda
 
 ## Purpose
 
-MediaPlayer (temporary name) is a privacy-first, cross-platform desktop media player: C#, .NET 10, Avalonia UI, LibVLCSharp/libVLC. Targets: Windows x64, Linux x64, macOS ARM64 and x64.
+Sonumio is a privacy-first, cross-platform desktop media player: C#, .NET 10, Avalonia UI, LibVLCSharp/libVLC. Targets: Windows x64, Linux x64, macOS ARM64 and x64.
 
 Current state: **M0 bootstrap**. Infrastructure only. No playback, UI, or domain code exists.
 
@@ -12,17 +12,17 @@ Current state: **M0 bootstrap**. Infrastructure only. No playback, UI, or domain
 
 | Path | Contents | Rules |
 | --- | --- | --- |
-| `src/MediaPlayer.Core` | Domain types | No project or package references to UI, libVLC, or IO. |
-| `src/MediaPlayer.Application` | Use cases | References Core only. |
-| `src/MediaPlayer.Playback.LibVLC` | libVLC adapter | Only place that may reference LibVLCSharp/VideoLAN packages. |
-| `src/MediaPlayer.Infrastructure` | OS, file system, persistence adapters | References Application. |
-| `src/MediaPlayer.Desktop` | Avalonia shell, composition root | Only place that may reference Avalonia. Wires all modules. |
-| `tests/*` | Tests | Mirror `src`. Integration and architecture tests in `MediaPlayer.Integration.Tests`. |
+| `src/Sonumio.Core` | Domain types | No project or package references to UI, libVLC, or IO. |
+| `src/Sonumio.Application` | Use cases | References Core only. |
+| `src/Sonumio.Playback.LibVLC` | libVLC adapter | Only place that may reference LibVLCSharp/VideoLAN packages. |
+| `src/Sonumio.Infrastructure` | OS, file system, persistence adapters | References Application. |
+| `src/Sonumio.Desktop` | Avalonia shell, composition root | Only place that may reference Avalonia. Wires all modules. |
+| `tests/*` | Tests | Mirror `src`. Integration and architecture tests in `Sonumio.Integration.Tests`. |
 | `eng/` | Verification scripts | `verify.sh` and `verify.ps1` must stay equivalent. |
 | `docs/` | Documentation | Keep aligned with actual behavior. |
 | `.github/` | CI, templates, Dependabot | Pin actions to commit SHAs. Least privilege. |
 
-The dependency direction is enforced by `tests/MediaPlayer.Integration.Tests/ArchitectureTests.cs`. Change that test and `docs/architecture/README.md` together, and only with an ADR.
+The dependency direction is enforced by `tests/Sonumio.Integration.Tests/ArchitectureTests.cs`. Change that test and `docs/architecture/README.md` together, and only with an ADR.
 
 ## Conventions
 
