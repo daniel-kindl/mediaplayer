@@ -3,6 +3,7 @@
 The application source is MIT. Planned combined binary releases with GPL native plugins use GPL-3.0-or-later terms.
 [ADR 0006](../decisions/0006-licensing-mit-with-lgpl-libvlc.md) records this decision.
 The [native audit](native-audit/README.md) records candidates, file licenses, evidence, and unresolved release requirements.
+The [component source catalog](native-audit/component-licenses.json) and [provenance evidence](native-audit/evidence/README.md) supplement that inventory.
 This document is engineering guidance. It does not provide patent clearance or approval to release an unaudited payload.
 
 ## Application and managed libraries

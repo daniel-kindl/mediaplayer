@@ -27,15 +27,28 @@ Separate agent sessions reviewed commit `a0439c2dd9ec657d1bf4323e4e2f6362ee48f74
 | Correctness and tests | No new defect found. Inventory and archive checks pass. [Review log](reviews/correctness.md). |
 
 All reviewers retain the open license acceptance requirement. These reviews do not approve binary redistribution or make issue #1 complete.
+A [follow-up correctness review](reviews/followup-correctness.md) checks the provenance and source-verification helpers against the actual downloaded inputs.
+It records successful checks and rejected changed inputs. Its file hashes identify the reviewed artifacts before later documentation corrections.
 
 ## Remaining license evidence
 
-The [source review](linked-component-review.md) matches the official VLC source archive to the embedded revision in the examined x64 binaries.
-It also identifies FFmpeg and other dependency recipes. Those recipes do not prove the dependency inputs used for each compiled platform build.
+The [source review](linked-component-review.md) identifies the matching VLC source archive.
+The follow-up [provenance check](evidence/README.md) matches all 1,574 candidate native and linker files to official VLC release payloads.
+The [component catalog](component-licenses.json) contains 81 source license records, including separately identified bundled GnuTLS sources.
+Its source inputs, 294 license evidence files, and 38 supplemental source files passed hash verification.
+The [component findings](component-license-findings.md) record license alternatives and source-specific limits.
+
+Actual upstream job logs supply dependency source hashes and configuration for three Windows release builds and two macOS CI builds.
+The Windows jobs' original output artifacts expired. Their individual output files cannot be compared with the published release through those artifacts.
+The macOS CI configurations differ from the published release builds. They do not supply the exact macOS release input records.
+The [conditional source map](evidence/module-component-candidates.tsv) identifies candidate dependencies for all 339 plugin source groups.
+It preserves conditional alternatives and does not establish an exact binary link manifest.
 
 To complete the audit, obtain the exact dependency manifests, source hashes, build options, and selected license alternatives for each platform payload.
 Map those dependencies to their source license texts and the affected native files.
-The source review lists the missing records and the inspected upstream locations.
+The [evidence guide](evidence/README.md) lists the retrieved records and their remaining limits.
+Public [issue and discussion searches](evidence/upstream-issue-search.md) did not supply the missing exact release records.
+The [upstream request](upstream-records-request.md) is prepared but has not been sent.
 An upstream build record or a new build from pinned sources can supply the missing evidence.
 Collecting the full corresponding-source bundle and generating release notices remain release tasks after the license mapping is established.
 
@@ -50,7 +63,7 @@ Windows import libraries are included. All package architectures are included, e
 | [VideoLAN.LibVLC.Windows 3.0.24](https://www.nuget.org/packages/VideoLAN.LibVLC.Windows/3.0.24) | 968 | 956 | 12 |
 | [VideoLAN.LibVLC.Mac 3.1.3.2](https://www.nuget.org/packages/VideoLAN.LibVLC.Mac/3.1.3.2) | 606 | 598 | 8 |
 
-The Windows count includes 956 DLLs and 12 import libraries. The macOS count includes 606 dylibs.
+The Windows count includes 956 DLLs, six import archives, and six GNU linker scripts. The macOS count includes 606 dylibs.
 Both packages contain VLC version string `3.0.24-rc1-0-g6de05adcba` in their core libraries.
 The macOS NuGet version is not the VLC engine version. Its archive contains separate `osx-x64` and `osx-arm64` trees.
 
@@ -68,7 +81,7 @@ b83faf0e4866a5d8c53e998aec4caafc38d0e8aff9390a2a02d49af4d9757715
 For 1,557 DLLs and dylibs, the inventory reads the embedded module license declaration.
 The [VLC module export definitions](https://github.com/videolan/vlc/blob/3.0.24/include/vlc_plugin.h) define these declarations and export them through `vlc_entry_license`.
 The declarations name LGPL-2.1-or-later or GPL-2.0-or-later.
-For the five `libvlc` API libraries and 12 import libraries, the evidence is library identity and [VLC COPYING.LIB](https://github.com/videolan/vlc/blob/3.0.24/COPYING.LIB).
+For the five `libvlc` API libraries and 12 import or linker files, the evidence is library identity and [VLC COPYING.LIB](https://github.com/videolan/vlc/blob/3.0.24/COPYING.LIB).
 
 These are module licenses, not a complete license expression for every statically linked component.
 VLC supplies a default LGPL module declaration when a module does not override it.
@@ -169,3 +182,8 @@ Locked restore, vulnerability checks, formatting, Release build, tests, coverage
 The build reports zero warnings and zero errors. All eight architecture tests pass, with no failures or skips.
 No SDK pin or verification rule was changed.
 Windows and macOS verification are NOT RUN locally. Native execution and playback checks are NOT RUN on every platform.
+The follow-up source work also passes `./eng/verify.sh` with eight passing architecture tests and no build warnings or errors.
+The provenance helper reproduces all 1,574 upstream file matches.
+The source helper verifies 81 component records, 294 license evidence files, and 38 supplemental files.
+The source-map helper reproduces all 339 conditional module groups, including the FluidLite branch.
+Independent negative checks reject changed package hashes, source hashes, license evidence, and supplemental source inputs.

@@ -4,7 +4,10 @@ Reviewed on 2026-10-15. The review used static archive inspection and primary up
 
 ## Result
 
-The VLC source base is identified for the examined Windows x64 and macOS x64 binaries. Exact third-party build selections and complete corresponding source remain unverified. GPL-3.0-or-later is a distribution policy. This review does not approve the exact native payload for release.
+The VLC source base is identified. A follow-up [native provenance check](evidence/README.md) matches every candidate native file to an official release payload.
+Actual upstream build records and a [source license catalog](component-licenses.json) now supplement the source recipes.
+Exact third-party build selections for the published payloads and complete corresponding source remain unverified.
+GPL-3.0-or-later is a distribution policy. This review does not approve the exact native payload for release.
 
 ## Source identity
 
@@ -38,13 +41,15 @@ These source checks show why the outer VLC plugin declaration cannot establish t
 
 ## Specific missing records
 
-1. A receipt that maps each candidate NuGet package to the packaging commit and checksummed upstream VLC archives used for each architecture. Then compare the repackaged files with those upstream files.
+1. The connection from the recorded Windows release jobs to the individual published native files. NuGet-to-official-release byte identity is now established for all five platform trees. Original Windows job artifacts return 404, and their container hashes differ from the later published containers.
 2. The actual contributor package manifest for each shipped architecture: package names, versions, source hashes, configure options, patches, and locally supplied dependencies. In particular, obtain the FFmpeg configuration and dependency selections used for each avcodec plugin.
 3. The identity of the prebuilt contributor archive, if one was used. The matching macOS `extras/package/macosx/build.sh` can build dependencies from source, use `VLC_PREBUILT_CONTRIBS_URL`, or use the default prebuilt archive. In `contrib/src/main.mak`, the default URL ends in `vlc-contrib-$(HOST)-latest.tar.zst`. That mutable filename cannot identify the exact archive consumed by a past build. The record must supply the immutable URL or archive plus its hash and manifest.
 4. An inventory that maps the compiled linked components, including nested dependencies, to their actual source license texts and notices. Record any selected dual-license alternative and evaluate compatibility with the chosen combined release terms. The source defaults above cannot clear an unidentified linked dependency.
 5. A complete retained corresponding-source bundle with the required build scripts, dependency source, changes, and release delivery method for the exact distributed payload. The official VLC source tar identifies and supplies VLC base source and contributor recipes. The recipes alone are not the downloaded contributor sources or a receipt for a particular compiled dependency set.
 
-The inspected [official release root](https://download.videolan.org/pub/videolan/vlc/3.0.24/), [Windows x64 directory](https://download.videolan.org/pub/videolan/vlc/3.0.24/win64/), and [macOS directory](https://download.videolan.org/pub/videolan/vlc/3.0.24/macosx/) expose VLC source or binaries and checksums. They do not list a per-binary contributor source manifest or build receipt. This is a finding about the inspected directories, not a claim that the records are unavailable everywhere.
+The inspected [official release root](https://download.videolan.org/pub/videolan/vlc/3.0.24/), [Windows x64 directory](https://download.videolan.org/pub/videolan/vlc/3.0.24/win64/), and [macOS directory](https://download.videolan.org/pub/videolan/vlc/3.0.24/macosx/) expose VLC source or binaries and checksums. They do not list a per-binary contributor source manifest or build receipt.
+Follow-up [public CI and issue searches](evidence/README.md) recovered revision-matched source receipts and build configurations.
+Those records do not establish the exact release input chain described above. The search report records inspected locations and access limits.
 
 ## Action to clear the remaining gap
 

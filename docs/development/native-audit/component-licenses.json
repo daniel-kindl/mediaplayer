@@ -1,0 +1,3050 @@
+{
+  "schema_version": 1,
+  "scope": "Source licenses from VLC3.0.24 contrib recipes. This catalog does not itself establish binary provenance or all transitive license obligations.",
+  "spdx_matching_sources": [
+    "https://spdx.org/licenses/MIT-Modern-Variant.html",
+    "https://spdx.org/licenses/HPND-sell-variant.html"
+  ],
+  "components": [
+    {
+      "component": "amf",
+      "version": "1.5.2",
+      "archive": "AMF-1.5.2.tar.gz",
+      "sha512": "b992d4a1f59f7b1c789d03e7bd9876417a569fb239bfe2e2178f2434ae18653bbacc912de2b8a5f8ff0a85fad28b0c1091c2a8d3417407a37c22c1e907e4c159",
+      "recipe": "contrib/src/amf/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF/releases/download/v1.5.2/AMF-headers-v1.5.2.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "amf-headers-v1.5.2/AMF/core/Platform.h",
+          "sha256": "c060dc2466d0d886d1a09e5fea891aa3bc2efd08dc8d5ef59faa4d0a7f42abd4"
+        }
+      ],
+      "license_expression": "MIT",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "Headers grant MIT and include a separate notice that AMD does not grant rights to media technology standards. This row covers headers, not a proprietary AMD driver."
+    },
+    {
+      "component": "crystalhd",
+      "version": "v1",
+      "archive": "crystalhd_lgpl_includes_v1.zip",
+      "sha512": "26a7443b8f3867742b519fac13552e0b4e7b8d5310223b5c73160a679ed777d7917b6d9ac0ed5629f23baa7d9db98425dd1d90c2893f9640c7890aebab4867db",
+      "recipe": "contrib/src/crystalhd/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://downloads.videolan.org/pub/contrib/crystalhd/crystalhd_lgpl_includes_v1.zip",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "version.h",
+          "sha256": "cac9464200ec859b8c62cd9c14c585cc499066231e0692c74f35ec835894bf04"
+        },
+        {
+          "path": "bc_dts_types.h",
+          "sha256": "0d3b8a6de06d054da15e256530e86b314f17616e6a4deefae468cbaabf9326d6"
+        },
+        {
+          "path": "bc_dts_glob.h",
+          "sha256": "f7faa9ba5b7643cf205e7c5f1816b0fe0064538dc0a9a3717d16dc8bb4faf966"
+        },
+        {
+          "path": "bc_dts_defs.h",
+          "sha256": "bb587b0c8478e8a4185f882a95d0a35b76c2303730004f2e7f7e532907877044"
+        },
+        {
+          "path": "bc_drv_if.h",
+          "sha256": "e8ecc59ae224115492857c98ae9203bfac61123e721dbc3a80d43db21abcc1e0"
+        }
+      ],
+      "license_expression": "LGPL-2.1-only",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "Header notice says LGPL version 2.1 without an or-later grant. Header package is not the native driver."
+    },
+    {
+      "component": "d3d11",
+      "version": "f701c4c8cc9a881e660904f8c0047908a7b2ed04",
+      "archive": "d3d11.h",
+      "sha512": "47f35cd2cc5429f50bcc468af8fb5282e59840f1faca29b90fa2b12e2224e8b9631523d2555d15936fc7722d6adf7285bd10e80d359f38d3bedfd1a809b6df00",
+      "recipe": "contrib/src/d3d11/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/f701c4c8cc9a881e660904f8c0047908a7b2ed04/mingw-w64-headers/include/d3d11.h",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "d3d11.h",
+          "sha256": "7081da1c5bd126703f0d187f59a5a03464963285bef8cc9732e63cfa382b4374"
+        }
+      ],
+      "license_expression": "LGPL-2.1-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "All 15 pinned header inputs match recipe SHA512 sums. All 15 corresponding original source IDLs at those same upstream commits explicitly grant LGPL2.1-or-later. Generated header licensing is inferred from this original source relationship; original grant evidence is retained as separate supplemental inputs. This is a compile SDK header dependency, not a separate runtime library.",
+      "header_inputs": [
+        {
+          "path": "d3d11.h",
+          "sha256": "7081da1c5bd126703f0d187f59a5a03464963285bef8cc9732e63cfa382b4374",
+          "sha512": "47f35cd2cc5429f50bcc468af8fb5282e59840f1faca29b90fa2b12e2224e8b9631523d2555d15936fc7722d6adf7285bd10e80d359f38d3bedfd1a809b6df00",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/f701c4c8cc9a881e660904f8c0047908a7b2ed04/mingw-w64-headers/include/d3d11.h",
+          "recipe_sha512_verified": true,
+          "source_idl": {
+            "path": "mingw-w64-headers/include/d3d11.idl",
+            "sha256": "f85be29fa3958a4f94f67fa00bc5878b6b78175673042cbf608078769149eb63",
+            "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/f701c4c8cc9a881e660904f8c0047908a7b2ed04/mingw-w64-headers/include/d3d11.idl",
+            "notice": "/*\n * Copyright 2010 Rico Sch\u00fcller\n * Copyright 2013 Austin English\n *\n * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA\n */\n\nimport \"oaidl.idl\";\nimport \"ocidl.idl\";\nimport \"dxgi.idl\";\nimport \"d3dcommon.idl\";\n\ntypedef D3D_PRIMITIVE D3D11_PRIMITIVE;\ntypedef D3D_PRIMITIVE_TOPOLOGY D3D11_PRIMITIVE_TOPOLOGY;\ntypedef D3D_SRV_DIMENSION D3D11_SRV_DIMENSION;\ntypedef RECT D3D11_RECT;\n\ninterface ID3D11Device;\ninterface ID3D11ClassLinkage;\ninterface ID3D11Resource;\ninterface ID3D11VideoProcessorInputView;\n\ncpp_quote(\"#ifndef _D3D11_CONSTANTS\")\ncpp_quote(\"#define _D3D11_CONSTANTS\")\n\nconst UINT D3D11_COMMONSHADER_CONSTANT_BUFFER_API_SLOT_COUNT      = 14;\nconst UINT D3D11_COMMONSHADER_CONSTANT_BUFFER_COMPONENTS          = 4;\nconst UINT D3D11_COMMONSHADER_CONSTANT_BUFFER_COMPONENT_BIT_COUNT = 32;\nconst UINT D3D11_COMMONSHADER_CONSTANT_BUFFER_HW_SLOT_COUNT       = 15;\nconst UINT D3D11_COMMONSHADER_CONSTANT_BUFFER_PARTIAL_UPDATE_EXTENTS_BYTE_ALIGNMENT = 16;\nconst UINT D3D11_COMMONSHADER_CONSTANT_BUFFER_REGISTER_COMPONENTS = 4;\nconst UINT D3D11_COMMONSHADER_CONSTANT_BUFFER_REGISTER_COUNT      = 15;\nconst UINT D3D1"
+          }
+        },
+        {
+          "path": "d3d11_1.h",
+          "sha256": "96eb5f5f75f002206d00c0a191d464d029c4d4175052bc36fac1b378ea65403d",
+          "sha512": "d309fc35b655213673ca2e79776a41088009cca845a7fe1968f0683093587de771039a3f2acd59f778e382ddb558309f728bbebbc4ffd1cfacc08bf57a223a89",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/aa6ab47929a9cac6897f38e630ce0bb88458e288/mingw-w64-headers/direct-x/include/d3d11_1.h",
+          "recipe_sha512_verified": true,
+          "source_idl": {
+            "path": "mingw-w64-headers/direct-x/include/d3d11_1.idl",
+            "sha256": "4be06c76f57e365a2b175074f50bcc11489e649c6273f41ee49a44631fbe28d1",
+            "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/aa6ab47929a9cac6897f38e630ce0bb88458e288/mingw-w64-headers/direct-x/include/d3d11_1.idl",
+            "notice": "/*\n * Copyright 2014 Jacek Caban for CodeWeavers\n *\n * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA\n */\n\nimport \"oaidl.idl\";\nimport \"ocidl.idl\";\nimport \"dxgi1_2.idl\";\nimport \"d3dcommon.idl\";\nimport \"d3d11.idl\";\n\ntypedef enum D3D11_LOGIC_OP\n{\n    D3D11_LOGIC_OP_CLEAR = 0,\n    D3D11_LOGIC_OP_SET,\n    D3D11_LOGIC_OP_COPY,\n    D3D11_LOGIC_OP_COPY_INVERTED,\n    D3D11_LOGIC_OP_NOOP,\n    D3D11_LOGIC_OP_INVERT,\n    D3D11_LOGIC_OP_AND,\n    D3D11_LOGIC_OP_NAND,\n    D3D11_LOGIC_OP_OR,\n    D3D11_LOGIC_OP_NOR,\n    D3D11_LOGIC_OP_XOR,\n    D3D11_LOGIC_OP_EQUIV,\n    D3D11_LOGIC_OP_AND_REVERSE,\n    D3D11_LOGIC_OP_AND_INVERTED,\n    D3D11_LOGIC_OP_OR_REVERSE,\n    D3D11_LOGIC_OP_OR_INVERTED\n} D3D11_LOGIC_OP;\n\ntypedef enum D3D11_COPY_FLAGS\n{\n    D3D11_COPY_NO_OVERWRITE                                                         = 0x00000001,\n    D3D11_COPY_DISCARD                                                              = 0x00000002,\n} D3D11_COPY_FLAGS;\n\ntypedef enum D3D11_1_CREATE_DEVICE_CONTEXT_STATE_FLAG\n{\n    D3D11_1_CREATE_DEVICE_CONTEXT_STATE_SINGLETHREADED                              = 0x1,\n} D3D11_1_CREATE_"
+          }
+        },
+        {
+          "path": "d3d11_2.h",
+          "sha256": "8fb822fe8c01a847851f25bceaf4a3106b3da51e4cc38eb7f35c6dbb25e324c7",
+          "sha512": "9cd0805fb4ede1b6269455ac44f309b1f3e60a64c401e157f9866ce41427324c05717f3dc166aef12bd865ffca0c96696de8a9e4b549836a47c322aeae955f4e",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/aa6ab47929a9cac6897f38e630ce0bb88458e288/mingw-w64-headers/direct-x/include/d3d11_2.h",
+          "recipe_sha512_verified": true,
+          "source_idl": {
+            "path": "mingw-w64-headers/direct-x/include/d3d11_2.idl",
+            "sha256": "a8b7237bbaa0d76e44cc759c0654b4908181b52de23d3682a5a7e64b89a17de0",
+            "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/aa6ab47929a9cac6897f38e630ce0bb88458e288/mingw-w64-headers/direct-x/include/d3d11_2.idl",
+            "notice": "/*\n * Copyright 2017 Ihsan Akmal\n *\n * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA\n */\n\nimport \"oaidl.idl\";\nimport \"ocidl.idl\";\nimport \"dxgi1_3.idl\";\nimport \"d3dcommon.idl\";\nimport \"d3d11_1.idl\";\n\nconst UINT D3D11_PACKED_TILE = 0xffffffff;\n\ntypedef enum D3D11_TILE_MAPPING_FLAG\n{\n    D3D11_TILE_MAPPING_NO_OVERWRITE = 0x1,\n} D3D11_TILE_MAPPING_FLAG;\n\ntypedef enum D3D11_TILE_RANGE_FLAG\n{\n    D3D11_TILE_RANGE_NULL = 0x1,\n    D3D11_TILE_RANGE_SKIP = 0x2,\n    D3D11_TILE_RANGE_REUSE_SINGLE_TILE = 0x4,\n} D3D11_TILE_RANGE_FLAG;\n\ntypedef enum D3D11_CHECK_MULTISAMPLE_QUALITY_LEVELS_FLAG\n{\n    D3D11_CHECK_MULTISAMPLE_QUALITY_LEVELS_TILED_RESOURCE = 0x1,\n} D3D11_CHECK_MULTISAMPLE_QUALITY_LEVELS_FLAG;\n\ntypedef enum D3D11_TILE_COPY_FLAG\n{\n    D3D11_TILE_COPY_NO_OVERWRITE = 0x1,\n    D3D11_TILE_COPY_LINEAR_BUFFER_TO_SWIZZLED_TILED_RESOURCE = 0x2,\n    D3D11_TILE_COPY_SWIZZLED_TILED_RESOURCE_TO_LINEAR_BUFFER = 0x4,\n} D3D11_TILE_COPY_FLAG;\n\ntypedef struct D3D11_TILED_RESOURCE_COORDINATE\n{\n    UINT X;\n    UINT Y;\n    UINT Z;\n    UINT Subresource;\n} D3D11_TILED_RESOURCE_COORDINATE;\n\ntypedef struct D3D11_TILE_REGION_"
+          }
+        },
+        {
+          "path": "d3d11_3.h",
+          "sha256": "a02ce06264a437c6b823032e48c957b0ec09617a684161f99c87d3b64e4f90b8",
+          "sha512": "5c9b2d3ca071d555f61d45c839b3a474a8e3a440cb386c65303f0e9c95da74565ac7bdc6430582bdd506c192fc259707f10fd2b111ca0374e487e6bbd5ffc3ee",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/aa6ab47929a9cac6897f38e630ce0bb88458e288/mingw-w64-headers/direct-x/include/d3d11_3.h",
+          "recipe_sha512_verified": true,
+          "source_idl": {
+            "path": "mingw-w64-headers/direct-x/include/d3d11_3.idl",
+            "sha256": "1608646a0fef3b9cd8646992b792512dc0e78be5990b787d47ad6e2fc99fc9b0",
+            "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/aa6ab47929a9cac6897f38e630ce0bb88458e288/mingw-w64-headers/direct-x/include/d3d11_3.idl",
+            "notice": "/*\n * Copyright 2017 Ihsan Akmal\n *\n * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA\n */\n\nimport \"oaidl.idl\";\nimport \"ocidl.idl\";\nimport \"dxgi1_3.idl\";\nimport \"d3dcommon.idl\";\nimport \"d3d11_2.idl\";\n\ntypedef enum D3D11_CONTEXT_TYPE\n{\n    D3D11_CONTEXT_TYPE_ALL = 0x0,\n    D3D11_CONTEXT_TYPE_3D = 0x1,\n    D3D11_CONTEXT_TYPE_COMPUTE = 0x2,\n    D3D11_CONTEXT_TYPE_COPY = 0x3,\n    D3D11_CONTEXT_TYPE_VIDEO = 0x4,\n} D3D11_CONTEXT_TYPE;\n\ntypedef enum D3D11_TEXTURE_LAYOUT\n{\n    D3D11_TEXTURE_LAYOUT_UNDEFINED = 0x0,\n    D3D11_TEXTURE_LAYOUT_ROW_MAJOR = 0x1,\n    D3D11_TEXTURE_LAYOUT_64K_STANDARD_SWIZZLE = 0x2,\n} D3D11_TEXTURE_LAYOUT;\n\ntypedef enum D3D11_CONSERVATIVE_RASTERIZATION_MODE\n{\n    D3D11_CONSERVATIVE_RASTERIZATION_MODE_OFF = 0x0,\n    D3D11_CONSERVATIVE_RASTERIZATION_MODE_ON = 0x1,\n} D3D11_CONSERVATIVE_RASTERIZATION_MODE;\n\ntypedef enum D3D11_FENCE_FLAG\n{\n    D3D11_FENCE_FLAG_NONE = 0x1,\n    D3D11_FENCE_FLAG_SHARED = 0x2,\n    D3D11_FENCE_FLAG_SHARED_CROSS_ADAPTER = 0x4,\n} D3D11_FENCE_FLAG;\n\ntypedef struct D3D11_TEXTURE2D_DESC1\n{\n    UINT Width;\n    UINT Height;\n    UINT MipLevels;\n    UINT ArraySize;\n "
+          }
+        },
+        {
+          "path": "d3d11_4.h",
+          "sha256": "155ac8d7b8b03f417cd22cb918a2a128679bd626ac93765b0903a187e070cec3",
+          "sha512": "f87eadc5c9a16a2e38d6a5615bd4e6d338df6a8b35879f315bcec39c876ebe9be47b0ce4174a5c259e6166895352a2403e503ae852218702fd7ed97b7aa3b142",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/6a1e782bb60bb1a93b5ab20fe895394d9c0904c2/mingw-w64-headers/direct-x/include/d3d11_4.h",
+          "recipe_sha512_verified": true,
+          "source_idl": {
+            "path": "mingw-w64-headers/direct-x/include/d3d11_4.idl",
+            "sha256": "b6977cb9051edfb5e7ca7a05cbf0473b7aaedd2552581aae19996f6307a5359a",
+            "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/6a1e782bb60bb1a93b5ab20fe895394d9c0904c2/mingw-w64-headers/direct-x/include/d3d11_4.idl",
+            "notice": "/*\n * Copyright 2017 Ihsan Akmal\n *\n * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA\n*/\n\nimport \"oaidl.idl\";\nimport \"ocidl.idl\";\nimport \"dxgi1_5.idl\";\nimport \"d3dcommon.idl\";\nimport \"d3d11_3.idl\";\n\ntypedef struct D3D11_FEATURE_DATA_D3D11_OPTIONS4\n{\n    BOOL ExtendedNV12SharedTextureSupported;\n} D3D11_FEATURE_DATA_D3D11_OPTIONS4;\n\n[\n    uuid(8992ab71-02e6-4b8d-ba48-b056dcda42c4),\n    object,\n    local,\n    pointer_default(unique)\n]\ninterface ID3D11Device4 : ID3D11Device3\n{\n    HRESULT RegisterDeviceRemovedEvent(\n        [in] HANDLE event,\n        [out] DWORD *cookie\n    );\n    void UnregisterDeviceRemoved(\n        [in] DWORD cookie\n    );\n}\n\n[\n    uuid(8ffde202-a0e7-45df-9e01-e837801b5ea0),\n    object,\n    local,\n    pointer_default(unique)\n]\ninterface ID3D11Device5 : ID3D11Device4\n{\n    HRESULT OpenSharedFence(\n        [in] HANDLE handle,\n        [in] REFIID iid,\n        [out] void **fence\n    );\n    HRESULT CreateFence(\n        [in] UINT64 initial_value,\n        [in] D3D11_FENCE_FLAG flags,\n        [in] REFIID iid,\n        [out] void **fence\n    );\n}\n\n[\n    uuid(9b7e4e00-342c-4106-a19f-4f2704f68"
+          }
+        },
+        {
+          "path": "dxgidebug.h",
+          "sha256": "4fd1b4e618a43fad4a5d7eccd5c1417f7d446a42da263b26ff3a72feb2320aa0",
+          "sha512": "baa4e380e41467c7d53191756376e8a60b9a2173ab3db08d5736416d89b6ca0b2b9d8eccce24e88731fdfbb9711ac36782a7fac03733de1342684a8557d2efbf",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/22333acf22f89b9709c718467e04735157b5d27a/mingw-w64-headers/include/dxgidebug.h",
+          "recipe_sha512_verified": true,
+          "source_idl": {
+            "path": "mingw-w64-headers/include/dxgidebug.idl",
+            "sha256": "bdd1f356b820f9da4cbd84e5cd61131fce9174a05cb49c084dc94feb6b93c518",
+            "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/22333acf22f89b9709c718467e04735157b5d27a/mingw-w64-headers/include/dxgidebug.idl",
+            "notice": "/*\n * Copyright 2015 Steve Lhomme\n *\n * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA\n */\n\nimport \"oaidl.idl\";\n\ncpp_quote(\"DEFINE_GUID(DXGI_DEBUG_ALL,   0xe48ae283, 0xda80, 0x490b,0x87, 0xe6, 0x43, 0xe9, 0xa9, 0xcf, 0xda, 0x08);\")\ncpp_quote(\"DEFINE_GUID(DXGI_DEBUG_DX,    0x35cdd7fc, 0x13b2, 0x421d,0xa5, 0xd7, 0x7e, 0x44, 0x51, 0x28, 0x7d, 0x64);\")\ncpp_quote(\"DEFINE_GUID(DXGI_DEBUG_DXGI,  0x25cddaa4, 0xb1c6, 0x47e1,0xac, 0x3e, 0x98, 0x87, 0x5b, 0x5a, 0x2e, 0x2a);\")\ncpp_quote(\"DEFINE_GUID(DXGI_DEBUG_APP,   0x06cd6e01, 0x4219, 0x4ebd,0x87, 0x90, 0x27, 0xed, 0x23, 0x36, 0x0c, 0x62);\")\n\ntypedef enum DXGI_DEBUG_RLO_FLAGS {\n    DXGI_DEBUG_RLO_SUMMARY         = 0x0001,\n    DXGI_DEBUG_RLO_DETAIL          = 0x0002,\n    DXGI_DEBUG_RLO_IGNORE_INTERNAL = 0x0004,\n    DXGI_DEBUG_RLO_ALL             = 0x0007\n} DXGI_DEBUG_RLO_FLAGS;\n\n[\n    object,\n    local,\n    uuid(119e7452-de9e-40fe-8806-88f90c12b441)\n]\ninterface IDXGIDebug : IUnknown\n{\n    HRESULT ReportLiveObjects(\n        [in] GUID apiid,\n        [in] DXGI_DEBUG_RLO_FLAGS flags);\n}\n"
+          }
+        },
+        {
+          "path": "dxgi1_2.h",
+          "sha256": "2da68f9332da7a3a33fda1a2a76f378ce9fb0bbff038627db19cccf4fb20937f",
+          "sha512": "3d1fa12e80b8ce7d54568439b1229b08356ba07b8d35a73971b9ba9fe8efe2b3e05e05bf343663fc921d421a0deb4b2355af49a6dbf20d30e7fafdc898537510",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgi1_2.h",
+          "recipe_sha512_verified": true,
+          "source_idl": {
+            "path": "mingw-w64-headers/include/dxgi1_2.idl",
+            "sha256": "1a42371382e58c18ac63428a2cfc9079f51619883bbdd6a538b048c17814b3d0",
+            "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgi1_2.idl",
+            "notice": "/*\n * Copyright 2014 Jacek Caban for CodeWeavers\n *\n * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA\n */\n\nimport \"dxgi.idl\";\n\nconst UINT DXGI_ENUM_MODES_STEREO = 0x4;\nconst UINT DXGI_ENUM_MODES_DISABLED_STEREO = 0x8;\n\nconst DWORD DXGI_SHARED_RESOURCE_READ = 0x80000000;\nconst DWORD DXGI_SHARED_RESOURCE_WRITE = 0x00000001;\n\ntypedef enum _DXGI_OFFER_RESOURCE_PRIORITY {\n    DXGI_OFFER_RESOURCE_PRIORITY_LOW = 1,\n    DXGI_OFFER_RESOURCE_PRIORITY_NORMAL,\n    DXGI_OFFER_RESOURCE_PRIORITY_HIGH\n} DXGI_OFFER_RESOURCE_PRIORITY;\n\ntypedef enum DXGI_ALPHA_MODE {\n    DXGI_ALPHA_MODE_UNSPECIFIED = 0,\n    DXGI_ALPHA_MODE_PREMULTIPLIED = 1,\n    DXGI_ALPHA_MODE_STRAIGHT = 2,\n    DXGI_ALPHA_MODE_IGNORE = 3,\n    DXGI_ALPHA_MODE_FORCE_DWORD = 0xffffffff\n} DXGI_ALPHA_MODE;\n\ntypedef struct DXGI_OUTDUPL_MOVE_RECT\n{\n    POINT SourcePoint;\n    RECT DestinationRect;\n} DXGI_OUTDUPL_MOVE_RECT;\n\ntypedef struct DXGI_OUTDUPL_DESC\n{\n    DXGI_MODE_DESC ModeDesc;\n    DXGI_MODE_ROTATION Rotation;\n    BOOL DesktopImageInSystemMemory;\n} DXGI_OUTDUPL_DESC;\n\ntypedef struct DXGI_OUTDUPL_POINTER_POSITION\n{\n    POINT Position;\n    BOOL Visi"
+          }
+        },
+        {
+          "path": "dxgi1_3.h",
+          "sha256": "f72123d319a4aa9e817a1d832dbfc3099fc831e2241c6d23ba7f71a4de9bef61",
+          "sha512": "b843e74266fdfdf4b6fdb121d75db441c48ab09282e20b1b9b81d816e9f2130b1404e9e4065bae69868e32b687c58a13d83f057a882b8cb4f897944b6330a22a",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgi1_3.h",
+          "recipe_sha512_verified": true,
+          "source_idl": {
+            "path": "mingw-w64-headers/include/dxgi1_3.idl",
+            "sha256": "b07fc707f421333d409795fe18586af11c9eaa61605909c60222a09cf37aa68a",
+            "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgi1_3.idl",
+            "notice": "/*\n * Copyright 2017 Ihsan Akmal\n *\n * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA\n */\n\nimport \"dxgi1_2.idl\";\n\ntypedef struct DXGI_MATRIX_3X2_F\n{\n    float _11;\n    float _12;\n    float _21;\n    float _22;\n    float _31;\n    float _32;\n} DXGI_MATRIX_3X2_F;\n\ntypedef struct DXGI_DECODE_SWAP_CHAIN_DESC\n{\n    UINT Flags;\n} DXGI_DECODE_SWAP_CHAIN_DESC;\n\ntypedef enum DXGI_MULTIPLANE_OVERLAY_YCbCr_FLAGS\n{\n    DXGI_MULTIPLANE_OVERLAY_YCbCr_FLAG_NOMINAL_RANGE = 0x1,\n    DXGI_MULTIPLANE_OVERLAY_YCbCr_FLAG_BT709 = 0x2,\n    DXGI_MULTIPLANE_OVERLAY_YCbCr_FLAG_xvYCC = 0x4,\n} DXGI_MULTIPLANE_OVERLAY_YCbCr_FLAGS;\n\ntypedef enum DXGI_FRAME_PRESENTATION_MODE\n{\n    DXGI_FRAME_PRESENTATION_MODE_COMPOSED = 0,\n    DXGI_FRAME_PRESENTATION_MODE_OVERLAY = 1,\n    DXGI_FRAME_PRESENTATION_MODE_NONE = 2,\n    DXGI_FRAME_PRESENTATION_MODE_COMPOSITION_FAILURE = 3,\n} DXGI_FRAME_PRESENTATION_MODE;\n\ntypedef struct DXGI_FRAME_STATISTICS_MEDIA\n{\n    UINT PresentCount;\n    UINT PresentRefreshCount;\n    UINT SyncRefreshCount;\n    LARGE_INTEGER SyncQPCTime;\n    LARGE_INTEGER SyncGPUTime;\n    DXGI_FRAME_PRESENTATION_MODE CompositionMod"
+          }
+        },
+        {
+          "path": "dxgi1_4.h",
+          "sha256": "cae975f1bdc9178118f3f53f7450e65be1a4dbd55b509c3c7c6cc3d85ce974ee",
+          "sha512": "22c658dc1a9c1a047f429cc27b46b81c42f0d44e35b5936dcfb74ed3d1dcd5aae53beb0a9e3f1285493e2f03ac85544b5bc3d0a91d37ef537a430cbbe89c1173",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgi1_4.h",
+          "recipe_sha512_verified": true,
+          "source_idl": {
+            "path": "mingw-w64-headers/include/dxgi1_4.idl",
+            "sha256": "052409feea583f1aefc3afa19b62dd616090a3b960a03852ec730dd4f3167b02",
+            "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgi1_4.idl",
+            "notice": "/*\n * Copyright 2017 Ihsan Akmal\n *\n * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA\n */\n\nimport \"dxgi1_3.idl\";\n\ntypedef enum DXGI_SWAP_CHAIN_COLOR_SPACE_SUPPORT_FLAG\n{\n    DXGI_SWAP_CHAIN_COLOR_SPACE_SUPPORT_FLAG_PRESENT = 0x1,\n    DXGI_SWAP_CHAIN_COLOR_SPACE_SUPPORT_FLAG_OVERLAY_PRESENT = 0x2,\n} DXGI_SWAP_CHAIN_COLOR_SPACE_SUPPORT_FLAG;\n\ntypedef enum DXGI_OVERLAY_COLOR_SPACE_SUPPORT_FLAG\n{\n    DXGI_OVERLAY_COLOR_SPACE_SUPPORT_FLAG_PRESENT = 0x1,\n} DXGI_OVERLAY_COLOR_SPACE_SUPPORT_FLAG;\n\ntypedef enum DXGI_MEMORY_SEGMENT_GROUP\n{\n    DXGI_MEMORY_SEGMENT_GROUP_LOCAL = 0x0,\n    DXGI_MEMORY_SEGMENT_GROUP_NON_LOCAL = 0x1,\n} DXGI_MEMORY_SEGMENT_GROUP;\n\ntypedef struct DXGI_QUERY_VIDEO_MEMORY_INFO\n{\n    UINT64 Budget;\n    UINT64 CurrentUsage;\n    UINT64 AvailableForReservation;\n    UINT64 CurrentReservation;\n} DXGI_QUERY_VIDEO_MEMORY_INFO;\n\n[\n    object,\n    uuid(94d99bdb-f1f8-4ab0-b236-7da0170edab1),\n    local,\n    pointer_default(unique)\n]\ninterface IDXGISwapChain3 : IDXGISwapChain2\n{\n    UINT GetCurrentBackBufferIndex();\n    HRESULT CheckColorSpaceSupport(\n        [in] DXGI_COLOR_SPACE_TYPE colour_spa"
+          }
+        },
+        {
+          "path": "dxgi1_5.h",
+          "sha256": "87a05e82915e74aef4aa59d8cd8e7b7138fbcfc9524560843be4d04d79e9504d",
+          "sha512": "bcbb0b2929a512137b1298b160e265141b8405e336dd347e6131a938edc62f2906e19f1451fef07ecae328824533445a90c8dffe10d3eab1ef5c93219b61a082",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgi1_5.h",
+          "recipe_sha512_verified": true,
+          "source_idl": {
+            "path": "mingw-w64-headers/include/dxgi1_5.idl",
+            "sha256": "8e96bc3c7c57cca352ccec4c4d40bbe4231cabd253a7f9f48bde5e317e6a1c74",
+            "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgi1_5.idl",
+            "notice": "/*\n * Copyright 2017 Ihsan Akmal\n *\n * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA\n */\n\nimport \"dxgi1_4.idl\";\n\ntypedef enum DXGI_OUTDUPL_FLAG\n{\n    DXGI_OUTDUPL_COMPOSITED_UI_CAPTURE_ONLY = 0x1,\n} DXGI_OUTDUPL_FLAG;\n\ntypedef enum DXGI_HDR_METADATA_TYPE\n{\n    DXGI_HDR_METADATA_TYPE_NONE = 0x0,\n    DXGI_HDR_METADATA_TYPE_HDR10 = 0x1,\n    DXGI_HDR_METADATA_TYPE_HDR10PLUS = 0x2,\n} DXGI_HDR_METADATA_TYPE;\n\ntypedef enum _DXGI_OFFER_RESOURCE_FLAGS\n{\n    DXGI_OFFER_RESOURCE_FLAG_ALLOW_DECOMMIT = 0x1,\n} DXGI_OFFER_RESOURCE_FLAGS;\n\ntypedef enum _DXGI_RECLAIM_RESOURCE_RESULTS\n{\n    DXGI_RECLAIM_RESOURCE_RESULT_OK = 0x0,\n    DXGI_RECLAIM_RESOURCE_RESULT_DISCARDED = 0x1,\n    DXGI_RECLAIM_RESOURCE_RESULT_NOT_COMMITTED = 0x2,\n} DXGI_RECLAIM_RESOURCE_RESULTS;\n\ntypedef enum DXGI_FEATURE\n{\n       DXGI_FEATURE_PRESENT_ALLOW_TEARING = 0x0,\n} DXGI_FEATURE;\n\ntypedef struct DXGI_HDR_METADATA_HDR10\n{\n    UINT16 RedPrimary[2];\n    UINT16 GreenPrimary[2];\n    UINT16 BluePrimary[2];\n    UINT16 WhitePoint[2];\n    UINT MaxMasteringLuminance;\n    UINT MinMasteringLuminance;\n    UINT16 MaxContentLightLevel;\n    UINT16 MaxFra"
+          }
+        },
+        {
+          "path": "dxgi1_6.h",
+          "sha256": "dc281e86f5668ebab17a6c9004d346b39106254f9d8001ce7f21fdf955295abd",
+          "sha512": "5ab157d2c41e9fc070a7eeb31479ffd0d3a259a4cd60b747077fe0e4fcd67aa79da9232058127158316332b0d672e6c78ef224d3c17fdda1307074e4f4f09902",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgi1_6.h",
+          "recipe_sha512_verified": true,
+          "source_idl": {
+            "path": "mingw-w64-headers/include/dxgi1_6.idl",
+            "sha256": "2de5923b42b8773eebac0d4d4b0728bdb42d72efee6e84f3f589249e0c869575",
+            "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgi1_6.idl",
+            "notice": "/*\n * Copyright 2017 Ihsan Akmal\n *\n * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA\n */\n\nimport \"dxgi1_5.idl\";\n\ntypedef enum DXGI_ADAPTER_FLAG3\n{\n    DXGI_ADAPTER_FLAG3_NONE = 0x0,\n    DXGI_ADAPTER_FLAG3_REMOTE = 0x1,\n    DXGI_ADAPTER_FLAG3_SOFTWARE = 0x2,\n    DXGI_ADAPTER_FLAG3_ACG_COMPATIBLE = 0x4,\n    DXGI_ADAPTER_FLAG3_SUPPORT_MONITORED_FENCES = 0x8,\n    DXGI_ADAPTER_FLAG3_SUPPORT_NON_MONITORED_FENCES = 0x10,\n    DXGI_ADAPTER_FLAG3_KEYED_MUTEX_CONFORMANCE = 0x20,\n    DXGI_ADAPTER_FLAG3_FORCE_DWORD = 0xffffffff,\n} DXGI_ADAPTER_FLAG3;\n\ntypedef enum DXGI_HARDWARE_COMPOSITION_SUPPORT_FLAGS\n{\n    DXGI_HARDWARE_COMPOSITION_SUPPORT_FLAG_FULLSCREEN = 0x1,\n    DXGI_HARDWARE_COMPOSITION_SUPPORT_FLAG_WINDOWED = 0x2,\n    DXGI_HARDWARE_COMPOSITION_SUPPORT_FLAG_CURSOR_STRETCHED = 0x4,\n} DXGI_HARDWARE_COMPOSITION_SUPPORT_FLAGS;\n\ntypedef enum DXGI_GPU_PREFERENCE\n{\n    DXGI_GPU_PREFERENCE_UNSPECIFIED = 0x0,\n    DXGI_GPU_PREFERENCE_MINIMUM_POWER = 0x1,\n    DXGI_GPU_PREFERENCE_HIGH_PERFORMANCE = 0x2,\n} DXGI_GPU_PREFERENCE;\n\ntypedef struct DXGI_ADAPTER_DESC3\n{\n    WCHAR Description[128];\n    UINT VendorId;\n    "
+          }
+        },
+        {
+          "path": "dxgitype.h",
+          "sha256": "dc69a0690da9a11dbe09c20796434e12d9b22d57f684b4379001ced8b06a95d4",
+          "sha512": "7887819e18867f793448e21e5a2a73305d4685ad2b80a4499b5a5710f2c7d0dc9079184e7e82aa5f1837c7a1b2d621ca392a9b8a903f0d135b29969be51d508a",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgitype.h",
+          "recipe_sha512_verified": true,
+          "source_idl": {
+            "path": "mingw-w64-headers/include/dxgitype.idl",
+            "sha256": "bc41d1844a8375724c039e8a8dc8fde1336045363b4aff7999d6d2f2c8b4a248",
+            "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgitype.idl",
+            "notice": "/*\n * Copyright 2007 Andras Kovacs\n *\n * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA\n */\n\nimport \"dxgicommon.idl\";\nimport \"dxgiformat.idl\";\n\ncpp_quote(\"#if 0\")\ntypedef unsigned int UINT;\ntypedef long BOOL;\ncpp_quote(\"#endif\")\n\ntypedef enum DXGI_MODE_ROTATION\n{\n    DXGI_MODE_ROTATION_UNSPECIFIED  = 0x0,\n    DXGI_MODE_ROTATION_IDENTITY     = 0x1,\n    DXGI_MODE_ROTATION_ROTATE90     = 0x2,\n    DXGI_MODE_ROTATION_ROTATE180    = 0x3,\n    DXGI_MODE_ROTATION_ROTATE270    = 0x4,\n} DXGI_MODE_ROTATION;\n\ntypedef enum DXGI_MODE_SCANLINE_ORDER\n{\n    DXGI_MODE_SCANLINE_ORDER_UNSPECIFIED        = 0x0,\n    DXGI_MODE_SCANLINE_ORDER_PROGRESSIVE        = 0x1,\n    DXGI_MODE_SCANLINE_ORDER_UPPER_FIELD_FIRST  = 0x2,\n    DXGI_MODE_SCANLINE_ORDER_LOWER_FIELD_FIRST  = 0x3,\n} DXGI_MODE_SCANLINE_ORDER;\n\ntypedef enum DXGI_MODE_SCALING\n{\n    DXGI_MODE_SCALING_UNSPECIFIED   = 0x0,\n    DXGI_MODE_SCALING_CENTERED      = 0x1,\n    DXGI_MODE_SCALING_STRETCHED     = 0x2,\n} DXGI_MODE_SCALING;\n\ncpp_quote(\"#ifndef D3DCOLORVALUE_DEFINED\")\ncpp_quote(\"#define D3DCOLORVALUE_DEFINED\")\ntypedef struct _D3DCOLORVALUE\n{\n    float r;\n    floa"
+          }
+        },
+        {
+          "path": "dxgicommon.h",
+          "sha256": "051251d8e0a62434fe00fdb2dc32b6809927ec2aa3001ba0b65d5fc8ff64d254",
+          "sha512": "6c4929f4a4b262d901aa0b1a7b47ffc739ee8e1ecd82f20627c43ad0ee5367aa7c8b6f374a25273b6928d5d1e3c735fbb84404107e6e4d2f2965252a6d91c0c3",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgicommon.h",
+          "recipe_sha512_verified": true,
+          "source_idl": {
+            "path": "mingw-w64-headers/include/dxgicommon.idl",
+            "sha256": "8a5c36af83b2b764db867216c689e561c31bc14286cbddb00a20af614856d1c2",
+            "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgicommon.idl",
+            "notice": "/*\n * Copyright 2017 Ihsan Akmal\n *\n * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA\n */\n\ncpp_quote(\"#if 0\")\ntypedef unsigned int UINT;\ncpp_quote(\"#endif\")\n\nconst UINT DXGI_STANDARD_MULTISAMPLE_QUALITY_PATTERN = 0xffffffff;\nconst UINT DXGI_CENTER_MULTISAMPLE_QUALITY_PATTERN = 0xfffffffe;\n\ntypedef enum DXGI_COLOR_SPACE_TYPE\n{\n    DXGI_COLOR_SPACE_RGB_FULL_G22_NONE_P709             = 0x00,\n    DXGI_COLOR_SPACE_RGB_FULL_G10_NONE_P709             = 0x01,\n    DXGI_COLOR_SPACE_RGB_STUDIO_G22_NONE_P709           = 0x02,\n    DXGI_COLOR_SPACE_RGB_STUDIO_G22_NONE_P2020          = 0x03,\n    DXGI_COLOR_SPACE_RESERVED                           = 0x04,\n    DXGI_COLOR_SPACE_YCBCR_FULL_G22_NONE_P709_X601      = 0x05,\n    DXGI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P601         = 0x06,\n    DXGI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P601           = 0x07,\n    DXGI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P709         = 0x08,\n    DXGI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P709           = 0x09,\n    DXGI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P2020        = 0x0a,\n    DXGI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P2020          = 0x0b,\n    DXGI_COLOR_SPA"
+          }
+        },
+        {
+          "path": "dxgiformat.h",
+          "sha256": "69958f34f46d3d05572deaf840b187fb0987ad6f4308321723903111bf957eb5",
+          "sha512": "3b1ccecaca5223a870a6195d4924908cfbc874d00e4dcb1e6415ec29323a15d36fae410049e86f25462dba996cc033f8ab716d9554c34f01ce061282b93c6f6e",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgiformat.h",
+          "recipe_sha512_verified": true,
+          "source_idl": {
+            "path": "mingw-w64-headers/include/dxgiformat.idl",
+            "sha256": "646e01778dc5be9137abe0bea291d57fbbc2a690e07f8884e1945a779914b328",
+            "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgiformat.idl",
+            "notice": "/*\n * Copyright 2016 J\u00f3zef Kucia for CodeWeavers\n *\n * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA\n */\n\nconst unsigned int DXGI_FORMAT_DEFINED = 1;\n\ntypedef enum DXGI_FORMAT\n{\n    DXGI_FORMAT_UNKNOWN                     = 0x00,\n    DXGI_FORMAT_R32G32B32A32_TYPELESS       = 0x01,\n    DXGI_FORMAT_R32G32B32A32_FLOAT          = 0x02,\n    DXGI_FORMAT_R32G32B32A32_UINT           = 0x03,\n    DXGI_FORMAT_R32G32B32A32_SINT           = 0x04,\n    DXGI_FORMAT_R32G32B32_TYPELESS          = 0x05,\n    DXGI_FORMAT_R32G32B32_FLOAT             = 0x06,\n    DXGI_FORMAT_R32G32B32_UINT              = 0x07,\n    DXGI_FORMAT_R32G32B32_SINT              = 0x08,\n    DXGI_FORMAT_R16G16B16A16_TYPELESS       = 0x09,\n    DXGI_FORMAT_R16G16B16A16_FLOAT          = 0x0a,\n    DXGI_FORMAT_R16G16B16A16_UNORM          = 0x0b,\n    DXGI_FORMAT_R16G16B16A16_UINT           = 0x0c,\n    DXGI_FORMAT_R16G16B16A16_SNORM          = 0x0d,\n    DXGI_FORMAT_R16G16B16A16_SINT           = 0x0e,\n    DXGI_FORMAT_R32G32_TYPELESS             = 0x0f,\n    DXGI_FORMAT_R32G32_FLOAT                = 0x10,\n    DXGI_FORMAT_R32G32_UINT                 = 0x11"
+          }
+        },
+        {
+          "path": "dxgi.h",
+          "sha256": "b131631e9c8566a7a633687c8a9cba16d3c296cebb17dabc4b213d81b518cede",
+          "sha512": "cb0120badd7671f0cda1055971554950fc39c77e92c1acc2ab98f8c9e0398456799d2fb49a3c73e4d4452deaffd551d8754ad0665803feb3cf0711841e297c1c",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgi.h",
+          "recipe_sha512_verified": true,
+          "source_idl": {
+            "path": "mingw-w64-headers/include/dxgi.idl",
+            "sha256": "13e0ad23a4381094144c36241bfd9257040586b5f6256e2d34c111a6c0d993c4",
+            "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgi.idl",
+            "notice": "/*\n * Copyright 2007 Andras Kovacs\n *\n * This library is free software; you can redistribute it and/or\n * modify it under the terms of the GNU Lesser General Public\n * License as published by the Free Software Foundation; either\n * version 2.1 of the License, or (at your option) any later version.\n *\n * This library is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n * Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public\n * License along with this library; if not, write to the Free Software\n * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA\n */\n\nimport \"oaidl.idl\";\nimport \"ocidl.idl\";\nimport \"dxgitype.idl\";\n\nconst UINT _FACDXGI = 0x87a;\n\ncpp_quote(\"#define MAKE_DXGI_STATUS(x)                         MAKE_HRESULT(0, _FACDXGI, x)\")\ncpp_quote(\"#define MAKE_DXGI_HRESULT(x)                        MAKE_HRESULT(1, _FACDXGI, x)\")\n\ncpp_quote(\"#if 0\")\ntypedef HANDLE HMONITOR;\ntypedef struct _LUID {\n    DWORD LowPart;\n    LONG HighPart;\n} LUID, *PLUID;\ncpp_quote(\"#endif\")\n\nconst UINT DXGI_CPU_ACCESS_NONE                     = 0;\nconst UINT DXGI_CPU_ACCESS_DYNAMIC                  = 1;\nconst UINT DXGI_CPU_ACCESS_READ_WRITE               = 2;\nconst UINT DXGI_CPU_ACCESS_SCRATCH                  = 3;\nconst UINT DXGI_CPU_ACCESS_FIELD                    = 15;\n\ntypedef UINT DXGI_USAGE;\nconst DXGI_USAGE DXGI_USAGE_SHADER_INPUT            = 0x10L;\nconst DXGI_USAGE DXGI_USAGE_RENDER_TARGET_OUTPUT    = 0x20L;\nconst DXGI_USAGE DXGI_USAGE_BACK_BUFFER             = 0x40L;\nconst DXGI_USAGE DXGI_USAGE_SHARED                  = 0x80L;\nconst DXGI_USAGE DXGI_USAGE_READ_ONLY   "
+          }
+        }
+      ],
+      "supplemental_source_inputs": [
+        {
+          "path": "d3d11.h",
+          "sha256": "7081da1c5bd126703f0d187f59a5a03464963285bef8cc9732e63cfa382b4374",
+          "sha512": "47f35cd2cc5429f50bcc468af8fb5282e59840f1faca29b90fa2b12e2224e8b9631523d2555d15936fc7722d6adf7285bd10e80d359f38d3bedfd1a809b6df00",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/f701c4c8cc9a881e660904f8c0047908a7b2ed04/mingw-w64-headers/include/d3d11.h",
+          "input_kind": "header",
+          "recipe_sha512_verified": true
+        },
+        {
+          "path": "mingw-w64-headers/include/d3d11.idl",
+          "sha256": "f85be29fa3958a4f94f67fa00bc5878b6b78175673042cbf608078769149eb63",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/f701c4c8cc9a881e660904f8c0047908a7b2ed04/mingw-w64-headers/include/d3d11.idl",
+          "input_kind": "original-idl",
+          "license_expression": "LGPL-2.1-or-later",
+          "sha512": "0b1968be3e825dc114cf706f9e3be6d6165b039b061e4651b31b36b19aed1534965d2f41080350bb1facf492c0a7ecd4285ff8dfbd1b641f108e3a72be3aa690",
+          "hash_basis": "Measured pinned-commit source file SHA512; not independently published checksum."
+        },
+        {
+          "path": "d3d11_1.h",
+          "sha256": "96eb5f5f75f002206d00c0a191d464d029c4d4175052bc36fac1b378ea65403d",
+          "sha512": "d309fc35b655213673ca2e79776a41088009cca845a7fe1968f0683093587de771039a3f2acd59f778e382ddb558309f728bbebbc4ffd1cfacc08bf57a223a89",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/aa6ab47929a9cac6897f38e630ce0bb88458e288/mingw-w64-headers/direct-x/include/d3d11_1.h",
+          "input_kind": "header",
+          "recipe_sha512_verified": true
+        },
+        {
+          "path": "mingw-w64-headers/direct-x/include/d3d11_1.idl",
+          "sha256": "4be06c76f57e365a2b175074f50bcc11489e649c6273f41ee49a44631fbe28d1",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/aa6ab47929a9cac6897f38e630ce0bb88458e288/mingw-w64-headers/direct-x/include/d3d11_1.idl",
+          "input_kind": "original-idl",
+          "license_expression": "LGPL-2.1-or-later",
+          "sha512": "4c987955fae219ac00e36016e3997f6db174f80f6e48960b3a020b69d547ddaa9e3da3ce4effb6cce8c9b955b247e8dbc6a8cffc2ee1e7759bee4f2059018cb2",
+          "hash_basis": "Measured pinned-commit source file SHA512; not independently published checksum."
+        },
+        {
+          "path": "d3d11_2.h",
+          "sha256": "8fb822fe8c01a847851f25bceaf4a3106b3da51e4cc38eb7f35c6dbb25e324c7",
+          "sha512": "9cd0805fb4ede1b6269455ac44f309b1f3e60a64c401e157f9866ce41427324c05717f3dc166aef12bd865ffca0c96696de8a9e4b549836a47c322aeae955f4e",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/aa6ab47929a9cac6897f38e630ce0bb88458e288/mingw-w64-headers/direct-x/include/d3d11_2.h",
+          "input_kind": "header",
+          "recipe_sha512_verified": true
+        },
+        {
+          "path": "mingw-w64-headers/direct-x/include/d3d11_2.idl",
+          "sha256": "a8b7237bbaa0d76e44cc759c0654b4908181b52de23d3682a5a7e64b89a17de0",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/aa6ab47929a9cac6897f38e630ce0bb88458e288/mingw-w64-headers/direct-x/include/d3d11_2.idl",
+          "input_kind": "original-idl",
+          "license_expression": "LGPL-2.1-or-later",
+          "sha512": "dca17b646a5302d895729fcd9727d28ab3bbfe2fbc24ff978c10211250be31c67f8aae86290f20d641ac230668908749253b7d07014ad765557e9ad430034050",
+          "hash_basis": "Measured pinned-commit source file SHA512; not independently published checksum."
+        },
+        {
+          "path": "d3d11_3.h",
+          "sha256": "a02ce06264a437c6b823032e48c957b0ec09617a684161f99c87d3b64e4f90b8",
+          "sha512": "5c9b2d3ca071d555f61d45c839b3a474a8e3a440cb386c65303f0e9c95da74565ac7bdc6430582bdd506c192fc259707f10fd2b111ca0374e487e6bbd5ffc3ee",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/aa6ab47929a9cac6897f38e630ce0bb88458e288/mingw-w64-headers/direct-x/include/d3d11_3.h",
+          "input_kind": "header",
+          "recipe_sha512_verified": true
+        },
+        {
+          "path": "mingw-w64-headers/direct-x/include/d3d11_3.idl",
+          "sha256": "1608646a0fef3b9cd8646992b792512dc0e78be5990b787d47ad6e2fc99fc9b0",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/aa6ab47929a9cac6897f38e630ce0bb88458e288/mingw-w64-headers/direct-x/include/d3d11_3.idl",
+          "input_kind": "original-idl",
+          "license_expression": "LGPL-2.1-or-later",
+          "sha512": "5c5076d1d06191668010b1e7a7480fc7887c88d9260c46d6782675e53f57dca3dee65c4cd0d949348dd37ea230d64408db86bc90f37867873b36ddb69fe2a085",
+          "hash_basis": "Measured pinned-commit source file SHA512; not independently published checksum."
+        },
+        {
+          "path": "d3d11_4.h",
+          "sha256": "155ac8d7b8b03f417cd22cb918a2a128679bd626ac93765b0903a187e070cec3",
+          "sha512": "f87eadc5c9a16a2e38d6a5615bd4e6d338df6a8b35879f315bcec39c876ebe9be47b0ce4174a5c259e6166895352a2403e503ae852218702fd7ed97b7aa3b142",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/6a1e782bb60bb1a93b5ab20fe895394d9c0904c2/mingw-w64-headers/direct-x/include/d3d11_4.h",
+          "input_kind": "header",
+          "recipe_sha512_verified": true
+        },
+        {
+          "path": "mingw-w64-headers/direct-x/include/d3d11_4.idl",
+          "sha256": "b6977cb9051edfb5e7ca7a05cbf0473b7aaedd2552581aae19996f6307a5359a",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/6a1e782bb60bb1a93b5ab20fe895394d9c0904c2/mingw-w64-headers/direct-x/include/d3d11_4.idl",
+          "input_kind": "original-idl",
+          "license_expression": "LGPL-2.1-or-later",
+          "sha512": "f3cb2d6ca86156a2fb2e1937a58510318a0b4e0769707627143dd6fd8f0cd38ba6803603c3d073f35df74b4d82837d5e6688c6300a5dcddf1a67dce4dbffcf70",
+          "hash_basis": "Measured pinned-commit source file SHA512; not independently published checksum."
+        },
+        {
+          "path": "dxgidebug.h",
+          "sha256": "4fd1b4e618a43fad4a5d7eccd5c1417f7d446a42da263b26ff3a72feb2320aa0",
+          "sha512": "baa4e380e41467c7d53191756376e8a60b9a2173ab3db08d5736416d89b6ca0b2b9d8eccce24e88731fdfbb9711ac36782a7fac03733de1342684a8557d2efbf",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/22333acf22f89b9709c718467e04735157b5d27a/mingw-w64-headers/include/dxgidebug.h",
+          "input_kind": "header",
+          "recipe_sha512_verified": true
+        },
+        {
+          "path": "mingw-w64-headers/include/dxgidebug.idl",
+          "sha256": "bdd1f356b820f9da4cbd84e5cd61131fce9174a05cb49c084dc94feb6b93c518",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/22333acf22f89b9709c718467e04735157b5d27a/mingw-w64-headers/include/dxgidebug.idl",
+          "input_kind": "original-idl",
+          "license_expression": "LGPL-2.1-or-later",
+          "sha512": "883a32ac35d9010225edaee78603fbeab14870114d5a1be039a9298478f411782f06cc6daed1e29032031814e1ecdad00f18332f0132279c951b68bb0c11da9e",
+          "hash_basis": "Measured pinned-commit source file SHA512; not independently published checksum."
+        },
+        {
+          "path": "dxgi1_2.h",
+          "sha256": "2da68f9332da7a3a33fda1a2a76f378ce9fb0bbff038627db19cccf4fb20937f",
+          "sha512": "3d1fa12e80b8ce7d54568439b1229b08356ba07b8d35a73971b9ba9fe8efe2b3e05e05bf343663fc921d421a0deb4b2355af49a6dbf20d30e7fafdc898537510",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgi1_2.h",
+          "input_kind": "header",
+          "recipe_sha512_verified": true
+        },
+        {
+          "path": "mingw-w64-headers/include/dxgi1_2.idl",
+          "sha256": "1a42371382e58c18ac63428a2cfc9079f51619883bbdd6a538b048c17814b3d0",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgi1_2.idl",
+          "input_kind": "original-idl",
+          "license_expression": "LGPL-2.1-or-later",
+          "sha512": "a07a12b5d97feb7f7a34149afbcfe6dc00283e49bf614f26991531206e6f13356eb2dca883d74e12e1e0dfdc47e82baef1eec3ff2debdb6e1e6ff24a7e714efd",
+          "hash_basis": "Measured pinned-commit source file SHA512; not independently published checksum."
+        },
+        {
+          "path": "dxgi1_3.h",
+          "sha256": "f72123d319a4aa9e817a1d832dbfc3099fc831e2241c6d23ba7f71a4de9bef61",
+          "sha512": "b843e74266fdfdf4b6fdb121d75db441c48ab09282e20b1b9b81d816e9f2130b1404e9e4065bae69868e32b687c58a13d83f057a882b8cb4f897944b6330a22a",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgi1_3.h",
+          "input_kind": "header",
+          "recipe_sha512_verified": true
+        },
+        {
+          "path": "mingw-w64-headers/include/dxgi1_3.idl",
+          "sha256": "b07fc707f421333d409795fe18586af11c9eaa61605909c60222a09cf37aa68a",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgi1_3.idl",
+          "input_kind": "original-idl",
+          "license_expression": "LGPL-2.1-or-later",
+          "sha512": "95dbeecd57e0e737f35901986e9bda4a57c7a227f109381ea85e586801bff1a2f35bd014f58aa1c114c815d1638ebb99be2bf14cc8fe66113566738d6a25a977",
+          "hash_basis": "Measured pinned-commit source file SHA512; not independently published checksum."
+        },
+        {
+          "path": "dxgi1_4.h",
+          "sha256": "cae975f1bdc9178118f3f53f7450e65be1a4dbd55b509c3c7c6cc3d85ce974ee",
+          "sha512": "22c658dc1a9c1a047f429cc27b46b81c42f0d44e35b5936dcfb74ed3d1dcd5aae53beb0a9e3f1285493e2f03ac85544b5bc3d0a91d37ef537a430cbbe89c1173",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgi1_4.h",
+          "input_kind": "header",
+          "recipe_sha512_verified": true
+        },
+        {
+          "path": "mingw-w64-headers/include/dxgi1_4.idl",
+          "sha256": "052409feea583f1aefc3afa19b62dd616090a3b960a03852ec730dd4f3167b02",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgi1_4.idl",
+          "input_kind": "original-idl",
+          "license_expression": "LGPL-2.1-or-later",
+          "sha512": "dbb53d4d6bbe5e3199640447f5156b1f6b7e287e3225dc489c229ed80242973eb7ac4c478ce71f3a3f13324b0157ddeeeb674d4f7e495c3057b868a1d83c2e75",
+          "hash_basis": "Measured pinned-commit source file SHA512; not independently published checksum."
+        },
+        {
+          "path": "dxgi1_5.h",
+          "sha256": "87a05e82915e74aef4aa59d8cd8e7b7138fbcfc9524560843be4d04d79e9504d",
+          "sha512": "bcbb0b2929a512137b1298b160e265141b8405e336dd347e6131a938edc62f2906e19f1451fef07ecae328824533445a90c8dffe10d3eab1ef5c93219b61a082",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgi1_5.h",
+          "input_kind": "header",
+          "recipe_sha512_verified": true
+        },
+        {
+          "path": "mingw-w64-headers/include/dxgi1_5.idl",
+          "sha256": "8e96bc3c7c57cca352ccec4c4d40bbe4231cabd253a7f9f48bde5e317e6a1c74",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgi1_5.idl",
+          "input_kind": "original-idl",
+          "license_expression": "LGPL-2.1-or-later",
+          "sha512": "7fa3d4ff1c820551c1eedf5038fc1c22eb8a80f1a2828c7add72822aec535e5a196a9b62c23be9dd6739bc3d4f3a979d20b4ec35ce4f51ee9cc29decd8c5a38b",
+          "hash_basis": "Measured pinned-commit source file SHA512; not independently published checksum."
+        },
+        {
+          "path": "dxgi1_6.h",
+          "sha256": "dc281e86f5668ebab17a6c9004d346b39106254f9d8001ce7f21fdf955295abd",
+          "sha512": "5ab157d2c41e9fc070a7eeb31479ffd0d3a259a4cd60b747077fe0e4fcd67aa79da9232058127158316332b0d672e6c78ef224d3c17fdda1307074e4f4f09902",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgi1_6.h",
+          "input_kind": "header",
+          "recipe_sha512_verified": true
+        },
+        {
+          "path": "mingw-w64-headers/include/dxgi1_6.idl",
+          "sha256": "2de5923b42b8773eebac0d4d4b0728bdb42d72efee6e84f3f589249e0c869575",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgi1_6.idl",
+          "input_kind": "original-idl",
+          "license_expression": "LGPL-2.1-or-later",
+          "sha512": "d6fece7526edb18a3cbaf54a9bfa55d90679dd65e00b250689aa78be37d0c161401261fcf0eaf0b8622ababfe9430f80b1855f509e37a6acafab79a472f739ac",
+          "hash_basis": "Measured pinned-commit source file SHA512; not independently published checksum."
+        },
+        {
+          "path": "dxgitype.h",
+          "sha256": "dc69a0690da9a11dbe09c20796434e12d9b22d57f684b4379001ced8b06a95d4",
+          "sha512": "7887819e18867f793448e21e5a2a73305d4685ad2b80a4499b5a5710f2c7d0dc9079184e7e82aa5f1837c7a1b2d621ca392a9b8a903f0d135b29969be51d508a",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgitype.h",
+          "input_kind": "header",
+          "recipe_sha512_verified": true
+        },
+        {
+          "path": "mingw-w64-headers/include/dxgitype.idl",
+          "sha256": "bc41d1844a8375724c039e8a8dc8fde1336045363b4aff7999d6d2f2c8b4a248",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgitype.idl",
+          "input_kind": "original-idl",
+          "license_expression": "LGPL-2.1-or-later",
+          "sha512": "26f3aa5b623b3790459f6982adc848f24026da84c74144e1a6e550ad42b6c420d91382ff2b6ec17201341c9128add9733329c1d32d5538ea27d84e47ff3947f6",
+          "hash_basis": "Measured pinned-commit source file SHA512; not independently published checksum."
+        },
+        {
+          "path": "dxgicommon.h",
+          "sha256": "051251d8e0a62434fe00fdb2dc32b6809927ec2aa3001ba0b65d5fc8ff64d254",
+          "sha512": "6c4929f4a4b262d901aa0b1a7b47ffc739ee8e1ecd82f20627c43ad0ee5367aa7c8b6f374a25273b6928d5d1e3c735fbb84404107e6e4d2f2965252a6d91c0c3",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgicommon.h",
+          "input_kind": "header",
+          "recipe_sha512_verified": true
+        },
+        {
+          "path": "mingw-w64-headers/include/dxgicommon.idl",
+          "sha256": "8a5c36af83b2b764db867216c689e561c31bc14286cbddb00a20af614856d1c2",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgicommon.idl",
+          "input_kind": "original-idl",
+          "license_expression": "LGPL-2.1-or-later",
+          "sha512": "a74bf1db781aa2fa3605efaefded08f98818a3e5da6209fb3ac13a762d7cacbc8f08e63159d5d3c5d7b4338d0cbb9fe9a05d26460ef8c025f62cb6d7f98e0d27",
+          "hash_basis": "Measured pinned-commit source file SHA512; not independently published checksum."
+        },
+        {
+          "path": "dxgiformat.h",
+          "sha256": "69958f34f46d3d05572deaf840b187fb0987ad6f4308321723903111bf957eb5",
+          "sha512": "3b1ccecaca5223a870a6195d4924908cfbc874d00e4dcb1e6415ec29323a15d36fae410049e86f25462dba996cc033f8ab716d9554c34f01ce061282b93c6f6e",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgiformat.h",
+          "input_kind": "header",
+          "recipe_sha512_verified": true
+        },
+        {
+          "path": "mingw-w64-headers/include/dxgiformat.idl",
+          "sha256": "646e01778dc5be9137abe0bea291d57fbbc2a690e07f8884e1945a779914b328",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgiformat.idl",
+          "input_kind": "original-idl",
+          "license_expression": "LGPL-2.1-or-later",
+          "sha512": "a102d0878c4b734352d9072c762e62eec040e980258aaa6e513576d6e12b125217742d09e66e59bc542e65fba210ff8c423011cd718fa51be589825c75471eba",
+          "hash_basis": "Measured pinned-commit source file SHA512; not independently published checksum."
+        },
+        {
+          "path": "dxgi.h",
+          "sha256": "b131631e9c8566a7a633687c8a9cba16d3c296cebb17dabc4b213d81b518cede",
+          "sha512": "cb0120badd7671f0cda1055971554950fc39c77e92c1acc2ab98f8c9e0398456799d2fb49a3c73e4d4452deaffd551d8754ad0665803feb3cf0711841e297c1c",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgi.h",
+          "input_kind": "header",
+          "recipe_sha512_verified": true
+        },
+        {
+          "path": "mingw-w64-headers/include/dxgi.idl",
+          "sha256": "13e0ad23a4381094144c36241bfd9257040586b5f6256e2d34c111a6c0d993c4",
+          "source_url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/3419b2d4b2b7e8b378696dc79546e3593f00ade6/mingw-w64-headers/include/dxgi.idl",
+          "input_kind": "original-idl",
+          "license_expression": "LGPL-2.1-or-later",
+          "sha512": "af8ca173e332f247495a8e4dda79185282c4d66774d4d0ea40f4c386faca411bbca3f77ed159c73d5a3ee08574a8aacdf45d7769369dee804d26e02f6c7e6f00",
+          "hash_basis": "Measured pinned-commit source file SHA512; not independently published checksum."
+        }
+      ]
+    },
+    {
+      "component": "ffi",
+      "version": "3.0.13",
+      "archive": "libffi-3.0.13.tar.gz",
+      "sha512": "fc47f5d25197c631754efe05a349edb556d072807ecef19b41f17c1a8f39c95221be64926fbd05b1f8439181df1ddff8fc01462ce3a26005b75159ddc27e6f6a",
+      "recipe": "contrib/src/ffi/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://downloads.videolan.org/pub/contrib/ffi/libffi-3.0.13.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libffi-3.0.13/README",
+          "sha256": "f593061a8263acd83072d8c83de1d25cacc8b4b45d816600015fb9b6ffca24b5"
+        },
+        {
+          "path": "libffi-3.0.13/LICENSE",
+          "sha256": "414f460aed519486beb78e92ea712c9ccf87c1acfb735a82d301f4cdf06f48e3"
+        }
+      ],
+      "license_expression": "MIT",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "glew",
+      "version": "2.3.1",
+      "archive": "glew-2.3.1.tgz",
+      "sha512": "cb4caecf32ec0f180c2691dc7769ffc99571c64f259a2663a2b80e788f1c2fd5362c59e0caaeefed6fb78a4070366d244666a657358049b09071b59fae2377e0",
+      "recipe": "contrib/src/glew/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://github.com/nigels-com/glew/releases/download/glew-2.3.1/glew-2.3.1.tgz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "glew-2.3.1/README.md",
+          "sha256": "eb4a333697c91fdff930b6214be2dc91ac2c86ed67e0b2a5f9805b83792557d5"
+        },
+        {
+          "path": "glew-2.3.1/LICENSE.txt",
+          "sha256": "8991cd11befec7c6a63662700f03c0cc42e864b6e77c7e70b80297c951a7f0ff"
+        }
+      ],
+      "license_expression": "LicenseRef-GLEW-Mixed",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "LICENSE.txt includes BSD-like GLEW and MIT Mesa grants. Its GLEW name-use clause says may be used, unlike the usual BSD3 prohibition; LicenseRef preserves exact text rather than silently correcting it.",
+      "extracted_license_text": "The OpenGL Extension Wrangler Library\nCopyright (C) 2002-2007, Milan Ikits <milan ikits[]ieee org>\nCopyright (C) 2002-2007, Marcelo E. Magallon <mmagallo[]debian org>\nCopyright (C) 2002, Lev Povalahev\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without \nmodification, are permitted provided that the following conditions are met:\n\n* Redistributions of source code must retain the above copyright notice, \n  this list of conditions and the following disclaimer.\n* Redistributions in binary form must reproduce the above copyright notice, \n  this list of conditions and the following disclaimer in the documentation \n  and/or other materials provided with the distribution.\n* The name of the author may be used to endorse or promote products \n  derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" \nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE \nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE \nLIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR \nCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF \nSUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\nINTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\nCONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\nARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF\nTHE POSSIBILITY OF SUCH DAMAGE.\n\n\nMesa 3-D graphics library\nVersion:  7.0\n\nCopyright (C) 1999-2007  Brian Paul   All Rights Reserved.\n\nPermission is hereby granted, free of charge, to any person obtaining a\ncopy of this software and associated documentation files (the \"Software\"),\nto deal in the Software without restriction, including without limitation\nthe rights to use, copy, modify, merge, publish, distribute, sublicense,\nand/or sell copies of the Software, and to permit persons to whom the\nSoftware is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included\nin all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL\nBRIAN PAUL BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN\nAN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN\nCONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n\nCopyright (c) 2007 The Khronos Group Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a\ncopy of this software and/or associated documentation files (the\n\"Materials\"), to deal in the Materials without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Materials, and to\npermit persons to whom the Materials are furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be included\nin all copies or substantial portions of the Materials.\n\nTHE MATERIALS ARE PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nMATERIALS OR THE USE OR OTHER DEALINGS IN THE MATERIALS.\n"
+    },
+    {
+      "component": "glib",
+      "version": "2.38.2",
+      "archive": "glib-2.38.2.tar.xz",
+      "sha512": "f31531060d898dbe05e71ffc4d057f5a703106674e68c28ad2346d227304ef9454736beaf653f27553ed5397caac8baf3d76d3b31b062898762e5cf4e24ff0e0",
+      "recipe": "contrib/src/glib/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://downloads.videolan.org/pub/contrib/glib/glib-2.38.2.tar.xz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "glib-2.38.2/README",
+          "sha256": "34085b8d3bb1c7a2338f6074f84faf28de1d98445b15116b5c795e8db8a4a3f9"
+        },
+        {
+          "path": "glib-2.38.2/COPYING",
+          "sha256": "d245807f90032872d1438d741ed21e2490e1175dc8aa3afa5ddb6c8e529b58e5"
+        },
+        {
+          "path": "glib-2.38.2/gmodule/COPYING",
+          "sha256": "d245807f90032872d1438d741ed21e2490e1175dc8aa3afa5ddb6c8e529b58e5"
+        },
+        {
+          "path": "glib-2.38.2/docs/reference/COPYING",
+          "sha256": "b1ec1d0e5947f81e815d8771f7d4d90671a94bb10a42dc687fb566de461a57aa"
+        },
+        {
+          "path": "glib-2.38.2/glib/pcre/COPYING",
+          "sha256": "17abe1dbb92b21ab173cf9757dd57b0b15cd8d863b2ccdef635fdbef03077fb0"
+        },
+        {
+          "path": "glib-2.38.2/glib/garray.c",
+          "sha256": "8533cca2408225adff98c81716fbfbcb069a4fef5f77fa7995d662ed68e8dca1"
+        }
+      ],
+      "license_expression": "LGPL-2.0-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "Representative glib/garray.c header grants version 2-or-later. Other source files and bundled dependencies can add terms."
+    },
+    {
+      "component": "mysofa",
+      "version": "1.2.1",
+      "archive": "libmysofa-1.2.1.tar.gz",
+      "sha512": "2058c94cd09aeeabe40975edd320d7447bd9e535108f32b2a5305c023c7bf89f0c2f44df182390b7e4be8f6ffc9b09c2e35817896bb5e63d3ec9f1bd5b7e972c",
+      "recipe": "contrib/src/mysofa/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://github.com/hoene/libmysofa/archive/v1.2.1.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libmysofa-1.2.1/LICENSE",
+          "sha256": "9c8713ccc5d6d93d20c7a1cfcb876e64baf551bfbe67faa4e60d39cda9ffd023"
+        },
+        {
+          "path": "libmysofa-1.2.1/README.md",
+          "sha256": "b58e521bcf7fa9807aa4c22895a93660eec8b29515a8684f45e30e19dc3870b5"
+        },
+        {
+          "path": "libmysofa-1.2.1/tests/LICENSE.CIPIC_subject_003_hrir_final",
+          "sha256": "78149b9a8138d9fdcbd77b66e554711a1a2a5451d16b432b5eaec6d642697d85"
+        },
+        {
+          "path": "libmysofa-1.2.1/tests/LICENSE.D1_48K_24bit_0.3s_FIR_SOFA",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "path": "libmysofa-1.2.1/tests/LICENSE.FHK_HRIR_L2354",
+          "sha256": "47c326d67143bb68c008a900c954c8a6779bdafa25d350d12c57d532c3a32200"
+        },
+        {
+          "path": "libmysofa-1.2.1/tests/LICENSE.H20_44K_16bit_256tap_FIR_SOFA",
+          "sha256": "44ba2315604e3fbe0f11c0d9cbb6114159ba74c3f31b5a72b2493476b3f9b44a"
+        },
+        {
+          "path": "libmysofa-1.2.1/tests/LICENSE.LISTEN_1002_IRC_1002_C_HRIR",
+          "sha256": "29661b4a131466c1d5cdb786db0e531244c14850af0d3fb80fb8c801bdbe7145"
+        },
+        {
+          "path": "libmysofa-1.2.1/tests/LICENSE.MIT_KEMAR_pinnae",
+          "sha256": "548b43283652608c38ed82accb918fae135885016de78c969cbd8cd7215d15ec"
+        },
+        {
+          "path": "libmysofa-1.2.1/tests/LICENSE.TU-Berlin_QU_KEMAR_anechoic",
+          "sha256": "84be1cf7d2cf8ea106fcf1f24e360cd922a05f80c6172e3f70608b0eaed50460"
+        },
+        {
+          "path": "libmysofa-1.2.1/tests/LICENSE.pulse",
+          "sha256": "fabb8e1099a0812e0be1951a94cdda0def9b3e60f1aa5b649a0dbe01fc637fc0"
+        }
+      ],
+      "license_expression": "BSD-3-Clause",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "Default BSD3 grant does not classify separately licensed files/data beneath share and tests. Their license files are retained as evidence."
+    },
+    {
+      "component": "protobuf",
+      "version": "3.4.1",
+      "archive": "protobuf-3.4.1-cpp.tar.gz",
+      "sha512": "6189e23c7e381f62e971bd0e35ad9c3ed8effe584755357013887c6a582cb5a9a654c39affa2a073b658854138f31bfb70f89fa1df494e9386f1d64fd73d07d2",
+      "recipe": "contrib/src/protobuf/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://github.com/google/protobuf/releases/download/v3.4.1/protobuf-cpp-3.4.1.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "protobuf-3.4.1/LICENSE",
+          "sha256": "af67c58de2e18677a0b8cb5fffbe2232aabb8eb2930e8cd684769cef3d74a262"
+        },
+        {
+          "path": "protobuf-3.4.1/gmock/LICENSE",
+          "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+        },
+        {
+          "path": "protobuf-3.4.1/gmock/gtest/LICENSE",
+          "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+        },
+        {
+          "path": "protobuf-3.4.1/README.md",
+          "sha256": "4d9b1130b36f817b028da437232d0c6c68fd15ebb06b82eec4e9244fe0f7e45c"
+        }
+      ],
+      "license_expression": "BSD-3-Clause",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "LICENSE identifies separately licensed atomicops generic GCC and POWER files; retain their source notices if compiled."
+    },
+    {
+      "component": "regex",
+      "version": "0.13",
+      "archive": "regex-0.13.tar.gz",
+      "sha512": "8a6d873c115357126db2df47886550b77d2b0f56f56f4261140a1823ba492ef86b64880ccb317a2e2a9058b6c046a06c3c6e700f6da16fc0ba60b4f568379723",
+      "recipe": "contrib/src/regex/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://downloads.videolan.org/pub/contrib/regex/regex-0.13.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "regex-0.13/README",
+          "sha256": "0b295aa23e94b6bfd3409c0cf80317f7975afaa37d0910f8df32a7b8da93950c"
+        },
+        {
+          "path": "regex-0.13/COPYING",
+          "sha256": "91df39d1816bfb17a4dda2d3d2c83b1f6f2d38d53e53e41e8f97ad5ac46a0cad"
+        },
+        {
+          "path": "regex-0.13/COPYING.LIB",
+          "sha256": "5bbcbb737e60fe9deba08ecbd00920cfcc3403ba2e534c64fdeea49d6bb87509"
+        },
+        {
+          "path": "regex-0.13/regex.c",
+          "sha256": "4791d4a4578afe50eeefb50b010b9036a2a7ddca3085b26a3b4b3d012156ebc2"
+        }
+      ],
+      "license_expression": "LGPL-2.1-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "utfcpp",
+      "version": "3.2.5",
+      "archive": "utfcpp-3.2.5.tar.gz",
+      "sha512": "1ce12c8158a2f3bcddec104ceacedaea4031b4c88fc0fa1f1fae8dfa8df81c846861df9d01e8f294d79b9e4ab8c51bd1289f404eed24d07abc760688fee13090",
+      "recipe": "contrib/src/utfcpp/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://github.com/nemtrif/utfcpp/archive/refs/tags/v3.2.5.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "utfcpp-3.2.5/LICENSE",
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566"
+        },
+        {
+          "path": "utfcpp-3.2.5/README.md",
+          "sha256": "d3e102b621cdb82ae7d79cb10104cac8fc53406ef391e31cd6238ad05459d63d"
+        }
+      ],
+      "license_expression": "BSL-1.0",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "xcb",
+      "version": "1.12",
+      "archive": "libxcb-1.12.tar.bz2",
+      "sha512": "4ce3e3f62b7e1c3a9e61c149c720ef2a4a760539ea615d7d52ae39e7f5a08456dc87d7a1ac5d85ca15dcc468a9a02d56fb8f8f6361c959af9b8780f011995896",
+      "recipe": "contrib/src/xcb/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://downloads.videolan.org/pub/contrib/xcb/libxcb-1.12.tar.bz2",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libxcb-1.12/COPYING",
+          "sha256": "c5ffbfeaa501071ceeb97b7de2c0d703fdaa35de01c0fb6cbac1c28453a3e9fd"
+        },
+        {
+          "path": "libxcb-1.12/README",
+          "sha256": "8114b942550eeeb4e69815ae6b875cfc5a42776f4c09bf189a6895d578f3f8d8"
+        }
+      ],
+      "license_expression": "MIT",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "libarchive",
+      "version": "3.8.9",
+      "archive": "libarchive-3.8.9.tar.xz",
+      "sha512": "f37425417a9e3fdc194a2b892137452ddba6601c69e822598692d4d776c573a90e70aac4598d47c915615facc45d0c83fc46c24856ddf04afd7494b63bb9f137",
+      "recipe": "contrib/src/libarchive/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://github.com/libarchive/libarchive/releases/download/v3.8.9/libarchive-3.8.9.tar.xz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libarchive-3.8.9/COPYING",
+          "sha256": "30e556b3959e3985d66efefec5eaac51d4995053caa1d3cffe6eb916f146f229"
+        },
+        {
+          "path": "libarchive-3.8.9/README.md",
+          "sha256": "158527b45cc55cce474530d54e8c7e1a6fd3f57c6cf0967777421c07ea34398d"
+        }
+      ],
+      "license_expression": "BSD-2-Clause AND BSD-3-Clause AND (CC0-1.0 OR OpenSSL OR Apache-2.0)",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "COPYING separately identifies BSD3 files, public-domain archive_parse_date.c, and BLAKE2 files with three alternative licenses. Choose CC0 or Apache2 for those files when applying GPL3. Build scripts have separate terms. Additional compression and crypto dependencies require their own rows."
+    },
+    {
+      "component": "fluid",
+      "version": "2.1.8",
+      "archive": "fluidsynth-2.1.8.tar.gz",
+      "sha512": "34f87ea1577b1e89146a1589c67771262961bb18d0c8b21aaa9a1315e18dffc984f18f21cc8a96cc52dca9e94fcad1bdec2b62678c5f2f3434a4faba713854a6",
+      "recipe": "contrib/src/fluid/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.1.8.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "fluidsynth-2.1.8/LICENSE",
+          "sha256": "9b872a8a070b8ad329c4bd380fb1bf0000f564c75023ec8e1e6803f15364b9e9"
+        },
+        {
+          "path": "fluidsynth-2.1.8/README.md",
+          "sha256": "64aca4d5f9aea9869353d803fbb5e3f2fa5b9e83bf8b16fd4f425aac92fa363c"
+        },
+        {
+          "path": "fluidsynth-2.1.8/sf2/COPYRIGHT.txt",
+          "sha256": "1dd0eaf80d116244b04a31e88769a8ecc65667af65a9dbf1fdc3549761eb13c7"
+        },
+        {
+          "path": "fluidsynth-2.1.8/src/synth/fluid_synth.c",
+          "sha256": "21db7882fd83158288f1c30fed214db4a80da4192b853415ba755a8251faef53"
+        },
+        {
+          "path": "doc/android/fluidsynth-assetloader/fluid_androidasset.h",
+          "sha256": "ec0fb96099bfc938d227152bd5a0bac106210e31d095cf12d958b86a395d154c"
+        },
+        {
+          "path": "doc/android/fluidsynth-assetloader/fluid_androidasset.c",
+          "sha256": "a680144fa32a33c7a179f4a92d8de230d3150daeba8bd157fa36a9157797d89a"
+        }
+      ],
+      "license_expression": "LGPL-2.1-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "ssh2",
+      "version": "1.11.1",
+      "archive": "libssh2-1.11.1.tar.xz",
+      "sha512": "8322b54a522b0cbbb07916d29ec045c08f8ed94bd8abb5e524038640e90a317667a25be46d95b62b101ed726ade0a51a90fb246cf34c045c38f927f4e439e431",
+      "recipe": "contrib/src/ssh2/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "http://www.libssh2.org/download/libssh2-1.11.1.tar.xz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libssh2-1.11.1/COPYING",
+          "sha256": "f7f9633cf9ff2f1333f3d7ce46973a8716a4d2a2815ad56f30d437d5fea7bafe"
+        },
+        {
+          "path": "libssh2-1.11.1/README",
+          "sha256": "1fc0694bbd85f7411852c56d5d922da629f55d61a9129dbe0e71c8eb5d1d619d"
+        },
+        {
+          "path": "libssh2-1.11.1/README.md",
+          "sha256": "f6a078174a5b360b48db13c399be5661eb24a2b1a3dcb72bd55f116fe15d5db9"
+        }
+      ],
+      "license_expression": "BSD-3-Clause",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "zlib",
+      "version": "1.3.2",
+      "archive": "zlib-1.3.2.tar.xz",
+      "sha512": "cf3d49fbabddc57cca99858feeca8f910e9de42a16014cddd406814d2d24ee33fee2af3805d7efbb1b04b05f55818092b000daf82502b675df65f2512c353f73",
+      "recipe": "contrib/src/zlib/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://github.com/madler/zlib/releases/download/v1.3.2/zlib-1.3.2.tar.xz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "zlib-1.3.2/LICENSE",
+          "sha256": "e32ff4e00d9d94930537635291da39e7e612703334bf6fde8c7f1686fe8a45a2"
+        },
+        {
+          "path": "zlib-1.3.2/contrib/dotzlib/LICENSE_1_0.txt",
+          "sha256": "36266a8fd073568394cb81cdb2b124f7fdae2c64c1a7ed09db34b4d22efa2951"
+        },
+        {
+          "path": "zlib-1.3.2/contrib/minizip/LICENSE.Info-Zip",
+          "sha256": "fc686023047ce5ce3a18a9b8a777156f0e475929d3de06bac279f3c025d2b2ca"
+        },
+        {
+          "path": "zlib-1.3.2/README",
+          "sha256": "4026d921213bb2e311d8d42b44ef53361c102d5d45ae32f93f8e52eaee8d068f"
+        }
+      ],
+      "license_expression": "Zlib",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "png",
+      "version": "1.6.58",
+      "archive": "libpng-1.6.58.tar.xz",
+      "sha512": "5937d6409d7ad564c9dba7969c5d39eea8bbc01936f433bf5936c872ec290dea353783f89bded91e124b3b3b15518320097de365acd3b0bcc922a0e90c94adc8",
+      "recipe": "contrib/src/png/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://downloads.sourceforge.net/project/libpng/libpng16/1.6.58/libpng-1.6.58.tar.xz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libpng-1.6.58/LICENSE",
+          "sha256": "bdb0a645ea18c60507d0368379b1ac5474b92255fcc2d115e07486a7672ba526"
+        },
+        {
+          "path": "libpng-1.6.58/README",
+          "sha256": "4a575153ac848dfbbdb250cb1220c736c68e7f63161677d7b0886711538ae925"
+        },
+        {
+          "path": "libpng-1.6.58/ci/LICENSE_MIT.txt",
+          "sha256": "508a77d2e7b51d98adeed32648ad124b7b30241a8e70b2e72c99f92d8e5874d1"
+        },
+        {
+          "path": "libpng-1.6.58/contrib/gregbook/COPYING",
+          "sha256": "d6cb0e9e560f51085556949a84af12b79a00f10ab8b66c752537faf7cd665572"
+        },
+        {
+          "path": "libpng-1.6.58/contrib/gregbook/LICENSE",
+          "sha256": "b6a03c1803eb58ffb1f1278d5c7d4096c4c116e66dce8a7553e8c77d163c3438"
+        },
+        {
+          "path": "libpng-1.6.58/contrib/pngexif/LICENSE_MIT.txt",
+          "sha256": "508a77d2e7b51d98adeed32648ad124b7b30241a8e70b2e72c99f92d8e5874d1"
+        },
+        {
+          "path": "libpng-1.6.58/contrib/pngminus/LICENSE.txt",
+          "sha256": "1806f1f10d393e9e377b3a8d1b968452b54f1a90378f14eeef45426946ace330"
+        }
+      ],
+      "license_expression": "libpng-2.0",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "jpeg",
+      "version": "10",
+      "archive": "jpegsrc.v10.tar.gz",
+      "sha512": "3bdd55d805d76f35cbcd44074e27684a25b40f4811c62374ec9300dde31fa75a17ff3fccfcb8f5947311fa7b07f52dc9cba343562ae4ceb8b3cbe30fda1e4311",
+      "recipe": "contrib/src/jpeg/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "http://www.ijg.org/files/jpegsrc.v10.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "jpeg-10/README",
+          "sha256": "913af09f785683accdf660b85dcf27fdd567d4ad649daa95cb8771b040db79d1"
+        }
+      ],
+      "license_expression": "IJG",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "README LEGAL ISSUES supplies IJG grant. Preserve README and binary attribution."
+    },
+    {
+      "component": "libxml2",
+      "version": "2.15.3",
+      "archive": "libxml2-2.15.3.tar.xz",
+      "sha512": "6f7f1aabd012454553e851bd1ee548fbd14d21c576f2b2ab9eeedab3dfba51392083f74b34f060e9b538baeea212cdb462b8669c214c711771fb9a897fdc1c60",
+      "recipe": "contrib/src/libxml2/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://download.gnome.org/sources/libxml2/2.15/libxml2-2.15.3.tar.xz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libxml2-2.15.3/README.md",
+          "sha256": "430d5fbcbad392d7b7d591a21505a02abe0d271e1913b4a077f54d15661336e9"
+        },
+        {
+          "path": "libxml2-2.15.3/Copyright",
+          "sha256": "5d4873884a890122a4b9b20ad56ac6f7da1d796a5bfcf04a427970ac96217626"
+        },
+        {
+          "path": "libxml2-2.15.3/test/html-tokenizer/NOTICE",
+          "sha256": "d6a2cb265a0a249a234b89eeffa7f316ebe5bff546672a0a2b1a861dd2238460"
+        },
+        {
+          "path": "libxml2-2.15.3/result/html-tokenizer/NOTICE",
+          "sha256": "d6a2cb265a0a249a234b89eeffa7f316ebe5bff546672a0a2b1a861dd2238460"
+        }
+      ],
+      "license_expression": "MIT",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "iconv",
+      "version": "1.17",
+      "archive": "libiconv-1.17.tar.gz",
+      "sha512": "18a09de2d026da4f2d8b858517b0f26d853b21179cf4fa9a41070b2d140030ad9525637dc4f34fc7f27abca8acdc84c6751dfb1d426e78bf92af4040603ced86",
+      "recipe": "contrib/src/iconv/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://ftp.gnu.org/gnu/libiconv/libiconv-1.17.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libiconv-1.17/COPYING.LIB",
+          "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+        },
+        {
+          "path": "libiconv-1.17/README",
+          "sha256": "dd37af33149d9722d6edca08aeb1e18591dda95bb645d81a2f011a5d83088929"
+        },
+        {
+          "path": "libiconv-1.17/libcharset/COPYING.LIB",
+          "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+        },
+        {
+          "path": "libiconv-1.17/COPYING",
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+        }
+      ],
+      "license_expression": "LGPL-2.1-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "aribb24",
+      "version": "1.0.3",
+      "archive": "aribb24-1.0.3.tar.gz",
+      "sha512": "622cc0c3928fd6db0b5ab3921f27348c956af20f8c0133ad5d9bf4de3d199077d9f23cc86ae149a9f0d13c7ee5906ec95de3fb8388207160cebd1f0c59078c8f",
+      "recipe": "contrib/src/aribb24/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://github.com/nkoriyama/aribb24/archive/v1.0.3.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "aribb24-1.0.3/COPYING",
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+        },
+        {
+          "path": "aribb24-1.0.3/README.md",
+          "sha256": "a9d5a0c8c8824d792cc57198f251c723b7ce69183efbc3a80de6384e0e60002c"
+        },
+        {
+          "path": "aribb24-1.0.3/src/aribb24.c",
+          "sha256": "c86328d3b911524c059cdff3419c37a3427000b66ffd873d14d763ae613003ba"
+        },
+        {
+          "path": "aribb24-1.0.3/src/aribb24/aribb24.h",
+          "sha256": "4d7cb9b964e876c06ec8095425637033b39aedcd83619feab85f8b65067f4bfd"
+        }
+      ],
+      "license_expression": "LGPL-2.1-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "Do not infer a GPL3 grant from the top-level COPYING file. src/aribb24.c and src/aribb24/aribb24.h explicitly grant LGPL2.1-or-later."
+    },
+    {
+      "component": "aribb25",
+      "version": "0.2.7",
+      "archive": "aribb25-0.2.7.tar.gz",
+      "sha512": "24eda8c610bb8775847420023d2a35135fbcd03296cb69c80b1f8745bb6c1ee5f33199ed980d86e6c9f26a6ca3a2029b16ca2c6ab36fdbfd91a3f69cca5f3dad",
+      "recipe": "contrib/src/aribb25/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://downloads.videolan.org/pub/videolan/aribb25/0.2.7/aribb25-0.2.7.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "aribb25-0.2.7/README.md",
+          "sha256": "cf742822e1a92de4416547c9d4dffbb2063657c8e88964a8cb7e77dcc25da07d"
+        },
+        {
+          "path": "aribb25-0.2.7/LICENCE",
+          "sha256": "750b3b2e24518bf1e626f35c01d97dc5acbb7f36c0e2ca967fe39d921db121f9"
+        },
+        {
+          "path": "aribb25-0.2.7/src/arib_std_b25.c",
+          "sha256": "22f81cf0393d692ca8d0d6b8417723ee81bbf635313d458aa9b024a754705988"
+        }
+      ],
+      "license_expression": "ISC",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "asdcplib",
+      "version": "2_13_2",
+      "archive": "asdcplib-rel_2_13_2.tar.gz",
+      "sha512": "aa98f3a3dfc2d19e9dbe7aaeb487201a09ec658a9cd1a48f88443993a69f6951a43ca4788ef52120ce8604aa72e8f134af6a9656106a64a8b660baa5c4a79a1f",
+      "recipe": "contrib/src/asdcplib/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://github.com/cinecert/asdcplib/archive/refs/tags/rel_2_13_2.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "asdcplib-rel_2_13_2/COPYING",
+          "sha256": "a6308c8ab4660d470976b4e1ce2c85daa44002340a917988cdc506df6379696d"
+        },
+        {
+          "path": "asdcplib-rel_2_13_2/README.md",
+          "sha256": "1c1332a543f32a8015f1c92dd12fd39b47bb557801882bcf5f6077fd34b535b5"
+        }
+      ],
+      "license_expression": "BSD-3-Clause",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "bluray",
+      "version": "1.4.1",
+      "archive": "libbluray-1.4.1.tar.xz",
+      "sha512": "76d686260b7cceb9e9e0272e4b9c4a815511925240dc4b69107c0816131728912f5cf3d08d5eab769024e024377f6591d1bbd51a459039a521639d569473cec6",
+      "recipe": "contrib/src/bluray/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://downloads.videolan.org/pub/videolan/libbluray/1.4.1/libbluray-1.4.1.tar.xz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libbluray-1.4.1/COPYING",
+          "sha256": "b3aa400aca6d2ba1f0bd03bd98d03d1fe7489a3bbb26969d72016360af8a5c9d"
+        },
+        {
+          "path": "libbluray-1.4.1/README.md",
+          "sha256": "7543cb2ba47ab1165d1463c0c8ab300c042544a372cdc7b1760ff9e75e749e9b"
+        },
+        {
+          "path": "libbluray-1.4.1/contrib/asm/LICENSE.txt",
+          "sha256": "293b6af371eee28b0ff16f0334ea19e20a3d5522143faa4b95b346855507879a"
+        },
+        {
+          "path": "libbluray-1.4.1/contrib/libudfread/COPYING",
+          "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+        },
+        {
+          "path": "libbluray-1.4.1/src/libbluray/bluray.c",
+          "sha256": "699706cd3b1a1cea65f16290508f6dd56e026d9d4dcf4defcd3c5e05bba9adcb"
+        },
+        {
+          "path": "contrib/libudfread/src/attributes.h",
+          "sha256": "619d2f16d7a9f4694f8f1a1df5748d8e2bc15b8e3b74c1ae2763091a980f2d85"
+        }
+      ],
+      "license_expression": "LGPL-2.1-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "caca",
+      "version": "0.99.beta20",
+      "archive": "libcaca-0.99.beta20.tar.gz",
+      "sha512": "ab03e6c7d17fd152b2d5e9161799531f5e87322e174cb9d25874700f5bc1acfaf8bc2736e733998dad906f793c5a0304740dd39eec04a5e4c3d181bb109b4f23",
+      "recipe": "contrib/src/caca/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://github.com/cacalabs/libcaca/releases/download/v0.99.beta20/libcaca-0.99.beta20.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libcaca-0.99.beta20/COPYING.GPL",
+          "sha256": "c38aee9e3c8c4d5d594ff548a1be05453023016d6286931f6512db215ec1fd42"
+        },
+        {
+          "path": "libcaca-0.99.beta20/README",
+          "sha256": "5264ad3e7f49f30c400f8af4641f1594aa37158c12cd36e8874fc523c56ae79f"
+        },
+        {
+          "path": "libcaca-0.99.beta20/COPYING.ISC",
+          "sha256": "7de62d31df6e3d2dacc9e8a6fcdcfc189035493c28a99f717f73a367dc6e1934"
+        },
+        {
+          "path": "libcaca-0.99.beta20/COPYING",
+          "sha256": "d20ad7990610153b563c52681da860b8302afcf0778f75237f8815c07d05141f"
+        },
+        {
+          "path": "libcaca-0.99.beta20/COPYING.LGPL",
+          "sha256": "d80c9d084ebfb50ea1ed91bfbc2410d6ce542097a32c43b00781b83adcb8c77f"
+        },
+        {
+          "path": "src/common-image.c",
+          "sha256": "09145dd8eb5fa94d29cb5c2591820aadb514d5751993eaf4b913c191878958f2"
+        },
+        {
+          "path": "caca/dither.c",
+          "sha256": "4c739caa286e193e9a5b7d6cfd5d8a231848b2806e6c43603f697bb13c7a077b"
+        }
+      ],
+      "license_expression": "WTFPL",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "Default libcaca code grants WTFPL2. Archive also contains LGPL, ISC and GPL licensed files; linkage must exclude or identify those files before treating WTFPL as complete."
+    },
+    {
+      "component": "chromaprint",
+      "version": "1.6.0",
+      "archive": "chromaprint-1.6.0.tar.gz",
+      "sha512": "517936826be34f492a63677b0f009985a802432ed906d08f9e6d48ef6fc67744a8f8bef579407eecc49d1948430442b7505445e8674389c17bb9e18ac1d259cf",
+      "recipe": "contrib/src/chromaprint/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://github.com/acoustid/chromaprint/releases/download/v1.6.0/chromaprint-1.6.0.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "chromaprint-1.6.0/LICENSE.md",
+          "sha256": "562cfe59627e0c4e8e3b066f3ff2e9736f83811ffe4c6c2c7796595aa7595ebd"
+        },
+        {
+          "path": "chromaprint-1.6.0/README.md",
+          "sha256": "63a89692284d3ea0aa7f2de6e1f1ebc9cb8c22fd08a5d8b5ce546bf0555c2de6"
+        },
+        {
+          "path": "chromaprint-1.6.0/src/avresample/avcodec.h",
+          "sha256": "43f6b6479b82e5d5b99d02ee5f610b89f2ac96b925f41647641b70a316dbb99f"
+        }
+      ],
+      "license_expression": "MIT AND LGPL-2.1-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "LICENSE.md explicitly says bundled FFmpeg code makes the whole library LGPL2.1. External FFT backend license also applies; VLC recipe uses FFmpeg. Later-version grant is from src/avresample/avcodec.h if present; if actual selected code differs, recheck."
+    },
+    {
+      "component": "dvbpsi",
+      "version": "1.3.3",
+      "archive": "libdvbpsi-1.3.3.tar.bz2",
+      "sha512": "70f9e783a947e026ea50afe98ad2b3bfce075bd8d76932f73a6253b077a3a180aa632e9a1fff20308e2f0f3f881d727b4e4aad9b8da2b384edf9a3a0f9eacc69",
+      "recipe": "contrib/src/dvbpsi/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://downloads.videolan.org/pub/videolan/libdvbpsi/1.3.3/libdvbpsi-1.3.3.tar.bz2",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libdvbpsi-1.3.3/COPYING",
+          "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+        },
+        {
+          "path": "libdvbpsi-1.3.3/README",
+          "sha256": "58051bbf7d6e9de9b52404e53529c8136fa688ad20e20680eedb28999414fb6b"
+        },
+        {
+          "path": "libdvbpsi-1.3.3/src/dvbpsi.c",
+          "sha256": "7999aec5c485a1275102914ecc1838856c22fdcff47ed545c6f54e3956486c95"
+        },
+        {
+          "path": "misc/gen_pmt.c",
+          "sha256": "17fc478eae5cd886fc61c95ce5757d20a31eb0b8377a9c2c721dc8f5d06f207a"
+        },
+        {
+          "path": "misc/gen_pat.c",
+          "sha256": "3526fdf80e32a1f7972ff5049b5f6c2df6983691f25ed7a11b2f8487185aab77"
+        }
+      ],
+      "license_expression": "LGPL-2.1-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "gcrypt",
+      "version": "1.12.2",
+      "archive": "libgcrypt-1.12.2.tar.bz2",
+      "sha512": "dc1a4a6c00a0d84d90c8d71f4bd121b968c80df74137d6e8867f1f4cc014a539efb5238c1a1429d7cb95e493a40718fc19252edc592ffe0f43057b372896591c",
+      "recipe": "contrib/src/gcrypt/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.12.2.tar.bz2",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libgcrypt-1.12.2/COPYING",
+          "sha256": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6"
+        },
+        {
+          "path": "libgcrypt-1.12.2/COPYING.LIB",
+          "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95"
+        },
+        {
+          "path": "libgcrypt-1.12.2/README",
+          "sha256": "33fe3d0a6ed5881cd29048fc10135fa94987f0a260fff729c771a8550e890a12"
+        },
+        {
+          "path": "libgcrypt-1.12.2/LICENSES",
+          "sha256": "289f9561592dbcee8f1f9a1aca26df3cb0dbf3a989dbdd08effac19a8192c834"
+        },
+        {
+          "path": "libgcrypt-1.12.2/AUTHORS",
+          "sha256": "481225960dca5cdffc76a5d326f8a8227de869c947c1b2a1e3957cce82156758"
+        }
+      ],
+      "license_expression": "LGPL-2.1-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "AUTHORS grants library LGPL2.1+. LICENSES contains additional BSD/X/OCB and other notices for individual files. Preserve those notices; this row is not the complete expression for all source files."
+    },
+    {
+      "component": "gpg-error",
+      "version": "1.61",
+      "archive": "libgpg-error-1.61.tar.bz2",
+      "sha512": "3e59eb52d061709fd8dfe56a4b36d2d5b49dd5e0c90c283899669d6a355286cb3a3f851631f8456c78c48b652bb31a4c1f8b081ccdf87e5db64b313d141a7670",
+      "recipe": "contrib/src/gpg-error/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.61.tar.bz2",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libgpg-error-1.61/COPYING",
+          "sha256": "231f7edcc7352d7734a96eef0b8030f77982678c516876fcb81e25b32d68564c"
+        },
+        {
+          "path": "libgpg-error-1.61/COPYING.LIB",
+          "sha256": "a9bdde5616ecdd1e980b44f360600ee8783b1f99b8cc83a2beb163a0a390e861"
+        },
+        {
+          "path": "libgpg-error-1.61/README",
+          "sha256": "f95a8f196358432937cb838d0fefd109393b9c8f9571950232e1d00ef39fea47"
+        },
+        {
+          "path": "libgpg-error-1.61/AUTHORS",
+          "sha256": "341d1631ccd3eb5b8a054177cfdaeb5e16357f27fd985486da5f38faf879db3f"
+        }
+      ],
+      "license_expression": "LGPL-2.1-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "Library LGPL2.1+; tools carry separate GPL terms and exceptions."
+    },
+    {
+      "component": "goom",
+      "version": "2k4-0",
+      "archive": "goom-2k4-0-src.tar.gz",
+      "sha512": "790e3ab8dee122320ad8b3ae15f6a1cd2780222d5ae97979f614f16ba73b4b853960e7945ef9053ad9eddf9e29e69d0c52f0875d07c5c6c7cee41d764bf4ea5f",
+      "recipe": "contrib/src/goom/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://downloads.videolan.org/pub/contrib/goom/goom-2k4-0-src.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "goom2k4-0/COPYING",
+          "sha256": "013ea5bfa603f5f2f6e43103102e077ba8e5b311c8235fe18018f2f17cf15093"
+        },
+        {
+          "path": "goom2k4-0/gtk-gui-devel/COPYING",
+          "sha256": "32b1062f7da84967e7019d01ab805935caa7ab7321a7ced0e30ebe75e5df1670"
+        },
+        {
+          "path": "goom2k4-0/README",
+          "sha256": "17d9352d90edeb5d3b5dc3eb9d3591bffcfada47897918d803152c1cbb196590"
+        },
+        {
+          "path": "src/goom_visual_fx.h",
+          "sha256": "91d65f1d55c7527a04fcf3bbd2d1279fe1e67ea045981d2102b9bbc82e411404"
+        }
+      ],
+      "license_expression": "LicenseRef-Goom-LGPL-Unversioned",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "COPYING states only LGPL without a version. LicenseRef preserves that exact grant. Exact LGPL version and source-level exception scope remain unresolved. Do not assign an SPDX version from the filename or recipe.",
+      "extracted_license_text": "This program is under the LGPL.\nYou can find the terms of this licence somewhere on the internet.\n(for exemple, search \"LGPL\" on your favorite search engine).\n"
+    },
+    {
+      "component": "kate",
+      "version": "0.4.1",
+      "archive": "libkate-0.4.1.tar.gz",
+      "sha512": "2635237753abc0f6c43fc07bd0ecc57c2f3c893efa6c62ad08de9191045612477302ed45acd61cdfea7447efd654ebbe0ed2d6a2cbf867eb834581d7ee43377b",
+      "recipe": "contrib/src/kate/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "http://libkate.googlecode.com/files/libkate-0.4.1.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libkate-0.4.1/README",
+          "sha256": "580e02514599319aff5cac38f9e65327711e3e4b6019f5c6ca47f2e398f623c0"
+        },
+        {
+          "path": "libkate-0.4.1/COPYING",
+          "sha256": "e039f0cf4f81b9bc3bc7a545d9d83ce2304565032d1c7756b1831972cdc5bbb4"
+        }
+      ],
+      "license_expression": "BSD-3-Clause",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "cddb",
+      "version": "1.3.2",
+      "archive": "libcddb-1.3.2.tar.bz2",
+      "sha512": "0e07e7d37f2013164d75b530a5528f54847271fd20f3b7bedb192a05d1f61dcf006d10dc2927efe155a01eddcc57b940bc31d8ac88d5dfc4f1a09771caa84e0a",
+      "recipe": "contrib/src/cddb/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://downloads.sourceforge.net/project/libcddb/libcddb-1.3.2.tar.bz2",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libcddb-1.3.2/COPYING",
+          "sha256": "7a4436f9ec37603356791c87de3bc444989befd2682d29efb3d97604e04c1852"
+        },
+        {
+          "path": "libcddb-1.3.2/README",
+          "sha256": "a6851dcc5835ad514e676d25bf2da1097a57b7b1e6bdbf12a4554ba5ddade4dc"
+        },
+        {
+          "path": "include/cddb/ll.h",
+          "sha256": "15f7a1d7b64246172dde35da5a9cf7ba13b09c46de0e6be4cccdbf2926b2996b"
+        },
+        {
+          "path": "include/cddb/cddb_log.h",
+          "sha256": "0b811d8dffdbcfe9d4913b288a3260dedf4252aa70be75580097c29ad3a5005b"
+        }
+      ],
+      "license_expression": "LGPL-2.0-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "librist",
+      "version": "v0.2.20",
+      "archive": "librist-v0.2.20.tar.gz",
+      "sha512": "3553d5db0cf67ab07ff85b55e4948958aa59251c236efa7b6605fce5c8e9552bce967cbfabdb1430cb21c1343b9eeebb582aaeb64bdb569b4cbe7493b8f3844a",
+      "recipe": "contrib/src/librist/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://code.videolan.org/rist/librist/-/archive/v0.2.20/librist-v0.2.20.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "librist-v0.2.20/COPYING",
+          "sha256": "b9841591a3452ee30033d8e3586c7b1244a0b2fc1dc6cb04576957c313cb2792"
+        },
+        {
+          "path": "librist-v0.2.20/README.md",
+          "sha256": "abf21b1227deab13b2aaaca42cad334166f676096036d5183e0d69464e645504"
+        },
+        {
+          "path": "librist-v0.2.20/contrib/mbedtls/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ],
+      "license_expression": "BSD-2-Clause",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "gme",
+      "version": "0.6.5",
+      "archive": "game-music-emu-0.6.5.tar.gz",
+      "sha512": "c28fc36098f5e083ef43cda3f037275d7f071868ab44abf577da3f07bd9f2ffae8a65fa842b060df42baa98ad6b5f42817001749fb3c08a4023dea7334d513e9",
+      "recipe": "contrib/src/gme/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://github.com/libgme/game-music-emu/archive/refs/tags/0.6.5.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "game-music-emu-0.6.5/gme/ext/LICENSE",
+          "sha256": "8fb093f26ed0d78c8ca033bbec7063ac5b34c5d2475e6bd121d03ccfaaf2355f"
+        },
+        {
+          "path": "game-music-emu-0.6.5/license.gpl2.txt",
+          "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+        },
+        {
+          "path": "game-music-emu-0.6.5/license.txt",
+          "sha256": "d2efc89fbb7533572a472d34e07964951810a3a4f8d3159ecc2dcaa1452c5c26"
+        },
+        {
+          "path": "game-music-emu-0.6.5/CMakeLists.txt",
+          "sha256": "d2fec31c03a470e1e0590da227306cb3d914240e5c50ff49255081250627d17c"
+        },
+        {
+          "path": "game-music-emu-0.6.5/gme/Ym2612_MAME.cpp",
+          "sha256": "d9c15bc360f0861b386c795968f7b254df9cbf5302eba38b5c364577c12db557"
+        },
+        {
+          "path": "game-music-emu-0.6.5/gme/Ym2612_Nuked.cpp",
+          "sha256": "a3fdbfe7b37b3fd7ede083e5e89e1c7ba517540279f19b8bc21af7d3fc479e57"
+        }
+      ],
+      "license_expression": "LGPL-2.1-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "Default CMake setting selects Nuked YM2612 emulator, LGPL2.1+. MAME alternative grants GPL2-or-later. Record the actual build selection from the build trace."
+    },
+    {
+      "component": "ebml",
+      "version": "1.4.6",
+      "archive": "libebml-1.4.6.tar.xz",
+      "sha512": "86b469a1c1352e9ea6f581267ab8fc357575f2e410a3a732b12203575744667b152c135cf314978500d6a19fac4ef4015b89fdcfcca43f5bfc49f63e27ecbce2",
+      "recipe": "contrib/src/ebml/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://dl.matroska.org/downloads/libebml/libebml-1.4.6.tar.xz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libebml-1.4.6/LICENSE.LGPL",
+          "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+        },
+        {
+          "path": "libebml-1.4.6/README.md",
+          "sha256": "913639f83b7db91208d758a2ca1faafdbc1ccecac26e4f9d47e537124775c66c"
+        },
+        {
+          "path": "ebml/EbmlBinary.h",
+          "sha256": "5909e94aa919a4d5b0bdf840adec50cf7c1bd530f76b2713e667c28223c15800"
+        },
+        {
+          "path": "ebml/Debug.h",
+          "sha256": "07ea4147804ba53ac10c4b0414bffe24a07cbf997bbf97bea47fc8ddb55b172e"
+        }
+      ],
+      "license_expression": "LGPL-2.1-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "README.md identifies bundled utf8-cpp Boost-licensed code, which requires a separate component entry or combined expression."
+    },
+    {
+      "component": "matroska",
+      "version": "1.7.2",
+      "archive": "libmatroska-1.7.2.tar.xz",
+      "sha512": "86b21a0ff3e5149a2824a9f21f9460179d02aecf477f2b9f1f92ce2f991033bd0cb209d81a4aeee2c0c5ffc193dac57a84dd4f529939b12c900f2cfb881618fb",
+      "recipe": "contrib/src/matroska/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://dl.matroska.org/downloads/libmatroska/libmatroska-1.7.2.tar.xz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libmatroska-1.7.2/LICENSE.LGPL",
+          "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+        },
+        {
+          "path": "libmatroska-1.7.2/README.md",
+          "sha256": "a2e15b5feb45bfd87a5d83738d8d99fad29f9d66d8c04954ae48cd763955409c"
+        },
+        {
+          "path": "matroska/KaxAttached.h",
+          "sha256": "e1c548b32e78ed04649166fafdcaf3f79a81feded5ddc7ffc2e623073f70d331"
+        },
+        {
+          "path": "matroska/FileKax.h",
+          "sha256": "6825ea15d4f5bb88ca48ea02d9184b5461b9a966f50a749d8d23fe1825dd5b48"
+        }
+      ],
+      "license_expression": "LGPL-2.1-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "modplug",
+      "version": "0.8.9.0",
+      "archive": "libmodplug-0.8.9.0.tar.gz",
+      "sha512": "880e10154fd367ee24ace53ca7e32a5c1fee7dfff1f934e6499944c12779427da63e2f55f8d6ce25db0a42a5b4424053bf64305b31dbfc4ef6a8909924d655fd",
+      "recipe": "contrib/src/modplug/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://downloads.sourceforge.net/project/modplug-xmms/libmodplug-0.8.9.0.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libmodplug-0.8.9.0/COPYING",
+          "sha256": "49942e7b3b175f549e751feb08b5270ca6f6c5fb7a1be9f9517db275ec32c92e"
+        },
+        {
+          "path": "libmodplug-0.8.9.0/README",
+          "sha256": "41611d0cb19b03149be014f84577e51eda81463c9cb285d149bdd143f2e4bf61"
+        }
+      ],
+      "license_expression": "LicenseRef-ModPlug-PublicDomain",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "COPYING says public domain. No CC0, Unlicense, or other standardized legal instrument is supplied by that statement. Use a LicenseRef with the exact grant if required; do not invent an SPDX license.",
+      "extracted_license_text": "ModPlug-XMMS and libmodplug are now in the public domain."
+    },
+    {
+      "component": "lua",
+      "version": "5.1.5",
+      "archive": "lua-5.1.5.tar.gz",
+      "sha512": "0142fefcbd13afcd9b201403592aa60620011cc8e8559d4d2db2f92739d18186860989f48caa45830ff4f99bfc7483287fd3ff3a16d4dec928e2767ce4d542a9",
+      "recipe": "contrib/src/lua/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "http://www.lua.org/ftp/lua-5.1.5.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "lua-5.1.5/COPYRIGHT",
+          "sha256": "ee5e3e82af1e1b543c4f216e399d7c8cfee797711913f349e385101c4ae60a79"
+        },
+        {
+          "path": "lua-5.1.5/README",
+          "sha256": "eaf56b5de891e11632aa36f302e03d27acd1614944904e2b7cf7955bb0474086"
+        }
+      ],
+      "license_expression": "MIT",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "microdns",
+      "version": "0.2.0",
+      "archive": "microdns-0.2.0.tar.xz",
+      "sha512": "fc642d463f52409e76515897e3662b7b08ee35dc760e595980c343a4fd24f1b76cdfbd4f91ea2115a02243be8ae8908670440ead96715c8983abb2a8559702b6",
+      "recipe": "contrib/src/microdns/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://github.com/videolabs/libmicrodns/releases/download/0.2.0/microdns-0.2.0.tar.xz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "microdns-0.2.0/COPYING",
+          "sha256": "f764ee3ea10043718c7cc2ce3e2c8a8b3a4e9a3f4b5b4bbb74c603d2a974aabe"
+        },
+        {
+          "path": "microdns-0.2.0/README.md",
+          "sha256": "db71349e0702b69c6c66a8b37cf8d5d795ccdcccbb3a6235d22224c7d8705017"
+        },
+        {
+          "path": "microdns-0.2.0/include/mdns.h",
+          "sha256": "0833bc761fe95fc69eeebc28a0765bbeed1a6855f3d2214e9c8448e448579cfb"
+        }
+      ],
+      "license_expression": "LGPL-2.1-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "mpg123",
+      "version": "1.33.6",
+      "archive": "mpg123-1.33.6.tar.bz2",
+      "sha512": "83d8fca128b1fd39e336e6052837b16951360d6f1a47919e00d4b7285717ee7cd4dd56c24bd873316ba6969081fe619cda93ebb20771aed052c6e9d07657f2ab",
+      "recipe": "contrib/src/mpg123/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://downloads.sourceforge.net/project/mpg123/mpg123/1.33.6/mpg123-1.33.6.tar.bz2",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "mpg123-1.33.6/COPYING",
+          "sha256": "c22482728a634a8dfdb4ff72a96d4c1ed64cd8f3e79335c401751ac591609366"
+        },
+        {
+          "path": "mpg123-1.33.6/README",
+          "sha256": "2460fe239649aa87cedc83a1014548852d1c4b6292d2cbecc7d7ed4796c49b40"
+        },
+        {
+          "path": "mpg123-1.33.6/doc/PATENTS",
+          "sha256": "a16db5483cc2ab07a81b152fe9147f0ef196d38d26477c7b8c803aff6522e8bc"
+        },
+        {
+          "path": "mpg123-1.33.6/doc/LICENSE",
+          "sha256": "cca79ea6fc0a7715e52450df2d86311f990e85067dd13f4d7f5a88d4fd23a07c"
+        }
+      ],
+      "license_expression": "LGPL-2.1-only",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "nfs",
+      "version": "6.0.2",
+      "archive": "libnfs-6.0.2.tar.gz",
+      "sha512": "539790ab98aac7b2f25755b745d1f5e016518f1adb3748b8c58df187048bc31e091915d59e6359bb95c49dd986361cbbf2536edcda02598b0fac236762b61a46",
+      "recipe": "contrib/src/nfs/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://github.com/sahlberg/libnfs/archive/libnfs-6.0.2.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libnfs-libnfs-6.0.2/COPYING",
+          "sha256": "edd960c0142b8ada98b43b6396b78f4e557b0bc70ac601a51e397ad04070e2c5"
+        },
+        {
+          "path": "libnfs-libnfs-6.0.2/LICENCE-BSD.txt",
+          "sha256": "d9406ced95457941032aa11d04623b8ab71f2827a3395ebef137aec475be35b1"
+        },
+        {
+          "path": "libnfs-libnfs-6.0.2/LICENCE-GPL-3.txt",
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+        },
+        {
+          "path": "libnfs-libnfs-6.0.2/LICENCE-LGPL-2.1.txt",
+          "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+        },
+        {
+          "path": "libnfs-libnfs-6.0.2/README",
+          "sha256": "427f15961f99763c8d83c2f04446a72df8e0e737cc88dab2127a47758c77e62e"
+        }
+      ],
+      "license_expression": "LGPL-2.1-or-later AND BSD-2-Clause",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "projectM",
+      "version": "2.0.1",
+      "archive": "projectM-2.0.1-Source.tar.gz",
+      "sha512": "0edbf487d45983b0004ee67009931da985f3b9909cb10eb32a2c9116eed46f9cf9c7a1c696138d16a30aedd81d43ac5533fb7666c9fba9326c9c89f4e87f88db",
+      "recipe": "contrib/src/projectM/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://downloads.sourceforge.net/project/projectm/2.0.1/projectM-2.0.1-Source.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "projectM-2.0.1-Source/omptl/License.txt",
+          "sha256": "6095e9ffa777dd22839f7801aa845b31c9ed07f3d6bf8a26dc5d2dec8ccc0ef3"
+        },
+        {
+          "path": "projectM-2.0.1-Source/COPYING",
+          "sha256": "ffc0dee05d3fd4ecd0defe7fc6684c5d5d64f2125c7329208706128997bbbcf9"
+        }
+      ],
+      "license_expression": "LGPL-2.1-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "shout",
+      "version": "2.4.6",
+      "archive": "libshout-2.4.6.tar.gz",
+      "sha512": "e8478cdbf9a27674c16a7b620d1576f2e31a47262b8e29b314d0f46d4e5be24b9a29790b7b226f48939bc34cacf5734fae0aa5686c7ed5879cdbd827ff8e0339",
+      "recipe": "contrib/src/shout/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://ftp.osuosl.org/pub/xiph/releases/libshout/libshout-2.4.6.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libshout-2.4.6/COPYING",
+          "sha256": "7a4436f9ec37603356791c87de3bc444989befd2682d29efb3d97604e04c1852"
+        },
+        {
+          "path": "libshout-2.4.6/README",
+          "sha256": "17288cb71bf1595e73a074a2cc85ce8464ab40aa740d1428180b56b05049ac68"
+        },
+        {
+          "path": "libshout-2.4.6/src/shout.c",
+          "sha256": "a843fbc42a812718a1941d296e83d546d4d99ea1540371334933c8962c702e2e"
+        },
+        {
+          "path": "tools/shout.c",
+          "sha256": "806e64eaa55e59cac91a6a9b65e2bd10f89b440cc12214a5c5f96449f61bf327"
+        }
+      ],
+      "license_expression": "LGPL-2.0-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "smb2",
+      "version": "6.1",
+      "archive": "libsmb2-6.1.tar.gz",
+      "sha512": "7f481b22f90b82d19c6bb29537ef10229b3ff4aff3d46dff5b11ee22c9c0410f1d58f466cf0774507d1d6f03c06dd82b223b1f4be75da239402e57749382fe5f",
+      "recipe": "contrib/src/smb2/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://github.com/sahlberg/libsmb2/archive/refs/tags/libsmb2-6.1.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libsmb2-libsmb2-6.1/COPYING",
+          "sha256": "749c710c2b3d5c95906c785f28af9abbe4ce909311e72eb72eee5c6873e2fa6f"
+        },
+        {
+          "path": "libsmb2-libsmb2-6.1/LICENCE-LGPL-2.1.txt",
+          "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+        },
+        {
+          "path": "libsmb2-libsmb2-6.1/README",
+          "sha256": "ad43ebb701972d9146eb4ab40d3ccecf83586dc070d237d6b8cb51fc2821ce4a"
+        }
+      ],
+      "license_expression": "LGPL-2.1-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "spatialaudio",
+      "version": "0.3.0",
+      "archive": "spatialaudio-0.3.0.tar.bz2",
+      "sha512": "ef1835a94cd87c55ac9327762ae8f1143272de2463ca850299be15d6cf7f5a554e536cc18f70475c25e2c78f434b9c51de158a7246956c8c1f9de3256a67b87a",
+      "recipe": "contrib/src/spatialaudio/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://github.com/videolabs/libspatialaudio/releases/download/0.3.0/spatialaudio-0.3.0.tar.bz2",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "spatialaudio-0.3.0/README.md",
+          "sha256": "197a1d7313e636ad5ec792ab869ea387289e95de4c074395078e21e88aa14a93"
+        },
+        {
+          "path": "spatialaudio-0.3.0/LICENSE",
+          "sha256": "63176449375086d82d675541c56bce8dd1ed7b2e9cff41c9fb8b8b388f2869b6"
+        }
+      ],
+      "license_expression": "LGPL-2.1-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "speexdsp",
+      "version": "1.2.1",
+      "archive": "speexdsp-1.2.1.tar.gz",
+      "sha512": "41b5f37b48db5cb8c5a0f6437a4a8266d2627a5b7c1088de8549fe0bf0bb3105b7df8024fe207eef194096e0726ea73e2b53e0a4293d8db8e133baa0f8a3bad3",
+      "recipe": "contrib/src/speexdsp/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://ftp.osuosl.org/pub/xiph/releases/speex/speexdsp-1.2.1.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "speexdsp-1.2.1/COPYING",
+          "sha256": "2654a4264b2bfe298dedc508748d140111840c315cc8eb646a3a68c13fa75b01"
+        },
+        {
+          "path": "speexdsp-1.2.1/README",
+          "sha256": "446f5683eaed88e73c4dc881898b46ee0cc5cba78b92b1b3dfcd3148d802a2de"
+        }
+      ],
+      "license_expression": "BSD-3-Clause",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "speex",
+      "version": "1.2.1",
+      "archive": "speex-1.2.1.tar.gz",
+      "sha512": "52e00300df82e1c7fb527b245af02b99a1f37faef74d004b7cd981052f1aa22a412cb18f5c7a5618df4c958f727c97eb7385beec99d68548d5b02e76192d4e0a",
+      "recipe": "contrib/src/speex/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://ftp.osuosl.org/pub/xiph/releases/speex/speex-1.2.1.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "speex-1.2.1/COPYING",
+          "sha256": "2654a4264b2bfe298dedc508748d140111840c315cc8eb646a3a68c13fa75b01"
+        },
+        {
+          "path": "speex-1.2.1/README",
+          "sha256": "75151bf738e419a42dd99ff200b9f195c4870fb89d844a0dde03839a1b988986"
+        }
+      ],
+      "license_expression": "BSD-3-Clause",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "srt",
+      "version": "1.5.6",
+      "archive": "srt-1.5.6.tar.gz",
+      "sha512": "57641b35644b6bfa5998648fb808b615d11d8eab52fecb628a58414dbc87b1d781ea281c8ceef42a92f0c3796a05b41b8411bea95188ce751544f8195b7dbb66",
+      "recipe": "contrib/src/srt/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://github.com/Haivision/srt/archive/v1.5.6.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "srt-1.5.6/LICENSE",
+          "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85"
+        },
+        {
+          "path": "srt-1.5.6/README.md",
+          "sha256": "1b94f4785a72dd2c7c0ac23577864a582fc83dc3d88872d28fb031a76877649c"
+        }
+      ],
+      "license_expression": "MPL-2.0",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "MPL2 license choice depends on no applicable Incompatible With Secondary Licenses notice. Inspect actual compiled source notices before asserting GPL secondary-license availability."
+    },
+    {
+      "component": "taglib",
+      "version": "1.13.1",
+      "archive": "taglib-1.13.1.tar.gz",
+      "sha512": "986231ee62caa975afead7e94630d58acaac25a38bc33d4493d51bd635d79336e81bba60586d7355ebc0670e31f28d32da3ecceaf33292e4bc240c64bf00f35b",
+      "recipe": "contrib/src/taglib/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://taglib.org/releases/taglib-1.13.1.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "taglib-1.13.1/COPYING.LGPL",
+          "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+        },
+        {
+          "path": "taglib-1.13.1/COPYING.MPL",
+          "sha256": "53692a2ed6c6a2c6ec9b32dd0b820dfae91e0a1fcdf625ca9ed0bdf8705fcc4f"
+        },
+        {
+          "path": "taglib-1.13.1/README.md",
+          "sha256": "9f60544b1293a33000be16d4e4b74f83e5a801d0502b361deec08054cf1130c0"
+        },
+        {
+          "path": "taglib-1.13.1/taglib/tag.h",
+          "sha256": "0a70e49fc62377bf29c785e7f30bd3e41dca3bba59e314895de022ce5fb1ffe0"
+        }
+      ],
+      "license_expression": "LGPL-2.1-only OR MPL-1.1",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "tiger",
+      "version": "0.3.4",
+      "archive": "libtiger-0.3.4.tar.gz",
+      "sha512": "559e522b5127f32fdd08d62c40dfb493dc2db1efd1e21707d723ef27cbe03e7e38fb04d40856d824ed0c3c94a223ed1a0358fc11ecb30446b5ee5c7a3b802e6d",
+      "recipe": "contrib/src/tiger/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "http://libtiger.googlecode.com/files/libtiger-0.3.4.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libtiger-0.3.4/README",
+          "sha256": "c29eb0b99c0434fcb37812fb585f949bda061888826fc8c8959c3cb30cae3bb7"
+        },
+        {
+          "path": "libtiger-0.3.4/COPYING",
+          "sha256": "d80c9d084ebfb50ea1ed91bfbc2410d6ce542097a32c43b00781b83adcb8c77f"
+        },
+        {
+          "path": "src/tiger_bitmap.c",
+          "sha256": "8bb1b4733e2ea96356b03534c76962e9f017b40ed3cd9715e6987d8fef778575"
+        }
+      ],
+      "license_expression": "LGPL-2.1-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "twolame",
+      "version": "0.4.0",
+      "archive": "twolame-0.4.0.tar.gz",
+      "sha512": "cc594bc8d2322922280f915a3c0aa52540cca0350d6498bc96f3f60fd6e53f951e775ea015a44bdb29ec883b46b31a0e5483f6a5c188b02e30008289273c7d03",
+      "recipe": "contrib/src/twolame/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://downloads.sourceforge.net/project/twolame/twolame-0.4.0.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "twolame-0.4.0/README",
+          "sha256": "a65ec132724127b535f2ff82939a308eaf62a12795314576b24cea20350a9503"
+        },
+        {
+          "path": "twolame-0.4.0/COPYING",
+          "sha256": "257a842724705950b07da76ce0e22ffa80ec77b3e9dfc6702522ac342409da0f"
+        },
+        {
+          "path": "twolame-0.4.0/libtwolame/twolame.c",
+          "sha256": "e297f6d256551fa5db022e45d934dfd952d84431eec9617926bb286669488a9d"
+        },
+        {
+          "path": "frontend/frontend.h",
+          "sha256": "b6b8854f566a9b142bbcc3c1c428bc2abef7b725b17593664cfeaf695716189f"
+        },
+        {
+          "path": "frontend/frontend.c",
+          "sha256": "a66b1956f2ca62630aef9fe46877ab2b60c1fd4297ec385d6e35e8a724389aaf"
+        }
+      ],
+      "license_expression": "LGPL-2.1-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "upnp",
+      "version": "1.14.31",
+      "archive": "pupnp-release-1.14.31.tar.gz",
+      "sha512": "be0f876adb7a0799187531cc83a29afd5bfe8f7772e909f88faf406e344f992ccb07ef410f7511766576bde8128478926e33cebfcfa8ed1ba15fe136e0bfc8c7",
+      "recipe": "contrib/src/upnp/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://github.com/pupnp/pupnp/archive/refs/tags/release-1.14.31.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "pupnp-release-1.14.31/COPYING",
+          "sha256": "c8b99423cad48bb44e2cf52a496361404290865eac259a82da6d1e4331ececb3"
+        },
+        {
+          "path": "pupnp-release-1.14.31/README.md",
+          "sha256": "1d91e911c384167a1dddfc4b0a49441eb39cd2dcacdef27c75aa3ecba26f7015"
+        },
+        {
+          "path": "pupnp-release-1.14.31/site/LICENSE",
+          "sha256": "0375955c8a79d6e8fa0792d45d00fc4e7710d7ac95bcbd27f9225a83f5c946fd"
+        }
+      ],
+      "license_expression": "BSD-3-Clause",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "COPYING supplies BSD3; source headers and third-party portions may add terms."
+    },
+    {
+      "component": "vpl",
+      "version": "2.13.0",
+      "archive": "libvpl-2.13.0.tar.gz",
+      "sha512": "22b9f409a9b8ed551847e1b5a94d0c48502b5fbf68ec28021ba36d3f851ef83896205977e6b7f52c102f747a8fbc793424181ecd7edaf6058a39dc15b78d19cd",
+      "recipe": "contrib/src/vpl/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://github.com/intel/libvpl/archive/v2.13.0/libvpl-2.13.0.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libvpl-2.13.0/LICENSE",
+          "sha256": "bf1cfac2e2792b6e1e995ce103d70796aecaf2ec7e4c5fe5474f7acec7b4a677"
+        },
+        {
+          "path": "libvpl-2.13.0/README.md",
+          "sha256": "4fe8b66ff43d334679c04df1007e41fb78e2e468f34702ab0497d5e5cdd29f44"
+        }
+      ],
+      "license_expression": "MIT",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "zvbi",
+      "version": "0.2.45",
+      "archive": "zvbi-0.2.45.tar.gz",
+      "sha512": "c627b65627446287cededd26857a7f25191adc8c42cab5a66e76f9673e06cafa52d9c3e2d31e60f949bbcaa155f61b31d775876f97f3f5c7cffe980548992a07",
+      "recipe": "contrib/src/zvbi/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://github.com/zapping-vbi/zvbi/archive/refs/tags/v0.2.45.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "zvbi-0.2.45/COPYING.md",
+          "sha256": "6d679539253897582d38fcd1eabfa670c01c0ece73d8cd3dc97869fcf723f106"
+        },
+        {
+          "path": "zvbi-0.2.45/README.md",
+          "sha256": "c99ae6909e8e0f12e5b83b1eade93ff614b85d02a83a1ea5588f6be1e0ec12a6"
+        }
+      ],
+      "license_expression": "GPL-2.0-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "ffmpeg",
+      "version": "8.1.2",
+      "archive": "ffmpeg-8.1.2.tar.xz",
+      "sha512": "b3adc16fe426217bb607da01c4137cee0a9788fc08e077874336db185d2b7287746a7dc94cf0181ea92cd8afcdb06094ee9456e2986112354f84538cb9a5ed0b",
+      "recipe": "contrib/src/ffmpeg/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://ffmpeg.org/releases/ffmpeg-8.1.2.tar.xz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "ffmpeg-8.1.2/COPYING.LGPLv2.1",
+          "sha256": "246041b6ecf9bc32d718a62c57877c78b5eb397b6467e74ed7ae2626ab189c30"
+        },
+        {
+          "path": "ffmpeg-8.1.2/COPYING.GPLv2",
+          "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+        },
+        {
+          "path": "ffmpeg-8.1.2/COPYING.LGPLv3",
+          "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768"
+        },
+        {
+          "path": "ffmpeg-8.1.2/COPYING.GPLv3",
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+        },
+        {
+          "path": "ffmpeg-8.1.2/LICENSE.md",
+          "sha256": "2e1d16c72fd74e12063776371da757322f8b77589386532f4fd8634bde7de1af"
+        },
+        {
+          "path": "ffmpeg-8.1.2/README.md",
+          "sha256": "05ba4b92c96605434b1aaae3eedf5a2c280c9607bf78ffca9a5b536d9af2dc6a"
+        }
+      ],
+      "license_expression": "LGPL-2.1-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "Default grant from LICENSE.md; optional GPL code requires --enable-gpl; version3 code requires --enable-version3; nonfree configured code may prevent redistribution. Read actual configure invocation before selecting effective license. Recipe alone is not actual-build evidence."
+    },
+    {
+      "component": "gnutls",
+      "version": "3.8.13",
+      "archive": "gnutls-3.8.13.tar.xz",
+      "sha512": "71bf189a836fd18d58b9e995d4bfcecdb0aae6129dfd44247b98422b2f127dd868f9905d28fad2ca05afd919a0e6b3c8eebb6b95804067d3a8dab31ebdc72453",
+      "recipe": "contrib/src/gnutls/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.13.tar.xz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "gnutls-3.8.13/COPYING",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        },
+        {
+          "path": "gnutls-3.8.13/COPYING.LESSERv2",
+          "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95"
+        },
+        {
+          "path": "gnutls-3.8.13/README.md",
+          "sha256": "5e4aca90e8e08e47558dfd21e2a42251a139242b0016a06708739eeb8f0da60c"
+        },
+        {
+          "path": "gnutls-3.8.13/lib/crau/LICENSE",
+          "sha256": "b3c9aed2f5750f6bf698c74916d675d1734e12455b96bfdf6f90e23ab01595cd"
+        },
+        {
+          "path": "gnutls-3.8.13/lib/inih/LICENSE.txt",
+          "sha256": "9ae3b39e83e9158e44b67733baa3bb2d84e80efdcfb14a5820210a42c7abdf7f"
+        },
+        {
+          "path": "gnutls-3.8.13/lib/gnutls_int.h",
+          "sha256": "841cc67a149ea6589a9ce554fdd0ad1ab7e97d358d98f41d6b841952eeaaa146"
+        },
+        {
+          "path": "gnutls-3.8.13/lib/minitasn1/libtasn1.h",
+          "sha256": "bb2f07996fd6811677e5cac2da0d7a3335f8e49173c7a166db8045b19f05349d"
+        },
+        {
+          "path": "gnutls-3.8.13/lib/unistring/unistr.in.h",
+          "sha256": "70bf803fa026b160d1f00c010adafcca623836a6c360f8aa1bfe3d930617c76e"
+        },
+        {
+          "path": "gnutls-3.8.13/lib/unistring/unitypes.in.h",
+          "sha256": "9819f5b2a965404f10d848593b88ffb43786da091df84ed5a4f26807745909c1"
+        }
+      ],
+      "license_expression": "LGPL-2.1-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "Library default LGPL2.1+. lib/minitasn1/libtasn1.h declares bundled ASN1_VERSION 4.20.0. Bundled lib/unistring snapshot files have LGPL2.1+ headers but no established standalone version. lib/inih is BSD3; lib/crau is MIT. Nettle/GMP add their separate dual-license obligations."
+    },
+    {
+      "component": "nettle",
+      "version": "3.10.2",
+      "archive": "nettle-3.10.2.tar.gz",
+      "sha512": "bf37ddd7dca8e78488da2a5286dcf16761d527d620572b42f2ad27bb8ee8c12999d92b0272e06f53766e7155a3f4a1ab7ad9c4b1c3caec47c031878b6b1772fb",
+      "recipe": "contrib/src/nettle/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://ftp.gnu.org/gnu/nettle/nettle-3.10.2.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "nettle-3.10.2/COPYINGv3",
+          "sha256": "e6037104443f9a7829b2aa7c5370d0789a7bda3ca65a0b904cdc0c2e285d9195"
+        },
+        {
+          "path": "nettle-3.10.2/README",
+          "sha256": "02cb98d7b68bd895fe26752c5f10d7eb23623dff90238998e019c26994c6739b"
+        },
+        {
+          "path": "nettle-3.10.2/COPYING.LESSERv3",
+          "sha256": "a853c2ffec17057872340eee242ae4d96cbf2b520ae27d903e1b2fef1a5f9d1c"
+        },
+        {
+          "path": "nettle-3.10.2/COPYINGv2",
+          "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+        },
+        {
+          "path": "nettle-3.10.2/aes-encrypt.c",
+          "sha256": "c0f88ff48c9df1abcd3ae342a68a3590a66c74e96eacc26d74e3120661efd946"
+        }
+      ],
+      "license_expression": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "gmp",
+      "version": "6.3.0",
+      "archive": "gmp-6.3.0.tar.xz",
+      "sha512": "e85a0dab5195889948a3462189f0e0598d331d3457612e2d3350799dba2e244316d256f8161df5219538eb003e4b5343f989aaa00f96321559063ed8c8f29fd2",
+      "recipe": "contrib/src/gmp/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://gmplib.org/download/gmp/gmp-6.3.0.tar.xz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "gmp-6.3.0/COPYING",
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+        },
+        {
+          "path": "gmp-6.3.0/README",
+          "sha256": "5e9f9325fd702bc4bcda27d7a78fea88a2a09fa39b4b15ac7b9b205e0863dc7e"
+        },
+        {
+          "path": "gmp-6.3.0/COPYING.LESSERv3",
+          "sha256": "a853c2ffec17057872340eee242ae4d96cbf2b520ae27d903e1b2fef1a5f9d1c"
+        },
+        {
+          "path": "gmp-6.3.0/COPYINGv3",
+          "sha256": "e6037104443f9a7829b2aa7c5370d0789a7bda3ca65a0b904cdc0c2e285d9195"
+        },
+        {
+          "path": "gmp-6.3.0/COPYINGv2",
+          "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+        }
+      ],
+      "license_expression": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "libtasn1",
+      "version": "4.21.0",
+      "archive": "libtasn1-4.21.0.tar.gz",
+      "sha512": "6a581c4c072b168bf29a0dec7e59a9329a798e392b7d1033791d0e3166a5d1164e2a7065373a84018d500a01563657900c318b1fd437c227c3174b754f9998d3",
+      "recipe": "contrib/src/libtasn1/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.21.0.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libtasn1-4.21.0/COPYING",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        },
+        {
+          "path": "libtasn1-4.21.0/COPYING.LESSERv2",
+          "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95"
+        },
+        {
+          "path": "libtasn1-4.21.0/README",
+          "sha256": "990ef6a87f29a9d3db33698b94ea026a5d0f81bbf9806333d73699a250b7e5d6"
+        },
+        {
+          "path": "libtasn1-4.21.0/README.md",
+          "sha256": "990ef6a87f29a9d3db33698b94ea026a5d0f81bbf9806333d73699a250b7e5d6"
+        }
+      ],
+      "license_expression": "LGPL-2.1-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "live555",
+      "version": "2026.06.24",
+      "archive": "live.2026.06.24.tar.gz",
+      "sha512": "31b325f406c651e9008367c90937a1dc555588f76a0aaa820edb62ccfed3bb9f46d42fae4fe62f8812c7f25d0a3eeb13a8267b84130dfee7a25ab74f5d94c57a",
+      "recipe": "contrib/src/live555/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://downloads.videolan.org/pub/contrib/live555/live.2026.06.24.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "live/COPYING",
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+        },
+        {
+          "path": "live/COPYING.LESSER",
+          "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768"
+        },
+        {
+          "path": "live/README",
+          "sha256": "e609e428d428273f72254f1e413ed94f32f2ae20bb3616d78ac8dbdf4730b4c9"
+        },
+        {
+          "path": "live/liveMedia/include/liveMedia.hh",
+          "sha256": "06f33665e87338cc6219b7dd4cb86cb00937e3f88c0bdb623f798260ea00f9be"
+        }
+      ],
+      "license_expression": "LGPL-3.0-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "liveMedia/include/liveMedia.hh explicitly grants LGPL3-or-later; do not downgrade to LGPL2.1 from historic versions."
+    },
+    {
+      "component": "freetype2",
+      "version": "2.14.3",
+      "archive": "freetype-2.14.3.tar.xz",
+      "sha512": "43de86ea70b4b47f6efaae67f3440f65a24ffac29dc6d11203a9764e4f1a749ce1ba7645acd23525220b3ba12ddad8687b962b9f1254e2c0a86070854e85d5a0",
+      "recipe": "contrib/src/freetype2/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://downloads.sourceforge.net/project/freetype/freetype2/2.14.3/freetype-2.14.3.tar.xz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "freetype-2.14.3/LICENSE.TXT",
+          "sha256": "bd36c8b474855fa294c2ec5c184544478ef3720aad37d65a6296a4f264fd2d3b"
+        },
+        {
+          "path": "freetype-2.14.3/README",
+          "sha256": "f322f7906b11a8c44b8a3973c0b1b31e56b5d59ef78638a459bf134f9c145796"
+        },
+        {
+          "path": "freetype-2.14.3/docs/GPLv2.TXT",
+          "sha256": "c4120c6752c910c299e3bd9cb3a46ff262c268303ca2069b61f92f10a5656c18"
+        },
+        {
+          "path": "freetype-2.14.3/docs/FTL.TXT",
+          "sha256": "5a5ee54c5001bbad1cdc1a57cc3dd4c42199b2da09d39c7ee41fab002d02967f"
+        }
+      ],
+      "license_expression": "FTL OR GPL-2.0-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "LICENSE.TXT supplies FTL or GPL2+ choice. Additional BDF/PCF/hash MIT-like, gzip Zlib and copied HarfBuzz code terms apply; docs/FTL.TXT must be retained if FTL is selected."
+    },
+    {
+      "component": "harfbuzz",
+      "version": "14.2.1",
+      "archive": "harfbuzz-14.2.1.tar.xz",
+      "sha512": "481dca68900e57895d3671baf0595c2d3a26f4f08d0db5662e83089f0d0ff6dc0c28c64c2811eb0f812b0525ed428e90db44f091a88bef47ace2f97d8285b013",
+      "recipe": "contrib/src/harfbuzz/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://github.com/harfbuzz/harfbuzz/releases/download/14.2.1/harfbuzz-14.2.1.tar.xz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "harfbuzz-14.2.1/COPYING",
+          "sha256": "ba8f810f2455c2f08e2d56bb49b72f37fcf68f1f4fade38977cfd7372050ad64"
+        },
+        {
+          "path": "harfbuzz-14.2.1/README.md",
+          "sha256": "03f6bebae3d16ea78a651fa1bbc9838354edca3ad39ed692fe5abecb93c29316"
+        },
+        {
+          "path": "harfbuzz-14.2.1/src/ms-use/COPYING",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        },
+        {
+          "path": "harfbuzz-14.2.1/test/COPYING",
+          "sha256": "9b35b8485f69cd298fccbb3c40a827dc06cf1185553bef827903497d2944a8d7"
+        }
+      ],
+      "license_expression": "MIT-Modern-Variant",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "COPYING text matches SPDX MIT-Modern-Variant. Other subdirectory COPYING files apply to their own files."
+    },
+    {
+      "component": "fontconfig",
+      "version": "2.12.3",
+      "archive": "fontconfig-2.12.3.tar.gz",
+      "sha512": "b17725c028be1c5e6f76c136b0ed7db1be7694cbbf217310083512708e05cdc1a824427f89082e6ef259c10297900f26cbe899f7c5762e7662855739f3eff5ea",
+      "recipe": "contrib/src/fontconfig/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.12.3.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "fontconfig-2.12.3/README",
+          "sha256": "159c28f1db0140d65b464e6b5a875c7d00f3b824e5268e9b73e611ae9ef8c451"
+        },
+        {
+          "path": "fontconfig-2.12.3/COPYING",
+          "sha256": "fa4cd9ab005185e10cd8f7504518856c7dd36c01e766c2bac87f4fc638e9f886"
+        }
+      ],
+      "license_expression": "HPND-sell-variant",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "COPYING matches SPDX HPND-sell-variant; it is not the MIT template."
+    },
+    {
+      "component": "fribidi",
+      "version": "1.0.12",
+      "archive": "fribidi-1.0.12.tar.xz",
+      "sha512": "cd624f519b270303e89139ced4020115abe3b6a0d774ba57f17fa69c6036edebd76c635a42c468786e76c6ffb0c7d63b435cd2663bc2fba08dec405840dd8e49",
+      "recipe": "contrib/src/fribidi/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://github.com/fribidi/fribidi/releases/download/v1.0.12/fribidi-1.0.12.tar.xz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "fribidi-1.0.12/COPYING",
+          "sha256": "32434afcc8666ba060e111d715bfdb6c2d5dd8a35fa4d3ab8ad67d8f850d2f2b"
+        },
+        {
+          "path": "fribidi-1.0.12/README",
+          "sha256": "3debe734c777df09c3c762cadd0fea1bebdb857c55243d605dc5b09211895bf3"
+        },
+        {
+          "path": "fribidi-1.0.12/README.md",
+          "sha256": "332c43f81281d8817b13d3e1d93519f2a938b95b507b416b5adbbc331bfe5624"
+        },
+        {
+          "path": "fribidi-1.0.12/lib/fribidi.c",
+          "sha256": "826707f6ddb46bd15b5d6799d01fb76c413b4b06fb48b8811ae151636cb638cd"
+        }
+      ],
+      "license_expression": "LGPL-2.1-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "ass",
+      "version": "0.17.5",
+      "archive": "libass-0.17.5.tar.xz",
+      "sha512": "b9e06023e9f5760ba1946f8dbcd8c411908bc6c77030099098f8252edabd31c98a6523cffb7cccf7b62e12bb374d136600a98e29a7916ccc218100ff694bfb7c",
+      "recipe": "contrib/src/ass/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://github.com/libass/libass/releases/download/0.17.5/libass-0.17.5.tar.xz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libass-0.17.5/COPYING",
+          "sha256": "f7e30699d02798351e7f839e3d3bfeb29ce65e44efa7735c225464c4fd7dfe9c"
+        },
+        {
+          "path": "libass-0.17.5/README.md",
+          "sha256": "ebca71588f5450479ac644a448d5a8dedc63d96f973769d4034de2616893e152"
+        }
+      ],
+      "license_expression": "ISC",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "opus",
+      "version": "1.6.1",
+      "archive": "opus-1.6.1.tar.gz",
+      "sha512": "93742e86b2eb222808a5055e62627d142e6e7347b3d5aebb4d39b45df78ed7d437746c51eb24d724a7c865d064e9d16f4541a4ce6a82fcf7dcc23427d2252e16",
+      "recipe": "contrib/src/opus/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://ftp.osuosl.org/pub/xiph/releases/opus/opus-1.6.1.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "opus-1.6.1/COPYING",
+          "sha256": "01e1167d54a096d123cf6dfbbeb19587278845c6481d2d66d545669846079551"
+        },
+        {
+          "path": "opus-1.6.1/README",
+          "sha256": "9bdf02594da8c33af8b7bdb7a2ac98f6fdc6abc71d5fb198e7b186286a681dca"
+        }
+      ],
+      "license_expression": "BSD-3-Clause",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "COPYING also links royalty-free patent grants. Those grants must be considered separately from the BSD3 copyright expression."
+    },
+    {
+      "component": "vorbis",
+      "version": "1.3.7",
+      "archive": "libvorbis-1.3.7.tar.xz",
+      "sha512": "bbf5f11f623d959b3ba98d6b52806521b0b918b59b867f0658c153ea1013293364eead4987e9e71f8798021379310860a2e548fcf89d10caf23d45e41aba45cd",
+      "recipe": "contrib/src/vorbis/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://ftp.osuosl.org/pub/xiph/releases/vorbis/libvorbis-1.3.7.tar.xz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libvorbis-1.3.7/COPYING",
+          "sha256": "ec1815db59fcd302846df949d7424876cb2e2dc5ed1606c5fb0b36787b1cf43a"
+        }
+      ],
+      "license_expression": "BSD-3-Clause",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "ogg",
+      "version": "1.3.6",
+      "archive": "libogg-1.3.6.tar.xz",
+      "sha512": "2168548e57e23fadca4aa66351214b23d699bc3aa47f5d065f8b583a3fe85c99333014a6aa38e4021b0e3750115b88258a6c00cac1e1496cdee5f12cdc633814",
+      "recipe": "contrib/src/ogg/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://ftp.osuosl.org/pub/xiph/releases/ogg/libogg-1.3.6.tar.xz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libogg-1.3.6/README.md",
+          "sha256": "59e6e1581cef12a1028a7b0f8bfb55b763dcde97620b82fb1eaca800941b62ba"
+        },
+        {
+          "path": "libogg-1.3.6/COPYING",
+          "sha256": "d2ab5758336489da61c12cc5bb757da5339c4ae9001f9bb0562b4370249af814"
+        }
+      ],
+      "license_expression": "BSD-3-Clause",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "flac",
+      "version": "1.4.2",
+      "archive": "flac-1.4.2.tar.xz",
+      "sha512": "20bdf0990a7432ac765037764bc8733a0d5646866fe6cc6f4868152d2a051c89676e501012ae489c7f87b3aacb45a5b30265afaca164cf0cf53ac058644a74c5",
+      "recipe": "contrib/src/flac/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://github.com/xiph/flac/releases/download/1.4.2/flac-1.4.2.tar.xz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "flac-1.4.2/COPYING.FDL",
+          "sha256": "f45cc81b400a048b56c9edbd4c3317f7a8958463dfd55aa96f268ecfd6baa12c"
+        },
+        {
+          "path": "flac-1.4.2/COPYING.GPL",
+          "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+        },
+        {
+          "path": "flac-1.4.2/COPYING.LGPL",
+          "sha256": "5df07007198989c622f5d41de8d703e7bef3d0e79d62e24332ee739a452af62a"
+        },
+        {
+          "path": "flac-1.4.2/COPYING.Xiph",
+          "sha256": "6e58d3036f05e2a0d58af854c12a505ddbe75011d71a598a2170987f3b15408d"
+        },
+        {
+          "path": "flac-1.4.2/README.md",
+          "sha256": "7d6983c66d720837666e81eca8d4519867cce6ad814ab5baaa3e2da41f7c0412"
+        }
+      ],
+      "license_expression": "BSD-3-Clause",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "BSD3 applies to libFLAC/libFLAC++ code. Tools and documentation have separate GPL/LGPL/GFDL terms."
+    },
+    {
+      "component": "vpx",
+      "version": "1.16.0",
+      "archive": "libvpx-1.16.0.tar.gz",
+      "sha512": "07f5e352411d6c0be331706d1835ac89bafbeddcbbac5542b473323766e9e974f4f68b33590f2aa50a7d8d69468a642b508cbb0a7c49a82c9933b07820f9c9d9",
+      "recipe": "contrib/src/vpx/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://github.com/webmproject/libvpx/archive/v1.16.0.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libvpx-1.16.0/LICENSE",
+          "sha256": "8267348d5af1262c11d1a08de2f5afc77457755f1ac658627dd9acf71011d615"
+        },
+        {
+          "path": "libvpx-1.16.0/PATENTS",
+          "sha256": "cc3273e0694ea5896145e0677699b53471b03ea43021ddc50e7923fbb9f5023c"
+        },
+        {
+          "path": "libvpx-1.16.0/README",
+          "sha256": "65476bb3c73577721320711fe5fc560e6964deda6ed66aa5bf20b3523793ccd5"
+        },
+        {
+          "path": "libvpx-1.16.0/third_party/libwebm/LICENSE.TXT",
+          "sha256": "5aec868f669e384a22372a4e8a1a6cd7d44c64cd451f960ca69cc170d1e13acf"
+        },
+        {
+          "path": "libvpx-1.16.0/third_party/libwebm/PATENTS.TXT",
+          "sha256": "cc3273e0694ea5896145e0677699b53471b03ea43021ddc50e7923fbb9f5023c"
+        },
+        {
+          "path": "libvpx-1.16.0/third_party/libyuv/LICENSE",
+          "sha256": "2b2cc1180c7e6988328ad2033b04b80117419db9c4c584918bbb3cfec7e9364f"
+        },
+        {
+          "path": "libvpx-1.16.0/third_party/nalloc/LICENSE",
+          "sha256": "d7dd0396ec46975e1bf9093680068ef301bc0ed204603e623a6f7073ab922ab1"
+        },
+        {
+          "path": "libvpx-1.16.0/third_party/x86inc/LICENSE",
+          "sha256": "719d8fa235f2068e0ae6d6a7dceb0a7720d7840f0f0ebed29957989e6ded3cd8"
+        }
+      ],
+      "license_expression": "BSD-3-Clause",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "Default BSD3 copyright grant plus PATENTS conditions. third_party code has separate notices."
+    },
+    {
+      "component": "dav1d",
+      "version": "1.5.4",
+      "archive": "dav1d-1.5.4.tar.xz",
+      "sha512": "75ab7c922bc9647d73534c9f6c95a514748557adbf7a4debf95eee52ef1db681012cbaad165a46141d904cdd01c1e6319cdea33d254afb5c6b3d968679e55b98",
+      "recipe": "contrib/src/dav1d/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://downloads.videolan.org/pub/videolan/dav1d/1.5.4/dav1d-1.5.4.tar.xz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "dav1d-1.5.4/COPYING",
+          "sha256": "dd92c3c2247c5651606fc23a5e2d6a1ebc5ace9a3e49cbde0e12f05ad1cb1ee5"
+        },
+        {
+          "path": "dav1d-1.5.4/README.md",
+          "sha256": "392f5b97fef0590409a372fac6dc6dc99284f0e05b189131973812fca3f0c1b9"
+        },
+        {
+          "path": "dav1d-1.5.4/doc/PATENTS",
+          "sha256": "335eca574598bf4ca181b12f708d6669e5a5e78c8e1513e5b35fa1f03901484b"
+        }
+      ],
+      "license_expression": "BSD-2-Clause",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "aom",
+      "version": "3.15.0",
+      "archive": "libaom-3.15.0.tar.gz",
+      "sha512": "68712a22e6912cdc16a208a62b4bd3a21fd4840924ed09191a4b85717bb6412b306ef302037e2ec4b524cdfb3c63ea2743671b989d84e45eca9c962eaa4d466b",
+      "recipe": "contrib/src/aom/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://storage.googleapis.com/aom-releases/libaom-3.15.0.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libaom-3.15.0/LICENSE",
+          "sha256": "4764a286d8b2faeaf42f4418e7d7a28d58fc8fd4d00a3d0a7f44b0a4099de7f2"
+        },
+        {
+          "path": "libaom-3.15.0/PATENTS",
+          "sha256": "661fb8e504744e95587b556b94a58343448300606a41bea8c7a9b97125696e61"
+        },
+        {
+          "path": "libaom-3.15.0/README.md",
+          "sha256": "4340234889ad98caf1b4248caec8b282935796ce947a583ae2465fe67a277546"
+        },
+        {
+          "path": "libaom-3.15.0/third_party/fastfeat/LICENSE",
+          "sha256": "499041ddee5227b6f29ca06c17803e5fe24d60f243c69635cd76b7ba08d0ddd5"
+        },
+        {
+          "path": "libaom-3.15.0/third_party/highway/LICENSE-BSD3",
+          "sha256": "d25e82e26acd42ca3ccc9993622631163425b869b9e16284226d534cff6470f2"
+        },
+        {
+          "path": "libaom-3.15.0/third_party/libwebm/LICENSE.TXT",
+          "sha256": "5aec868f669e384a22372a4e8a1a6cd7d44c64cd451f960ca69cc170d1e13acf"
+        },
+        {
+          "path": "libaom-3.15.0/third_party/libwebm/PATENTS.TXT",
+          "sha256": "cc3273e0694ea5896145e0677699b53471b03ea43021ddc50e7923fbb9f5023c"
+        },
+        {
+          "path": "libaom-3.15.0/third_party/libyuv/LICENSE",
+          "sha256": "2b2cc1180c7e6988328ad2033b04b80117419db9c4c584918bbb3cfec7e9364f"
+        },
+        {
+          "path": "libaom-3.15.0/third_party/vector/LICENSE",
+          "sha256": "ff6c857ce2708e87701323078aef115c1872a1f80a9649f86dc899b48083bc60"
+        },
+        {
+          "path": "libaom-3.15.0/third_party/x86inc/LICENSE",
+          "sha256": "719d8fa235f2068e0ae6d6a7dceb0a7720d7840f0f0ebed29957989e6ded3cd8"
+        }
+      ],
+      "license_expression": "BSD-2-Clause",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "Default BSD2 copyright grant plus PATENTS conditions. third_party source licenses are recorded in archive evidence; the actual compiled subset needs build evidence."
+    },
+    {
+      "component": "theora",
+      "version": "1.1.1",
+      "archive": "libtheora-1.1.1.tar.xz",
+      "sha512": "032fb60f10ac0074ec87d5f8c586702309edc50dc0d2842d2f9b9c46ebd1500acc399e9309f858f318fff5b8fbe953234db3afb54ed74a03d0f2c6ee8c3ed481",
+      "recipe": "contrib/src/theora/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://ftp.osuosl.org/pub/xiph/releases/theora/libtheora-1.1.1.tar.xz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "libtheora-1.1.1/LICENSE",
+          "sha256": "654a0238f789f4435c4818f50005b141d013c5a09a31d861efc1d0d67ba975a4"
+        },
+        {
+          "path": "libtheora-1.1.1/README",
+          "sha256": "4b7a47e72dd833f3cec145794bc86f0030d85bcbd7fa7c2ba612a41b52971aad"
+        },
+        {
+          "path": "libtheora-1.1.1/COPYING",
+          "sha256": "8417fad7da775735564e209484a2e011e0fa201e94f01fdbee6e4977e478e6fc"
+        }
+      ],
+      "license_expression": "BSD-3-Clause",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "gsm",
+      "version": "1.0.13",
+      "archive": "libgsm_1.0.13.tar.gz",
+      "sha512": "0d0cf9e1e81e64cd84f588c1e4f0cb74b849d45e41fdebf860f63588084c73c7c5198bfe73a6c976bda5735ee516661d3db00afbb5cc5886a7ee3a7b31d673aa",
+      "recipe": "contrib/src/gsm/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "http://libgsm.sourcearchive.com/downloads/1.0.13/libgsm_1.0.13.orig.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "gsm-1.0-pl13/COPYRIGHT",
+          "sha256": "81c68a3374937ed9b5e4929c709e81a2c4b35b5d1f450ecf8c473e2daea46ff6"
+        },
+        {
+          "path": "gsm-1.0-pl13/README",
+          "sha256": "960170bd887c0f82e9d53d7fb85bef5eb97fd24f00e20e7233181f309bae40ae"
+        }
+      ],
+      "license_expression": "TU-Berlin-2.0",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "openjpeg",
+      "version": "2.5.4",
+      "archive": "openjpeg-2.5.4.tar.gz",
+      "sha512": "702a10e20caaf8209684ded7c9fcf32f5ba6a972cf2d9fcf2611cdc6a446d2c3bb60324205758e6b6f92278c8cf4ef0fbae511e6ffb45ed6e8df514db0c6ab25",
+      "recipe": "contrib/src/openjpeg/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://github.com/uclouvain/openjpeg/archive/v2.5.4.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "openjpeg-2.5.4/LICENSE",
+          "sha256": "a6af136f3e15038a666b61f376612a07d9a4e48cb7c01adbf3e33b3f14ab49b6"
+        },
+        {
+          "path": "openjpeg-2.5.4/README.md",
+          "sha256": "cc0090eb6abfbea7d44351851d04bcfcfeb9181eac9fcb8b2d108091b5eefc24"
+        },
+        {
+          "path": "openjpeg-2.5.4/thirdparty/astyle/LICENSE.md",
+          "sha256": "2e8480e753b7a1d100c80920f4250b1bc9f93a18c6a5953c42b11445218cd0fb"
+        },
+        {
+          "path": "openjpeg-2.5.4/thirdparty/liblcms2/COPYING",
+          "sha256": "c725daac91a9259ce5e195683c0eeb797d345035c36ac5ba114c9fa80e11639a"
+        },
+        {
+          "path": "openjpeg-2.5.4/thirdparty/libpng/LICENSE",
+          "sha256": "7317e078e2d3b5d7ba5a6159e650945153262b44b76f6700f8e9edb261c5143e"
+        }
+      ],
+      "license_expression": "BSD-2-Clause",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false
+    },
+    {
+      "component": "lame",
+      "version": "3.100",
+      "archive": "lame-3.100.tar.gz",
+      "sha512": "0844b9eadb4aacf8000444621451277de365041cc1d97b7f7a589da0b7a23899310afd4e4d81114b9912aa97832621d20588034715573d417b2923948c08634b",
+      "recipe": "contrib/src/lame/rules.mak",
+      "status": "source-retrieved",
+      "source_url": "https://downloads.sourceforge.net/project/lame/lame-3.100.tar.gz",
+      "sha512_verified": true,
+      "license_evidence": [
+        {
+          "path": "lame-3.100/README",
+          "sha256": "687ad59451fddafba33340222a5c5820a99b62249d69b25a3667b396bd623d10"
+        },
+        {
+          "path": "lame-3.100/COPYING",
+          "sha256": "bfe4a52dc4645385f356a8e83cc54216a293e3b6f1cb4f79f5fc0277abf937fd"
+        },
+        {
+          "path": "lame-3.100/LICENSE",
+          "sha256": "7a40cbd8818c57e5285e83c772a459a996d1662c824a879836b97b473c07cae4"
+        },
+        {
+          "path": "lame-3.100/debian/copyright",
+          "sha256": "1f27f9f698183275bd615c1140b7bf6e498750e9280597c6eb39790e54ae809b"
+        },
+        {
+          "path": "lame-3.100/libmp3lame/lame.c",
+          "sha256": "561882821f4b9575e2d171d2e8f797c50e4ea2eb2f9c7a58b5f02353ba7f36c0"
+        }
+      ],
+      "license_expression": "LGPL-2.0-or-later",
+      "license_scope": "Main library default license. Dependencies, optional code, bundled code, tools and documentation may add separate terms.",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "libmp3lame/lame.c explicitly grants LGPL2-or-later. VLC LAME_CONF disables decoder; shipped source also contains separately licensed mpglib decoder code."
+    },
+    {
+      "component": "x264",
+      "version": "e067ab0b530395f90b578f6d05ab0a225e2efdf9",
+      "archive": "x264-e067ab0b530395f90b578f6d05ab0a225e2efdf9.tar.gz",
+      "source_url": "https://code.videolan.org/videolan/x264/-/archive/e067ab0b530395f90b578f6d05ab0a225e2efdf9/x264-e067ab0b530395f90b578f6d05ab0a225e2efdf9.tar.gz",
+      "sha512": "ae3561d9ced105a8f62b789789173e9bce00c67c9fbcc7a6a2e41aba30e0c0c2b6b765d7e07a196cfb1bdd7c5cd01407f22209161273b86809d91c38735da0d3",
+      "sha512_verified": false,
+      "hash_basis": "Measured archive SHA512; VLC recipe pins Git commit rather than release archive SHA512.",
+      "recipe": "contrib/src/x264/rules.mak",
+      "status": "source-retrieved",
+      "license_expression": "GPL-2.0-or-later",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "notes": "Same source used for x26410b. Source headers grant GPL2-or-later. No commercial license is assumed.",
+      "license_evidence": [
+        {
+          "path": "x264.h",
+          "sha256": "c585f3c245b4d84a6e80bc18e79d928941a0d68851d66ef417ec1656f877dc3f"
+        },
+        {
+          "path": "common/common.h",
+          "sha256": "450f2117ff386a65cec1a385b74cfcd4b504aac5067e19210812388117aa24cd"
+        },
+        {
+          "path": "COPYING",
+          "sha256": "32b1062f7da84967e7019d01ab805935caa7ab7321a7ced0e30ebe75e5df1670"
+        }
+      ]
+    },
+    {
+      "archive": "gnutls-3.8.13.tar.xz",
+      "source_url": "https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.13.tar.xz",
+      "sha512": "71bf189a836fd18d58b9e995d4bfcecdb0aae6129dfd44247b98422b2f127dd868f9905d28fad2ca05afd919a0e6b3c8eebb6b95804067d3a8dab31ebdc72453",
+      "sha512_verified": true,
+      "recipe": "contrib/src/gnutls/rules.mak",
+      "component": "gnutls-bundled-libtasn1",
+      "version": "4.20.0",
+      "status": "source-retrieved",
+      "license_expression": "LGPL-2.1-or-later",
+      "review_status": "source-license-reviewed",
+      "parent_component": "gnutls",
+      "binary_inclusion_proven": false,
+      "license_scope": "Observed bundled source subset; actual binary selection needs build evidence.",
+      "license_evidence": [
+        {
+          "path": "gnutls-3.8.13/lib/minitasn1/libtasn1.h",
+          "sha256": "bb2f07996fd6811677e5cac2da0d7a3335f8e49173c7a166db8045b19f05349d"
+        }
+      ]
+    },
+    {
+      "archive": "gnutls-3.8.13.tar.xz",
+      "source_url": "https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.13.tar.xz",
+      "sha512": "71bf189a836fd18d58b9e995d4bfcecdb0aae6129dfd44247b98422b2f127dd868f9905d28fad2ca05afd919a0e6b3c8eebb6b95804067d3a8dab31ebdc72453",
+      "sha512_verified": true,
+      "recipe": "contrib/src/gnutls/rules.mak",
+      "component": "gnutls-bundled-unistring",
+      "version": "snapshot bundled in GnuTLS 3.8.13",
+      "status": "source-retrieved",
+      "license_expression": "LGPL-2.1-or-later",
+      "review_status": "source-license-reviewed",
+      "parent_component": "gnutls",
+      "binary_inclusion_proven": false,
+      "license_scope": "Observed bundled source subset; actual binary selection needs build evidence.",
+      "license_evidence": [
+        {
+          "path": "gnutls-3.8.13/lib/unistring/unistr.in.h",
+          "sha256": "70bf803fa026b160d1f00c010adafcca623836a6c360f8aa1bfe3d930617c76e"
+        },
+        {
+          "path": "gnutls-3.8.13/lib/unistring/unitypes.in.h",
+          "sha256": "9819f5b2a965404f10d848593b88ffb43786da091df84ed5a4f26807745909c1"
+        }
+      ]
+    },
+    {
+      "archive": "gnutls-3.8.13.tar.xz",
+      "source_url": "https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.13.tar.xz",
+      "sha512": "71bf189a836fd18d58b9e995d4bfcecdb0aae6129dfd44247b98422b2f127dd868f9905d28fad2ca05afd919a0e6b3c8eebb6b95804067d3a8dab31ebdc72453",
+      "sha512_verified": true,
+      "recipe": "contrib/src/gnutls/rules.mak",
+      "component": "gnutls-bundled-inih",
+      "version": "snapshot bundled in GnuTLS 3.8.13",
+      "status": "source-retrieved",
+      "license_expression": "BSD-3-Clause",
+      "review_status": "source-license-reviewed",
+      "parent_component": "gnutls",
+      "binary_inclusion_proven": false,
+      "license_scope": "Observed bundled source subset; actual binary selection needs build evidence.",
+      "license_evidence": [
+        {
+          "path": "gnutls-3.8.13/lib/inih/LICENSE.txt",
+          "sha256": "9ae3b39e83e9158e44b67733baa3bb2d84e80efdcfb14a5820210a42c7abdf7f"
+        }
+      ]
+    },
+    {
+      "archive": "gnutls-3.8.13.tar.xz",
+      "source_url": "https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.13.tar.xz",
+      "sha512": "71bf189a836fd18d58b9e995d4bfcecdb0aae6129dfd44247b98422b2f127dd868f9905d28fad2ca05afd919a0e6b3c8eebb6b95804067d3a8dab31ebdc72453",
+      "sha512_verified": true,
+      "recipe": "contrib/src/gnutls/rules.mak",
+      "component": "gnutls-bundled-crau",
+      "version": "snapshot bundled in GnuTLS 3.8.13",
+      "status": "source-retrieved",
+      "license_expression": "MIT",
+      "review_status": "source-license-reviewed",
+      "parent_component": "gnutls",
+      "binary_inclusion_proven": false,
+      "license_scope": "Observed bundled source subset; actual binary selection needs build evidence.",
+      "license_evidence": [
+        {
+          "path": "gnutls-3.8.13/lib/crau/LICENSE",
+          "sha256": "b3c9aed2f5750f6bf698c74916d675d1734e12455b96bfdf6f90e23ab01595cd"
+        }
+      ]
+    },
+    {
+      "component": "fluidlite",
+      "version": "b0f187b404e393ee0a495b277154d55d7d03cbeb",
+      "archive": "fluidlite-b0f187b404e393ee0a495b277154d55d7d03cbeb.tar.gz",
+      "source_url": "https://github.com/divideconcept/FluidLite/archive/b0f187b404e393ee0a495b277154d55d7d03cbeb.tar.gz",
+      "sha512": "dfbae6e829e71d9729ceb9120a2f30a6c0d383d979246d6ce92a10109db456658ba9567eb5e1233f82f4ebaf41ee29e8b4f676fd369411fe8f38c795697cdf4d",
+      "sha512_verified": false,
+      "hash_basis": "Measured archive SHA512; recipe pins a Git commit rather than a release archive checksum.",
+      "recipe": "contrib/src/fluidlite/rules.mak",
+      "status": "source-retrieved",
+      "license_expression": "LGPL-2.1-or-later",
+      "review_status": "source-license-reviewed",
+      "binary_inclusion_proven": false,
+      "license_scope": "Main library default; Vorbis SF3 dependency and bundled files can add separate terms.",
+      "license_evidence": [
+        {
+          "path": "FluidLite-b0f187b404e393ee0a495b277154d55d7d03cbeb/LICENSE",
+          "sha256": "a5564e99fd7f49e1344152a8c5bc1d420d5f973b30e010946764db0b5b9e668c"
+        },
+        {
+          "path": "FluidLite-b0f187b404e393ee0a495b277154d55d7d03cbeb/README.md",
+          "sha256": "d1a000c198f7e61675e37e96c06905ae962e6d991643dcb0aaf609eb6bcea197"
+        },
+        {
+          "path": "FluidLite-b0f187b404e393ee0a495b277154d55d7d03cbeb/src/fluid_synth.c",
+          "sha256": "f1ba920854702f9e9f5fa1beadaba29de023aaf7a522b223a11001c669df39d3"
+        }
+      ]
+    }
+  ],
+  "supplemental_runtime_sources": [
+    {
+      "component": "gcc-runtime-6.4.0",
+      "license_expression": "GPL-3.0-or-later WITH GCC-exception-3.1",
+      "scope": "Potential compiler runtime source license. Compiler version was observed in the upstream build trace; exact runtime archive, enabled exceptions and actual binary inclusion remain to establish.",
+      "binary_inclusion_proven": false,
+      "inputs": [
+        {
+          "path": "COPYING3",
+          "source_url": "https://raw.githubusercontent.com/gcc-mirror/gcc/releases/gcc-6.4.0/COPYING3",
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+          "sha512": "7633623b66b5e686bb94dd96a7cdb5a7e5ee00e87004fab416a5610d59c62badaf512a2e26e34e2455b7ed6b76690d2cd47464836d7d85d78b51d50f7e933d5c",
+          "hash_basis": "Measured pinned release or commit source file hash; not an independent upstream archive checksum."
+        },
+        {
+          "path": "COPYING.RUNTIME",
+          "source_url": "https://raw.githubusercontent.com/gcc-mirror/gcc/releases/gcc-6.4.0/COPYING.RUNTIME",
+          "sha256": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74",
+          "sha512": "0fa9cdd317b02a5706dbb619231dde8ad843f4052dbf2c8daef97fdaeec81af413be12faec4d3bfba583e77604596b5aab62f1c9d54758dd32358aaa9bebef5a",
+          "hash_basis": "Measured pinned release or commit source file hash; not an independent upstream archive checksum."
+        },
+        {
+          "path": "libgcc/libgcc2.c",
+          "source_url": "https://raw.githubusercontent.com/gcc-mirror/gcc/releases/gcc-6.4.0/libgcc/libgcc2.c",
+          "sha256": "a487ad1fcc2d5b397bfc72a151865ffbecd19b218002dab49f64601ccd73d106",
+          "sha512": "2f16ca5c309e3a4e472cad707ea8523998d1f08b4b89d3bac8762eaed922b3e7bef92bfa05488e63146c899793c78c8fb3324ce55c91f77841adfa2165c9e630",
+          "hash_basis": "Measured pinned release or commit source file hash; not an independent upstream archive checksum."
+        },
+        {
+          "path": "libstdc++-v3/libsupc++/exception_ptr.h",
+          "source_url": "https://raw.githubusercontent.com/gcc-mirror/gcc/releases/gcc-6.4.0/libstdc++-v3/libsupc++/exception_ptr.h",
+          "sha256": "4abec6b15644197652c65743c3105e6583a554761985dee48b06bed22293fca4",
+          "sha512": "f631f4256ed89dc8e1bf5ad4f3bd2e3d80b8bf55c35883e3f91bc061f384f2da44a8c51fe9010f5e61db084806f63128761736d7b1190b91a89cc98c2318728f",
+          "hash_basis": "Measured pinned release or commit source file hash; not an independent upstream archive checksum."
+        }
+      ]
+    },
+    {
+      "component": "llvm-runtime-22.1.2",
+      "license_expression": "Apache-2.0 WITH LLVM-exception",
+      "scope": "Potential compiler runtime source license. Compiler version was observed in the upstream build trace; exact runtime archive, enabled exceptions and actual binary inclusion remain to establish.",
+      "binary_inclusion_proven": false,
+      "inputs": [
+        {
+          "path": "libunwind/LICENSE.TXT",
+          "source_url": "https://raw.githubusercontent.com/llvm/llvm-project/1ab49a973e210e97d61e5db6557180dcb92c3e98/libunwind/LICENSE.TXT",
+          "sha256": "b5efebcaca80879234098e52d1725e6d9eb8fb96a19fce625d39184b705f7b6d",
+          "sha512": "5971ad33016b86cd7395b5c41f3ccdb00537df254720b650a9f57c85024b43c43ee3b6a2e3373319a546c2af5af81a5094bc4f914f59dbc3845052b2af40de8c",
+          "hash_basis": "Measured pinned release or commit source file hash; not an independent upstream archive checksum."
+        },
+        {
+          "path": "libcxx/LICENSE.TXT",
+          "source_url": "https://raw.githubusercontent.com/llvm/llvm-project/1ab49a973e210e97d61e5db6557180dcb92c3e98/libcxx/LICENSE.TXT",
+          "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b",
+          "sha512": "7e341482191cb13f310e78ef7999f6d5fbf0788b6df7e66a1ba0a37defec1af28da711e757b5f288c519c54e6e82cc8181fce3fe57eb09c6fb7007412ebaa21d",
+          "hash_basis": "Measured pinned release or commit source file hash; not an independent upstream archive checksum."
+        },
+        {
+          "path": "libcxxabi/LICENSE.TXT",
+          "source_url": "https://raw.githubusercontent.com/llvm/llvm-project/1ab49a973e210e97d61e5db6557180dcb92c3e98/libcxxabi/LICENSE.TXT",
+          "sha256": "e2b35be49f7284a45b7baca8fc7b3ab7440e7902392b2528a457816b5bb2a15c",
+          "sha512": "5e09a35da63125dda3f70889068fe9692bee153b94aa4c3cccf1d9ccb1b893e9571b9727a6d07f5acabafb22f2d86cc10410a0144b115aa84bd88bd51166e8c9",
+          "hash_basis": "Measured pinned release or commit source file hash; not an independent upstream archive checksum."
+        },
+        {
+          "path": "compiler-rt/LICENSE.TXT",
+          "source_url": "https://raw.githubusercontent.com/llvm/llvm-project/1ab49a973e210e97d61e5db6557180dcb92c3e98/compiler-rt/LICENSE.TXT",
+          "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d",
+          "sha512": "4c442a83c3a0739274511d8aabaaa2c34411eb9b9f64eeeaa862b488f30e7c18199ed9057ebae54b5a13b5f17e52ced18f315398accdf87d3b7bb552f9087f93",
+          "hash_basis": "Measured pinned release or commit source file hash; not an independent upstream archive checksum."
+        }
+      ]
+    }
+  ]
+}
