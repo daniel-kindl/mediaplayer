@@ -141,6 +141,8 @@ This procedure checks reproducibility of the module inventory. It does not repla
 
 The regenerated TSV matches the committed inventory byte for byte.
 All local Markdown file links resolve. `git diff --check` passes.
-`./eng/verify.sh` stops at prerequisites because SDK 10.0.402 is missing. Only SDK 10.0.401 is installed.
-No SDK pin or verification rule was changed. All subsequent verification steps are NOT RUN.
-Windows and macOS verification are NOT RUN. Native execution and playback checks are NOT RUN on every platform.
+After the local SDK update, `./eng/verify.sh` passes on Linux x64 with SDK 10.0.402.
+Locked restore, vulnerability checks, formatting, Release build, tests, coverage, and architecture checks pass.
+The build reports zero warnings and zero errors. All eight architecture tests pass, with no failures or skips.
+No SDK pin or verification rule was changed.
+Windows and macOS verification are NOT RUN locally. Native execution and playback checks are NOT RUN on every platform.
