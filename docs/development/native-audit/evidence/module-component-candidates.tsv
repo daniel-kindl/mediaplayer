@@ -1,0 +1,340 @@
+module	native_file_count	source_files	explicit_source_license_grants	direct_component_candidates	transitive_component_candidates
+libaccess_concat_plugin	5	modules/access/concat.c	LGPL-2.1-or-later		
+libaccess_imem_plugin	5	modules/access/imem.c	LGPL-2.1-or-later		
+libaccess_mms_plugin	5	modules/access/mms/asf.c | modules/access/mms/asf.h | modules/access/mms/buffer.c | modules/access/mms/buffer.h | modules/access/mms/mms.c | modules/access/mms/mms.h | modules/access/mms/mmsh.c | modules/access/mms/mmsh.h | modules/access/mms/mmstu.c | modules/access/mms/mmstu.h | modules/demux/asf/libasf_guid.h	LGPL-2.1-or-later		
+libaccess_output_dummy_plugin	5	modules/access_output/dummy.c	LGPL-2.1-or-later		
+libaccess_output_file_plugin	5	modules/access_output/file.c	LGPL-2.1-or-later		
+libaccess_output_http_plugin	5	modules/access_output/http.c	LGPL-2.1-or-later		
+libaccess_output_livehttp_plugin	5	modules/access_output/livehttp.c	LGPL-2.1-or-later	gcrypt	gcrypt | gpg-error
+libaccess_output_rist_plugin	5	modules/access/rist.h | modules/access_output/rist.c	LGPL-2.1-or-later	librist	gmp | gnutls | librist | nettle
+libaccess_output_shout_plugin	5	modules/access_output/shout.c	LGPL-2.1-or-later	shout	ogg | shout | speex | theora | vorbis
+libaccess_output_srt_plugin	5	modules/access/srt_common.c | modules/access/srt_common.h | modules/access_output/srt.c | modules/dummy.cpp	LGPL-2.1-or-later	srt	gmp | gnutls | nettle | srt
+libaccess_output_udp_plugin	5	modules/access_output/udp.c	LGPL-2.1-or-later		
+libaccess_srt_plugin	5	modules/access/srt.c | modules/access/srt_common.c | modules/access/srt_common.h | modules/dummy.cpp	LGPL-2.1-or-later	srt	gmp | gnutls | nettle | srt
+libaccess_wasapi_plugin	3	modules/access/wasapi.c	LGPL-2.1-or-later		
+libadaptive_plugin	5	modules/access/http/chunked.c | modules/access/http/conn.h | modules/access/http/connmgr.c | modules/access/http/connmgr.h | modules/access/http/file.c | modules/access/http/file.h | modules/access/http/h1conn.c | modules/access/http/h2conn.c | modules/access/http/h2frame.c | modules/access/http/h2frame.h | modules/access/http/h2output.c | modules/access/http/h2output.h | modules/access/http/hpack.c | modules/access/http/hpack.h | modules/access/http/hpackenc.c | modules/access/http/live.c | modules/access/http/live.h | modules/access/http/message.c | modules/access/http/message.h | modules/access/http/resource.c | modules/access/http/resource.h | modules/access/http/transport.h | modules/access/http/tunnel.c | modules/demux/adaptive/AbstractSource.hpp | modules/demux/adaptive/ID.cpp | modules/demux/adaptive/ID.hpp | modules/demux/adaptive/PlaylistManager.cpp | modules/demux/adaptive/PlaylistManager.h | modules/demux/adaptive/SegmentTracker.cpp | modules/demux/adaptive/SegmentTracker.hpp | modules/demux/adaptive/SharedResources.cpp | modules/demux/adaptive/SharedResources.hpp | modules/demux/adaptive/StreamFormat.cpp | modules/demux/adaptive/StreamFormat.hpp | modules/demux/adaptive/Streams.cpp | modules/demux/adaptive/Streams.hpp | modules/demux/adaptive/Time.hpp | modules/demux/adaptive/adaptive.cpp | modules/demux/adaptive/encryption/CommonEncryption.cpp | modules/demux/adaptive/encryption/CommonEncryption.hpp | modules/demux/adaptive/encryption/Keyring.cpp | modules/demux/adaptive/encryption/Keyring.hpp | modules/demux/adaptive/http/AuthStorage.cpp | modules/demux/adaptive/http/AuthStorage.hpp | modules/demux/adaptive/http/BytesRange.cpp | modules/demux/adaptive/http/BytesRange.hpp | modules/demux/adaptive/http/Chunk.cpp | modules/demux/adaptive/http/Chunk.h | modules/demux/adaptive/http/ConnectionParams.cpp | modules/demux/adaptive/http/ConnectionParams.hpp | modules/demux/adaptive/http/Downloader.cpp | modules/demux/adaptive/http/Downloader.hpp | modules/demux/adaptive/http/HTTPConnection.cpp | modules/demux/adaptive/http/HTTPConnection.hpp | modules/demux/adaptive/http/HTTPConnectionManager.cpp | modules/demux/adaptive/http/HTTPConnectionManager.h | modules/demux/adaptive/logic/AbstractAdaptationLogic.cpp | modules/demux/adaptive/logic/AbstractAdaptationLogic.h | modules/demux/adaptive/logic/AlwaysBestAdaptationLogic.cpp | modules/demux/adaptive/logic/AlwaysBestAdaptationLogic.h | modules/demux/adaptive/logic/AlwaysLowestAdaptationLogic.cpp | modules/demux/adaptive/logic/AlwaysLowestAdaptationLogic.hpp | modules/demux/adaptive/logic/BufferingLogic.cpp | modules/demux/adaptive/logic/BufferingLogic.hpp | modules/demux/adaptive/logic/IDownloadRateObserver.h | modules/demux/adaptive/logic/NearOptimalAdaptationLogic.cpp | modules/demux/adaptive/logic/NearOptimalAdaptationLogic.hpp | modules/demux/adaptive/logic/PredictiveAdaptationLogic.cpp | modules/demux/adaptive/logic/PredictiveAdaptationLogic.hpp | modules/demux/adaptive/logic/RateBasedAdaptationLogic.cpp | modules/demux/adaptive/logic/RateBasedAdaptationLogic.h | modules/demux/adaptive/logic/Representationselectors.cpp | modules/demux/adaptive/logic/Representationselectors.hpp | modules/demux/adaptive/mp4/AtomsReader.cpp | modules/demux/adaptive/mp4/AtomsReader.hpp | modules/demux/adaptive/playlist/BaseAdaptationSet.cpp | modules/demux/adaptive/playlist/BaseAdaptationSet.h | modules/demux/adaptive/playlist/BasePeriod.cpp | modules/demux/adaptive/playlist/BasePeriod.h | modules/demux/adaptive/playlist/BasePlaylist.cpp | modules/demux/adaptive/playlist/BasePlaylist.hpp | modules/demux/adaptive/playlist/BaseRepresentation.cpp | modules/demux/adaptive/playlist/BaseRepresentation.h | modules/demux/adaptive/playlist/CodecDescription.cpp | modules/demux/adaptive/playlist/CodecDescription.hpp | modules/demux/adaptive/playlist/CommonAttributesElements.cpp | modules/demux/adaptive/playlist/CommonAttributesElements.h | modules/demux/adaptive/playlist/ICanonicalUrl.hpp | modules/demux/adaptive/playlist/Inheritables.cpp | modules/demux/adaptive/playlist/Inheritables.hpp | modules/demux/adaptive/playlist/Role.cpp | modules/demux/adaptive/playlist/Role.hpp | modules/demux/adaptive/playlist/Segment.cpp | modules/demux/adaptive/playlist/Segment.h | modules/demux/adaptive/playlist/SegmentBase.cpp | modules/demux/adaptive/playlist/SegmentBase.h | modules/demux/adaptive/playlist/SegmentBaseType.cpp | modules/demux/adaptive/playlist/SegmentBaseType.hpp | modules/demux/adaptive/playlist/SegmentChunk.cpp | modules/demux/adaptive/playlist/SegmentChunk.hpp | modules/demux/adaptive/playlist/SegmentInformation.cpp | modules/demux/adaptive/playlist/SegmentInformation.hpp | modules/demux/adaptive/playlist/SegmentList.cpp | modules/demux/adaptive/playlist/SegmentList.h | modules/demux/adaptive/playlist/SegmentTemplate.cpp | modules/demux/adaptive/playlist/SegmentTemplate.h | modules/demux/adaptive/playlist/SegmentTimeline.cpp | modules/demux/adaptive/playlist/SegmentTimeline.h | modules/demux/adaptive/playlist/Templates.hpp | modules/demux/adaptive/playlist/Url.cpp | modules/demux/adaptive/playlist/Url.hpp | modules/demux/adaptive/plumbing/CommandsQueue.cpp | modules/demux/adaptive/plumbing/CommandsQueue.hpp | modules/demux/adaptive/plumbing/Demuxer.cpp | modules/demux/adaptive/plumbing/Demuxer.hpp | modules/demux/adaptive/plumbing/FakeESOut.cpp | modules/demux/adaptive/plumbing/FakeESOut.hpp | modules/demux/adaptive/plumbing/FakeESOutID.cpp | modules/demux/adaptive/plumbing/FakeESOutID.hpp | modules/demux/adaptive/plumbing/SourceStream.cpp | modules/demux/adaptive/plumbing/SourceStream.hpp | modules/demux/adaptive/tools/Compatibility.hpp | modules/demux/adaptive/tools/Conversions.cpp | modules/demux/adaptive/tools/Conversions.hpp | modules/demux/adaptive/tools/Debug.hpp | modules/demux/adaptive/tools/FormatNamespace.cpp | modules/demux/adaptive/tools/FormatNamespace.hpp | modules/demux/adaptive/tools/Helper.cpp | modules/demux/adaptive/tools/Helper.h | modules/demux/adaptive/tools/MovingAverage.hpp | modules/demux/adaptive/tools/Properties.hpp | modules/demux/adaptive/tools/Retrieve.cpp | modules/demux/adaptive/tools/Retrieve.hpp | modules/demux/adaptive/xml/DOMHelper.cpp | modules/demux/adaptive/xml/DOMHelper.h | modules/demux/adaptive/xml/DOMParser.cpp | modules/demux/adaptive/xml/DOMParser.h | modules/demux/adaptive/xml/Node.cpp | modules/demux/adaptive/xml/Node.h | modules/demux/dash/DASHManager.cpp | modules/demux/dash/DASHManager.h | modules/demux/dash/DASHStream.cpp | modules/demux/dash/DASHStream.hpp | modules/demux/dash/mp4/IndexReader.cpp | modules/demux/dash/mp4/IndexReader.hpp | modules/demux/dash/mpd/AdaptationSet.cpp | modules/demux/dash/mpd/AdaptationSet.h | modules/demux/dash/mpd/ContentDescription.cpp | modules/demux/dash/mpd/ContentDescription.h | modules/demux/dash/mpd/DASHCommonAttributesElements.cpp | modules/demux/dash/mpd/DASHCommonAttributesElements.h | modules/demux/dash/mpd/DASHSegment.cpp | modules/demux/dash/mpd/DASHSegment.h | modules/demux/dash/mpd/IsoffMainParser.cpp | modules/demux/dash/mpd/IsoffMainParser.h | modules/demux/dash/mpd/MPD.cpp | modules/demux/dash/mpd/MPD.h | modules/demux/dash/mpd/Profile.cpp | modules/demux/dash/mpd/Profile.hpp | modules/demux/dash/mpd/ProgramInformation.cpp | modules/demux/dash/mpd/ProgramInformation.h | modules/demux/dash/mpd/Representation.cpp | modules/demux/dash/mpd/Representation.h | modules/demux/dash/mpd/TemplatedUri.cpp | modules/demux/dash/mpd/TemplatedUri.hpp | modules/demux/dash/mpd/TrickModeType.cpp | modules/demux/dash/mpd/TrickModeType.h | modules/demux/hls/HLSManager.cpp | modules/demux/hls/HLSManager.hpp | modules/demux/hls/HLSStreams.cpp | modules/demux/hls/HLSStreams.hpp | modules/demux/hls/playlist/HLSRepresentation.cpp | modules/demux/hls/playlist/HLSRepresentation.hpp | modules/demux/hls/playlist/HLSSegment.cpp | modules/demux/hls/playlist/HLSSegment.hpp | modules/demux/hls/playlist/M3U8.cpp | modules/demux/hls/playlist/M3U8.hpp | modules/demux/hls/playlist/Parser.cpp | modules/demux/hls/playlist/Parser.hpp | modules/demux/hls/playlist/Tags.cpp | modules/demux/hls/playlist/Tags.hpp | modules/demux/mp4/libmp4.c | modules/demux/mp4/libmp4.h | modules/demux/mpeg/timestamps.h | modules/demux/smooth/SmoothManager.cpp | modules/demux/smooth/SmoothManager.hpp | modules/demux/smooth/SmoothStream.cpp | modules/demux/smooth/SmoothStream.hpp | modules/demux/smooth/mp4/SmoothIndexReader.cpp | modules/demux/smooth/mp4/SmoothIndexReader.hpp | modules/demux/smooth/playlist/ForgedInitSegment.cpp | modules/demux/smooth/playlist/ForgedInitSegment.hpp | modules/demux/smooth/playlist/Manifest.cpp | modules/demux/smooth/playlist/Manifest.hpp | modules/demux/smooth/playlist/MemoryChunk.cpp | modules/demux/smooth/playlist/MemoryChunk.hpp | modules/demux/smooth/playlist/QualityLevel.cpp | modules/demux/smooth/playlist/QualityLevel.hpp | modules/demux/smooth/playlist/SmoothParser.cpp | modules/demux/smooth/playlist/SmoothParser.hpp | modules/demux/smooth/playlist/SmoothSegment.cpp | modules/demux/smooth/playlist/SmoothSegment.hpp | modules/meta_engine/ID3Meta.h | modules/meta_engine/ID3Tag.h | modules/mux/mp4/libmp4mux.c | modules/mux/mp4/libmp4mux.h | modules/packetizer/h264_nal.c | modules/packetizer/hevc_nal.c	LGPL-2.1-or-later	gcrypt | zlib	gcrypt | gpg-error | zlib
+libaddonsfsstorage_plugin	5	modules/misc/addons/fsstorage.c | modules/misc/addons/xmlreading.h	LGPL-2.1-or-later		
+libaddonsvorepository_plugin	5	modules/misc/addons/vorepository.c | modules/misc/addons/xmlreading.h	LGPL-2.1-or-later		
+libadf_plugin	5	modules/stream_filter/adf.c	LGPL-2.1-or-later		
+libadjust_plugin	5	modules/video_filter/adjust.c | modules/video_filter/adjust_sat_hue.c | modules/video_filter/adjust_sat_hue.h	LGPL-2.1-or-later		
+libadpcm_plugin	5	modules/codec/adpcm.c	LGPL-2.1-or-later		
+libadummy_plugin	5	modules/audio_output/adummy.c	LGPL-2.1-or-later		
+libaes3_plugin	5	modules/codec/aes3.c	LGPL-2.1-or-later		
+libafile_plugin	5	modules/audio_output/file.c	LGPL-2.1-or-later		
+libaiff_plugin	5	modules/demux/aiff.c	LGPL-2.1-or-later		
+libalphamask_plugin	5	modules/video_filter/alphamask.c	LGPL-2.1-or-later		
+libamem_plugin	5	modules/audio_output/amem.c	LGPL-2.1-or-later		
+libanaglyph_plugin	5	modules/video_filter/anaglyph.c	LGPL-2.1-or-later		
+libantiflicker_plugin	5	modules/video_filter/antiflicker.c	LGPL-2.1-or-later		
+libaom_plugin	5	modules/codec/aom.c | modules/packetizer/iso_color_tables.h	LGPL-2.1-or-later	aom	aom
+libaraw_plugin	5	modules/codec/araw.c	LGPL-2.1-or-later		
+libarchive_plugin	5	modules/stream_extractor/archive.c	LGPL-2.1-or-later	libarchive	libarchive | zlib
+libaribcam_plugin	3	modules/stream_filter/aribcam.c	LGPL-2.1-or-later	aribb25	aribb25
+libasf_plugin	5	modules/demux/asf/asf.c | modules/demux/asf/asfpacket.c | modules/demux/asf/asfpacket.h | modules/demux/asf/libasf.c | modules/demux/asf/libasf.h | modules/demux/asf/libasf_guid.h	LGPL-2.1-or-later		
+libattachment_plugin	5	modules/access/attachment.c	LGPL-2.1-or-later		
+libau_plugin	5	modules/demux/au.c	LGPL-2.1-or-later		
+libaudio_format_plugin	5	modules/audio_filter/converter/format.c	LGPL-2.1-or-later		
+libaudiobargraph_a_plugin	5	modules/audio_filter/audiobargraph_a.c	LGPL-2.1-or-later		
+libaudiobargraph_v_plugin	5	modules/spu/audiobargraph_v.c	LGPL-2.1-or-later		
+libaudiotoolboxmidi_plugin	2	modules/codec/audiotoolbox_midi.c	LGPL-2.1-or-later		
+libauhal_plugin	2	modules/audio_output/auhal.c | modules/audio_output/coreaudio_common.c | modules/audio_output/coreaudio_common.h	LGPL-2.1-or-later		
+libavaudiocapture_plugin	2	modules/access/avaudiocapture.m	LGPL-2.1-or-later		
+libavcapture_plugin	2	modules/access/avcapture.m	LGPL-2.1-or-later		
+libavcodec_plugin	5	modules/access/avio.c | modules/codec/avcodec/audio.c | modules/codec/avcodec/avcodec.c | modules/codec/avcodec/avcodec.h | modules/codec/avcodec/avcommon.h | modules/codec/avcodec/avcommon_compat.h | modules/codec/avcodec/chroma.c | modules/codec/avcodec/chroma.h | modules/codec/avcodec/encoder.c | modules/codec/avcodec/fourcc.c | modules/codec/avcodec/subtitle.c | modules/codec/avcodec/va.c | modules/codec/avcodec/va.h | modules/codec/avcodec/video.c | modules/demux/avformat/demux.c | modules/demux/avformat/mux.c | modules/packetizer/av1.h | modules/packetizer/av1_obu.c | modules/packetizer/av1_obu.h | modules/packetizer/avparser.c	LGPL-2.1-or-later	ffmpeg	amf | d3d11 | ffmpeg | gsm | lame | openjpeg | zlib
+libavi_plugin	5	modules/demux/avi/avi.c | modules/demux/avi/libavi.c | modules/demux/avi/libavi.h	LGPL-2.1-or-later		
+libball_plugin	5	modules/video_filter/ball.c	LGPL-2.1-or-later		
+libblend_plugin	5	modules/video_filter/blend.cpp	LGPL-2.1-or-later		
+libblendbench_plugin	5	modules/video_filter/blendbench.c	LGPL-2.1-or-later		
+libbluescreen_plugin	5	modules/video_filter/bluescreen.c	LGPL-2.1-or-later		
+libbonjour_plugin	2	modules/services_discovery/bonjour.m	LGPL-2.1-or-later		
+libcaca_plugin	3	modules/video_output/caca.c | modules/video_output/event_thread.c | modules/video_output/event_thread.h	LGPL-2.1-or-later	caca	caca
+libcache_block_plugin	5	modules/stream_filter/cache_block.c	LGPL-2.1-or-later		
+libcache_read_plugin	5	modules/stream_filter/cache_read.c	LGPL-2.1-or-later		
+libcaf_plugin	5	modules/demux/caf.c	LGPL-2.1-or-later		
+libcanvas_plugin	5	modules/video_filter/canvas.c	LGPL-2.1-or-later		
+libcaopengllayer_plugin	2	modules/video_output/caopengllayer.m	LGPL-2.1-or-later		
+libcc_plugin	5	modules/codec/cc.c | modules/codec/cc.h | modules/codec/cea708.c | modules/codec/cea708.h | modules/codec/substext.h	LGPL-2.1-or-later		
+libcdda_plugin	5	modules/access/cdda.c | modules/access/vcd/cdrom.c | modules/access/vcd/cdrom.h | modules/access/vcd/cdrom_internals.h | modules/misc/webservices/json.c | modules/misc/webservices/json.h | modules/misc/webservices/json_helper.h | modules/misc/webservices/musicbrainz.c | modules/misc/webservices/musicbrainz.h	LGPL-2.1-or-later	cddb | gcrypt | iconv	cddb | gcrypt | gpg-error | iconv | regex
+libcdg_plugin	5	modules/codec/cdg.c	LGPL-2.1-or-later		
+libchain_plugin	5	modules/video_chroma/chain.c	LGPL-2.1-or-later		
+libchorus_flanger_plugin	5	modules/audio_filter/chorus_flanger.c	LGPL-2.1-or-later		
+libci_filters_plugin	2	modules/codec/vt_utils.c | modules/codec/vt_utils.h | modules/video_filter/ci_filters.m	LGPL-2.1-or-later		
+libclone_plugin	5	modules/video_splitter/clone.c	LGPL-2.1-or-later		
+libcolorthres_plugin	5	modules/video_filter/colorthres.c	LGPL-2.1-or-later		
+libcompressor_plugin	5	modules/audio_filter/compressor.c	LGPL-2.1-or-later		
+libconsole_logger_plugin	5	modules/logger/console.c	LGPL-2.1-or-later		
+libcroppadd_plugin	5	modules/video_filter/croppadd.c	LGPL-2.1-or-later		
+libcrystalhd_plugin	3	modules/codec/crystalhd.c | modules/packetizer/h264_nal.c | modules/packetizer/h264_nal.h	LGPL-2.1-or-later	crystalhd	crystalhd
+libcvdsub_plugin	5	modules/codec/cvdsub.c	LGPL-2.1-or-later		
+libcvpx_plugin	2	modules/codec/vt_utils.c | modules/codec/vt_utils.h | modules/video_chroma/copy.c | modules/video_chroma/copy.h | modules/video_chroma/cvpx.c	LGPL-2.1-or-later		
+libd3d11va_plugin	3	modules/codec/avcodec/d3d11va.c | modules/codec/avcodec/directx_va.c | modules/codec/avcodec/directx_va.h | modules/codec/avcodec/dxva_blacklist.c | modules/codec/avcodec/va_surface.c | modules/codec/avcodec/va_surface.h | modules/codec/avcodec/va_surface_internal.h | modules/packetizer/h264_nal.c | modules/packetizer/h264_nal.h | modules/packetizer/hevc_nal.c | modules/packetizer/hevc_nal.h | modules/video_chroma/d3d11_fmt.c | modules/video_chroma/d3d11_fmt.h | modules/video_chroma/dxgi_fmt.c | modules/video_chroma/dxgi_fmt.h	LGPL-2.1-or-later	d3d11 | ffmpeg	amf | d3d11 | ffmpeg | gsm | lame | openjpeg | zlib
+libdav1d_plugin	5	modules/codec/dav1d.c	LGPL-2.1-or-later	dav1d	dav1d
+libdcp_plugin	5	modules/access/dcp/dcp.cpp | modules/access/dcp/dcpdecrypt.cpp | modules/access/dcp/dcpparser.cpp | modules/access/dcp/dcpparser.h	LGPL-2.1-or-later	asdcplib | gcrypt	asdcplib | gcrypt | gmp | gpg-error | nettle
+libddummy_plugin	5	modules/codec/ddummy.c	LGPL-2.1-or-later		
+libdecomp_plugin	2	modules/stream_filter/decomp.c	LGPL-2.1-or-later		
+libdeinterlace_plugin	5	modules/video_filter/deinterlace/algo_basic.c | modules/video_filter/deinterlace/algo_basic.h | modules/video_filter/deinterlace/algo_ivtc.c | modules/video_filter/deinterlace/algo_ivtc.h | modules/video_filter/deinterlace/algo_phosphor.c | modules/video_filter/deinterlace/algo_phosphor.h | modules/video_filter/deinterlace/algo_x.c | modules/video_filter/deinterlace/algo_x.h | modules/video_filter/deinterlace/algo_yadif.c | modules/video_filter/deinterlace/algo_yadif.h | modules/video_filter/deinterlace/common.c | modules/video_filter/deinterlace/common.h | modules/video_filter/deinterlace/deinterlace.c | modules/video_filter/deinterlace/deinterlace.h | modules/video_filter/deinterlace/helpers.c | modules/video_filter/deinterlace/helpers.h | modules/video_filter/deinterlace/merge.c | modules/video_filter/deinterlace/merge.h | modules/video_filter/deinterlace/merge_arm.S | modules/video_filter/deinterlace/merge_arm64.S | modules/video_filter/deinterlace/mmx.h | modules/video_filter/deinterlace/yadif.h | modules/video_filter/deinterlace/yadif_template.h	GPL-2.0-or-later | LGPL-2.1-or-later		
+libdemux_cdg_plugin	5	modules/demux/cdg.c	LGPL-2.1-or-later		
+libdemux_chromecast_plugin	5	modules/stream_out/chromecast/chromecast.h | modules/stream_out/chromecast/chromecast_common.h | modules/stream_out/chromecast/chromecast_demux.cpp	LGPL-2.1-or-later		
+libdemux_stl_plugin	5	modules/demux/stl.c	LGPL-2.1-or-later		
+libdemuxdump_plugin	5	modules/demux/demuxdump.c	LGPL-2.1-or-later		
+libdiracsys_plugin	5	modules/demux/dirac.c	LGPL-2.1-or-later		
+libdirect3d11_filters_plugin	3	modules/hw/amf/amf_helper.c | modules/hw/amf/amf_helper.h | modules/hw/d3d11/d3d11_deinterlace.c | modules/hw/d3d11/d3d11_filters.c | modules/hw/d3d11/d3d11_filters.h | modules/hw/d3d11/d3d11_instance.c | modules/hw/d3d11/d3d11_surface.c | modules/video_chroma/copy.c | modules/video_chroma/copy.h | modules/video_chroma/d3d11_fmt.c | modules/video_chroma/d3d11_fmt.h | modules/video_chroma/dxgi_fmt.c | modules/video_chroma/dxgi_fmt.h | modules/video_filter/amf_frc.c | modules/video_filter/amf_vqenhancer.c | modules/video_filter/deinterlace/common.c | modules/video_filter/deinterlace/common.h	LGPL-2.1-or-later	d3d11	d3d11
+libdirect3d11_plugin	3	modules/hw/amf/amf_helper.c | modules/hw/amf/amf_helper.h | modules/video_chroma/copy.c | modules/video_chroma/copy.h | modules/video_chroma/d3d11_fmt.c | modules/video_chroma/d3d11_fmt.h | modules/video_chroma/dxgi_fmt.c | modules/video_chroma/dxgi_fmt.h | modules/video_output/win32/common.c | modules/video_output/win32/common.h | modules/video_output/win32/d3d11_quad.c | modules/video_output/win32/d3d11_quad.h | modules/video_output/win32/d3d11_scaler.cpp | modules/video_output/win32/d3d11_scaler.h | modules/video_output/win32/d3d11_shaders.c | modules/video_output/win32/d3d11_shaders.h | modules/video_output/win32/d3d11_tonemap.cpp | modules/video_output/win32/d3d11_tonemap.h | modules/video_output/win32/direct3d11.c | modules/video_output/win32/events.c | modules/video_output/win32/events.h | modules/video_output/win32/sensors.cpp | modules/video_output/win32/win32touch.c | modules/video_output/win32/win32touch.h	LGPL-2.1-or-later	d3d11	d3d11
+libdirect3d9_filters_plugin	3	modules/hw/d3d9/d3d9_filters.c | modules/hw/d3d9/d3d9_filters.h | modules/hw/d3d9/d3d9_instance.c | modules/hw/d3d9/dxa9.c | modules/hw/d3d9/dxva2_deinterlace.c | modules/video_chroma/copy.c | modules/video_chroma/copy.h | modules/video_chroma/d3d9_fmt.c | modules/video_chroma/d3d9_fmt.h | modules/video_chroma/dxgi_fmt.c | modules/video_chroma/dxgi_fmt.h | modules/video_filter/deinterlace/common.c | modules/video_filter/deinterlace/common.h	LGPL-2.1-or-later		
+libdirect3d9_plugin	3	modules/video_chroma/copy.c | modules/video_chroma/copy.h | modules/video_chroma/d3d9_fmt.c | modules/video_chroma/d3d9_fmt.h | modules/video_chroma/dxgi_fmt.c | modules/video_chroma/dxgi_fmt.h | modules/video_output/win32/builtin_shaders.h | modules/video_output/win32/common.c | modules/video_output/win32/common.h | modules/video_output/win32/direct3d9.c | modules/video_output/win32/events.c | modules/video_output/win32/events.h | modules/video_output/win32/sensors.cpp | modules/video_output/win32/win32touch.c | modules/video_output/win32/win32touch.h	LGPL-2.1-or-later		
+libdirectdraw_plugin	3	modules/video_chroma/copy.c | modules/video_chroma/copy.h | modules/video_output/win32/common.c | modules/video_output/win32/common.h | modules/video_output/win32/directdraw.c | modules/video_output/win32/events.c | modules/video_output/win32/events.h | modules/video_output/win32/sensors.cpp | modules/video_output/win32/win32touch.c | modules/video_output/win32/win32touch.h	LGPL-2.1-or-later		
+libdirectory_demux_plugin	5	modules/demux/directory.c	LGPL-2.1-or-later		
+libdirectsound_plugin	3	modules/audio_output/directsound.c | modules/audio_output/windows_audio_common.h	LGPL-2.1-or-later		
+libdmo_plugin	3	modules/codec/dmo/buffer.c | modules/codec/dmo/dmo.c | modules/codec/dmo/dmo.h	LGPL-2.1-or-later		
+libdmxmus_plugin	5	modules/demux/dmxmus.c	LGPL-2.1-or-later		
+libdolby_surround_decoder_plugin	5	modules/audio_filter/channel_mixer/dolby.c	GPL-2.0-or-later		
+libdrawable_plugin	3	modules/video_output/drawable.c	LGPL-2.1-or-later		
+libdtv_plugin	3	modules/access/dtv/access.c | modules/access/dtv/bdadefs.h | modules/access/dtv/bdagraph.cpp | modules/access/dtv/bdagraph.hpp | modules/access/dtv/dtv.h | modules/access/dtv/en50221.c | modules/access/dtv/en50221.h | modules/access/dtv/en50221_capmt.h | modules/access/dtv/linux.c	GPL-2.0-or-later | LGPL-2.1-or-later		
+libdvbsub_plugin	5	modules/codec/dvbsub.c	LGPL-2.1-or-later		
+libdxva2_plugin	3	modules/codec/avcodec/directx_va.c | modules/codec/avcodec/directx_va.h | modules/codec/avcodec/dxva2.c | modules/codec/avcodec/dxva_blacklist.c | modules/codec/avcodec/va_surface.c | modules/codec/avcodec/va_surface.h | modules/codec/avcodec/va_surface_internal.h | modules/packetizer/h264_nal.c | modules/packetizer/h264_nal.h | modules/packetizer/hevc_nal.c | modules/packetizer/hevc_nal.h | modules/video_chroma/copy.c | modules/video_chroma/copy.h | modules/video_chroma/d3d9_fmt.c | modules/video_chroma/d3d9_fmt.h | modules/video_chroma/dxgi_fmt.c | modules/video_chroma/dxgi_fmt.h	LGPL-2.1-or-later	ffmpeg	amf | d3d11 | ffmpeg | gsm | lame | openjpeg | zlib
+libdynamicoverlay_plugin	2	modules/spu/dynamicoverlay/dynamicoverlay.c | modules/spu/dynamicoverlay/dynamicoverlay.h | modules/spu/dynamicoverlay/dynamicoverlay_buffer.c | modules/spu/dynamicoverlay/dynamicoverlay_commands.c | modules/spu/dynamicoverlay/dynamicoverlay_list.c | modules/spu/dynamicoverlay/dynamicoverlay_queue.c	LGPL-2.1-or-later		
+libedgedetection_plugin	5	modules/video_filter/edgedetection.c	LGPL-2.1-or-later		
+libedummy_plugin	5	modules/codec/edummy.c	LGPL-2.1-or-later		
+libequalizer_plugin	5	modules/audio_filter/equalizer.c | modules/audio_filter/equalizer_presets.h	LGPL-2.1-or-later		
+liberase_plugin	5	modules/video_filter/erase.c	LGPL-2.1-or-later		
+libes_plugin	5	modules/demux/mpeg/es.c | modules/meta_engine/ID3Tag.h | modules/meta_engine/ID3Text.h | modules/packetizer/dts_header.c | modules/packetizer/dts_header.h	LGPL-2.1-or-later		
+libextract_plugin	5	modules/video_filter/extract.c	LGPL-2.1-or-later		
+libfile_keystore_plugin	5	modules/keystore/file.c | modules/keystore/file_crypt.h | modules/keystore/file_crypt_android.c | modules/keystore/file_crypt_win32.c | modules/keystore/list_util.c | modules/keystore/list_util.h	LGPL-2.1-or-later		
+libfilesystem_plugin	5	modules/access/directory.c | modules/access/file.c | modules/access/fs.c | modules/access/fs.h	LGPL-2.1-or-later		
+libfingerprinter_plugin	5	modules/misc/fingerprinter.c | modules/misc/webservices/acoustid.c | modules/misc/webservices/acoustid.h | modules/misc/webservices/json.c | modules/misc/webservices/json.h | modules/misc/webservices/json_helper.h	LGPL-2.1-or-later		
+libflac_plugin	5	modules/codec/flac.c	LGPL-2.1-or-later	flac	flac | ogg
+libflacsys_plugin	5	modules/demux/flac.c | modules/demux/xiph_metadata.c | modules/demux/xiph_metadata.h | modules/meta_engine/ID3Pictures.h | modules/packetizer/flac.h	LGPL-2.1-or-later		
+libflaschen_plugin	5	modules/video_output/flaschen.c	LGPL-2.1-or-later		
+libfloat_mixer_plugin	5	modules/audio_mixer/float.c	LGPL-2.1-or-later		
+libfluidsynth_plugin	3	modules/codec/fluidsynth.c	LGPL-2.1-or-later	fluid | fluidlite	ffi | fluid | fluidlite | glib | ogg | vorbis
+libfolder_plugin	5	modules/meta_engine/folder.c	LGPL-2.1-or-later		
+libfps_plugin	5	modules/video_filter/fps.c	LGPL-2.1-or-later		
+libfreetype_plugin	5	modules/text_renderer/freetype/fonts/android.c | modules/text_renderer/freetype/fonts/darwin.c | modules/text_renderer/freetype/fonts/dwrite.cpp | modules/text_renderer/freetype/fonts/fontconfig.c | modules/text_renderer/freetype/fonts/win32.c | modules/text_renderer/freetype/freetype.c | modules/text_renderer/freetype/freetype.h | modules/text_renderer/freetype/platform_fonts.c | modules/text_renderer/freetype/platform_fonts.h | modules/text_renderer/freetype/text_layout.c | modules/text_renderer/freetype/text_layout.h	LGPL-2.1-or-later	fontconfig | freetype2 | fribidi | harfbuzz | iconv	fontconfig | freetype2 | fribidi | harfbuzz | iconv | libxml2 | png | zlib
+libfreeze_plugin	5	modules/video_filter/freeze.c	LGPL-2.1-or-later		
+libftp_plugin	5	modules/access/ftp.c	LGPL-2.1-or-later		
+libg711_plugin	5	modules/codec/g711.c	LGPL-2.1-or-later		
+libgain_plugin	5	modules/audio_filter/gain.c	LGPL-2.1-or-later		
+libgaussianblur_plugin	5	modules/video_filter/gaussianblur.c	LGPL-2.1-or-later		
+libgl_plugin	2	modules/video_output/opengl/display.c	LGPL-2.1-or-later		
+libglconv_cvpx_plugin	2	modules/codec/vt_utils.c | modules/codec/vt_utils.h | modules/video_output/opengl/converter.h | modules/video_output/opengl/converter_cvpx.c	LGPL-2.1-or-later		
+libglinterop_dxva2_plugin	2	modules/video_chroma/copy.c | modules/video_chroma/copy.h | modules/video_chroma/d3d9_fmt.c | modules/video_chroma/d3d9_fmt.h | modules/video_chroma/dxgi_fmt.c | modules/video_chroma/dxgi_fmt.h | modules/video_output/opengl/converter.h | modules/video_output/opengl/interop_dxva2.c	LGPL-2.1-or-later		
+libglspectrum_plugin	2	modules/visualization/glspectrum.c | modules/visualization/visual/fft.c | modules/visualization/visual/fft.h | modules/visualization/visual/window.c | modules/visualization/visual/window.h | modules/visualization/visual/window_presets.h	GPL-2.0-or-later | LGPL-2.1-or-later		
+libglwin32_plugin	2	modules/video_chroma/copy.c | modules/video_chroma/copy.h | modules/video_output/win32/common.c | modules/video_output/win32/common.h | modules/video_output/win32/events.c | modules/video_output/win32/events.h | modules/video_output/win32/glwin32.c | modules/video_output/win32/sensors.cpp | modules/video_output/win32/win32touch.c | modules/video_output/win32/win32touch.h	LGPL-2.1-or-later		
+libgme_plugin	5	modules/demux/gme.c	LGPL-2.1-or-later	gme	gme | zlib
+libgnutls_plugin	5	modules/misc/gnutls.c	LGPL-2.1-or-later	gnutls	gmp | gnutls | nettle
+libgoom_plugin	5	modules/visualization/goom.c	LGPL-2.1-or-later	goom	goom
+libgradfun_plugin	5	modules/video_filter/gradfun.c | modules/video_filter/gradfun.h	LGPL-2.1-or-later		
+libgradient_plugin	5	modules/video_filter/gradient.c	LGPL-2.1-or-later		
+libgrain_plugin	5	modules/video_filter/grain.c	LGPL-2.1-or-later		
+libgrey_yuv_plugin	5	modules/video_chroma/grey_yuv.c	LGPL-2.1-or-later		
+libh26x_plugin	5	modules/demux/mpeg/h26x.c | modules/packetizer/h264_nal.c | modules/packetizer/hevc_nal.h	LGPL-2.1-or-later		
+libhds_plugin	5	modules/stream_filter/hds/hds.c			
+libheadphone_channel_mixer_plugin	5	modules/audio_filter/channel_mixer/headphone.c	GPL-2.0-or-later		
+libhqdn3d_plugin	5	modules/video_filter/hqdn3d.c | modules/video_filter/hqdn3d.h	GPL-2.0-or-later | LGPL-2.1-or-later		
+libhttp_plugin	5	modules/access/http.c	LGPL-2.1-or-later		
+libhttps_plugin	5	modules/access/http/access.c | modules/access/http/chunked.c | modules/access/http/conn.h | modules/access/http/connmgr.c | modules/access/http/connmgr.h | modules/access/http/file.c | modules/access/http/file.h | modules/access/http/h1conn.c | modules/access/http/h2conn.c | modules/access/http/h2frame.c | modules/access/http/h2frame.h | modules/access/http/h2output.c | modules/access/http/h2output.h | modules/access/http/hpack.c | modules/access/http/hpack.h | modules/access/http/hpackenc.c | modules/access/http/live.c | modules/access/http/live.h | modules/access/http/message.c | modules/access/http/message.h | modules/access/http/resource.c | modules/access/http/resource.h | modules/access/http/transport.h | modules/access/http/tunnel.c	LGPL-2.1-or-later		
+libi420_10_p010_plugin	5	modules/video_chroma/copy.c | modules/video_chroma/copy.h | modules/video_chroma/i420_10_p010.c	LGPL-2.1-or-later		
+libi420_nv12_plugin	5	modules/video_chroma/copy.c | modules/video_chroma/copy.h | modules/video_chroma/i420_nv12.c	LGPL-2.1-or-later		
+libi420_rgb_mmx_plugin	3	modules/video_chroma/i420_rgb.c | modules/video_chroma/i420_rgb.h | modules/video_chroma/i420_rgb16_x86.c | modules/video_chroma/i420_rgb_mmx.h	GPL-2.0-or-later | LGPL-2.1-or-later		
+libi420_rgb_plugin	5	modules/video_chroma/i420_rgb.c | modules/video_chroma/i420_rgb.h | modules/video_chroma/i420_rgb16.c | modules/video_chroma/i420_rgb8.c | modules/video_chroma/i420_rgb_c.h	LGPL-2.1-or-later		
+libi420_rgb_sse2_plugin	3	modules/video_chroma/i420_rgb.c | modules/video_chroma/i420_rgb.h | modules/video_chroma/i420_rgb16_x86.c | modules/video_chroma/i420_rgb_sse2.h	LGPL-2.1-or-later		
+libi420_yuy2_mmx_plugin	3	modules/video_chroma/i420_yuy2.c | modules/video_chroma/i420_yuy2.h	LGPL-2.1-or-later		
+libi420_yuy2_plugin	5	modules/video_chroma/i420_yuy2.c | modules/video_chroma/i420_yuy2.h	LGPL-2.1-or-later		
+libi420_yuy2_sse2_plugin	3	modules/video_chroma/i420_yuy2.c | modules/video_chroma/i420_yuy2.h	LGPL-2.1-or-later		
+libi422_i420_plugin	5	modules/video_chroma/i422_i420.c	LGPL-2.1-or-later		
+libi422_yuy2_mmx_plugin	3	modules/video_chroma/i422_yuy2.c | modules/video_chroma/i422_yuy2.h	LGPL-2.1-or-later		
+libi422_yuy2_plugin	5	modules/video_chroma/i422_yuy2.c | modules/video_chroma/i422_yuy2.h	LGPL-2.1-or-later		
+libi422_yuy2_sse2_plugin	3	modules/video_chroma/i422_yuy2.c | modules/video_chroma/i422_yuy2.h	LGPL-2.1-or-later		
+libidummy_plugin	5	modules/access/idummy.c	LGPL-2.1-or-later		
+libimage_plugin	5	modules/demux/image.c | modules/demux/mxpeg_helper.h	LGPL-2.1-or-later		
+libimem_plugin	5	modules/access/imem-access.c	LGPL-2.1-or-later		
+libinflate_plugin	5	modules/stream_filter/inflate.c	LGPL-2.1-or-later	zlib	zlib
+libinteger_mixer_plugin	5	modules/audio_mixer/integer.c	LGPL-2.1-or-later		
+libinvert_plugin	5	modules/video_filter/invert.c	LGPL-2.1-or-later		
+libjpeg_plugin	5	modules/codec/jpeg.c	LGPL-2.1-or-later	jpeg	jpeg
+libkaraoke_plugin	5	modules/audio_filter/karaoke.c	LGPL-2.1-or-later		
+libkate_plugin	5	modules/codec/kate.c	LGPL-2.1-or-later	kate | tiger	kate | ogg | tiger
+libkeychain_plugin	2	modules/keystore/keychain.m | modules/keystore/list_util.c | modules/keystore/list_util.h	LGPL-2.1-or-later		
+liblibass_plugin	5	modules/codec/libass.c	LGPL-2.1-or-later	ass | freetype2	ass | fontconfig | freetype2 | fribidi | harfbuzz | iconv | libxml2 | png | zlib
+liblibbluray_plugin	5	modules/access/bluray.c | modules/demux/mpeg/timestamps.h	LGPL-2.1-or-later	bluray	bluray | fontconfig | freetype2 | libxml2 | zlib
+liblive555_plugin	5	modules/access/live555.cpp | modules/access/live555_dtsgen.h | modules/access/mms/asf.c | modules/access/mms/buffer.c | modules/codec/opus_header.c | modules/codec/opus_header.h	LGPL-2.1-or-later	live555	live555
+liblogo_plugin	5	modules/spu/logo.c	LGPL-2.1-or-later		
+liblpcm_plugin	5	modules/codec/lpcm.c	LGPL-2.1-or-later		
+liblua_plugin	5	modules/lua/demux.c | modules/lua/extension.c | modules/lua/extension.h | modules/lua/extension_thread.c | modules/lua/intf.c | modules/lua/libs.h | modules/lua/libs/configuration.c | modules/lua/libs/dialog.c | modules/lua/libs/equalizer.c | modules/lua/libs/errno.c | modules/lua/libs/gettext.c | modules/lua/libs/httpd.c | modules/lua/libs/input.c | modules/lua/libs/input.h | modules/lua/libs/io.c | modules/lua/libs/messages.c | modules/lua/libs/misc.c | modules/lua/libs/misc.h | modules/lua/libs/net.c | modules/lua/libs/objects.c | modules/lua/libs/objects.h | modules/lua/libs/osd.c | modules/lua/libs/playlist.c | modules/lua/libs/sd.c | modules/lua/libs/stream.c | modules/lua/libs/strings.c | modules/lua/libs/variables.c | modules/lua/libs/variables.h | modules/lua/libs/video.c | modules/lua/libs/vlm.c | modules/lua/libs/volume.c | modules/lua/libs/win.c | modules/lua/libs/xml.c | modules/lua/meta.c | modules/lua/services_discovery.c | modules/lua/vlc.c | modules/lua/vlc.h	GPL-2.0-or-later	lua	lua
+libmagnify_plugin	5	modules/video_filter/magnify.c	LGPL-2.1-or-later		
+libmarq_plugin	5	modules/spu/marq.c	LGPL-2.1-or-later		
+libmemory_keystore_plugin	5	modules/keystore/list_util.c | modules/keystore/list_util.h | modules/keystore/memory.c	LGPL-2.1-or-later		
+libmft_plugin	3	modules/codec/mft.c | modules/packetizer/h264_nal.c | modules/packetizer/h264_nal.h	LGPL-2.1-or-later		
+libmicrodns_plugin	3	modules/services_discovery/microdns.c	LGPL-2.1-or-later	microdns	microdns
+libmirror_plugin	5	modules/video_filter/mirror.c	LGPL-2.1-or-later		
+libmjpeg_plugin	5	modules/demux/mjpeg.c | modules/demux/mxpeg_helper.h	LGPL-2.1-or-later		
+libmkv_plugin	5	modules/codec/webvtt/helpers.h | modules/demux/av1_unpack.h | modules/demux/mkv/Ebml_dispatcher.hpp | modules/demux/mkv/Ebml_parser.cpp | modules/demux/mkv/Ebml_parser.hpp | modules/demux/mkv/chapter_command.cpp | modules/demux/mkv/chapter_command.hpp | modules/demux/mkv/chapters.cpp | modules/demux/mkv/chapters.hpp | modules/demux/mkv/demux.cpp | modules/demux/mkv/demux.hpp | modules/demux/mkv/dispatcher.hpp | modules/demux/mkv/matroska_segment.cpp | modules/demux/mkv/matroska_segment.hpp | modules/demux/mkv/matroska_segment_parse.cpp | modules/demux/mkv/matroska_segment_seeker.cpp | modules/demux/mkv/matroska_segment_seeker.hpp | modules/demux/mkv/mkv.cpp | modules/demux/mkv/mkv.hpp | modules/demux/mkv/stream_io_callback.cpp | modules/demux/mkv/stream_io_callback.hpp | modules/demux/mkv/string_dispatcher.hpp | modules/demux/mkv/util.cpp | modules/demux/mkv/util.hpp | modules/demux/mkv/virtual_segment.cpp | modules/demux/mkv/virtual_segment.hpp | modules/demux/mp4/libmp4.c | modules/demux/vobsub.h | modules/demux/windows_audio_commons.h | modules/packetizer/dts_header.c | modules/packetizer/dts_header.h	LGPL-2.1-or-later	ebml | matroska | zlib	ebml | matroska | utfcpp | zlib
+libmmdevice_plugin	3	modules/audio_output/mmdevice.c | modules/audio_output/mmdevice.h	LGPL-2.1-or-later		
+libmod_plugin	5	modules/demux/mod.c	LGPL-2.1-or-later	modplug	modplug
+libmosaic_plugin	5	modules/spu/mosaic.c | modules/spu/mosaic.h	LGPL-2.1-or-later		
+libmotionblur_plugin	5	modules/video_filter/motionblur.c	LGPL-2.1-or-later		
+libmotiondetect_plugin	5	modules/video_filter/motiondetect.c	LGPL-2.1-or-later		
+libmp4_plugin	5	modules/demux/asf/asfpacket.c | modules/demux/asf/asfpacket.h | modules/demux/av1_unpack.h | modules/demux/mp4/avci.h | modules/demux/mp4/essetup.c | modules/demux/mp4/fragments.c | modules/demux/mp4/fragments.h | modules/demux/mp4/languages.h | modules/demux/mp4/libmp4.c | modules/demux/mp4/libmp4.h | modules/demux/mp4/meta.c | modules/demux/mp4/mp4.c | modules/demux/mp4/mp4.h | modules/demux/mp4/mpeg4.h | modules/meta_engine/ID3Genres.h | modules/packetizer/iso_color_tables.h	LGPL-2.1-or-later	zlib	zlib
+libmpg123_plugin	5	modules/codec/mpg123.c	LGPL-2.1-or-later	mpg123	mpg123
+libmpgv_plugin	5	modules/demux/mpeg/mpgv.c	LGPL-2.1-or-later		
+libmux_asf_plugin	5	modules/demux/asf/libasf_guid.h | modules/mux/asf.c	LGPL-2.1-or-later		
+libmux_avi_plugin	5	modules/mux/avi.c	LGPL-2.1-or-later		
+libmux_dummy_plugin	5	modules/mux/dummy.c	LGPL-2.1-or-later		
+libmux_mp4_plugin	5	modules/demux/mp4/libmp4.h | modules/mux/mp4/libmp4mux.c | modules/mux/mp4/libmp4mux.h | modules/mux/mp4/mp4.c | modules/packetizer/h264_nal.c | modules/packetizer/h264_nal.h | modules/packetizer/hevc_nal.c | modules/packetizer/hevc_nal.h | modules/packetizer/hxxx_nal.c | modules/packetizer/hxxx_nal.h	LGPL-2.1-or-later		
+libmux_mpjpeg_plugin	5	modules/mux/mpjpeg.c	LGPL-2.1-or-later		
+libmux_ogg_plugin	5	modules/mux/ogg.c	LGPL-2.1-or-later	ogg	ogg
+libmux_ps_plugin	5	modules/mux/mpeg/bits.h | modules/mux/mpeg/pes.c | modules/mux/mpeg/pes.h | modules/mux/mpeg/ps.c	LGPL-2.1-or-later		
+libmux_ts_plugin	5	modules/codec/jpeg2000.h | modules/mux/mpeg/bits.h | modules/mux/mpeg/csa.c | modules/mux/mpeg/csa.h | modules/mux/mpeg/dvbpsi_compat.h | modules/mux/mpeg/pes.c | modules/mux/mpeg/pes.h | modules/mux/mpeg/streams.h | modules/mux/mpeg/tables.c | modules/mux/mpeg/tables.h | modules/mux/mpeg/ts.c | modules/mux/mpeg/tsutil.c | modules/mux/mpeg/tsutil.h	LGPL-2.1-or-later	dvbpsi	dvbpsi
+libmux_wav_plugin	5	modules/mux/wav.c	LGPL-2.1-or-later		
+libnfs_plugin	5	modules/access/nfs.c	LGPL-2.1-or-later	nfs	gmp | gnutls | nettle | nfs
+libnormvol_plugin	5	modules/audio_filter/normvol.c	LGPL-2.1-or-later		
+libnoseek_plugin	5	modules/demux/filter/noseek.c	LGPL-2.1-or-later		
+libnsc_plugin	5	modules/demux/nsc.c	LGPL-2.1-or-later		
+libnsspeechsynthesizer_plugin	2	modules/text_renderer/nsspeechsynthesizer.m	LGPL-2.1-or-later		
+libnsv_plugin	5	modules/demux/nsv.c	LGPL-2.1-or-later		
+libnuv_plugin	5	modules/demux/nuv.c	LGPL-2.1-or-later		
+libogg_plugin	5	modules/demux/ogg.c | modules/demux/ogg.h | modules/demux/oggseek.c | modules/demux/oggseek.h | modules/demux/opus.h | modules/demux/xiph.h | modules/demux/xiph_metadata.c | modules/demux/xiph_metadata.h | modules/meta_engine/ID3Pictures.h	LGPL-2.1-or-later	ogg | vorbis	ogg | vorbis
+liboggspots_plugin	5	modules/codec/oggspots.c	LGPL-2.1-or-later	ogg	ogg
+liboldmovie_plugin	5	modules/video_filter/oldmovie.c	LGPL-2.1-or-later		
+libopus_plugin	5	modules/codec/opus.c | modules/codec/opus_header.c | modules/codec/opus_header.h	LGPL-2.1-or-later	ogg | opus	ogg | opus
+libpacketizer_av1_plugin	5	modules/packetizer/av1.c | modules/packetizer/av1.h | modules/packetizer/av1_obu.c | modules/packetizer/av1_obu.h	LGPL-2.1-or-later		
+libpacketizer_copy_plugin	5	modules/packetizer/copy.c	LGPL-2.1-or-later		
+libpacketizer_dirac_plugin	5	modules/packetizer/dirac.c	LGPL-2.0-or-later		
+libpacketizer_dts_plugin	5	modules/packetizer/dts.c | modules/packetizer/dts_header.c | modules/packetizer/dts_header.h	LGPL-2.1-or-later		
+libpacketizer_flac_plugin	5	modules/packetizer/flac.c | modules/packetizer/flac.h	LGPL-2.1-or-later		
+libpacketizer_h264_plugin	5	modules/packetizer/h264.c | modules/packetizer/h264_nal.c | modules/packetizer/h264_nal.h | modules/packetizer/h264_slice.c | modules/packetizer/h264_slice.h | modules/packetizer/hxxx_common.c | modules/packetizer/hxxx_common.h | modules/packetizer/hxxx_nal.h | modules/packetizer/hxxx_sei.c | modules/packetizer/hxxx_sei.h	LGPL-2.1-or-later		
+libpacketizer_hevc_plugin	5	modules/packetizer/hevc.c | modules/packetizer/hevc_nal.c | modules/packetizer/hevc_nal.h | modules/packetizer/hxxx_common.c | modules/packetizer/hxxx_common.h | modules/packetizer/hxxx_nal.h | modules/packetizer/hxxx_sei.c | modules/packetizer/hxxx_sei.h	LGPL-2.1-or-later		
+libpacketizer_mlp_plugin	5	modules/packetizer/mlp.c	LGPL-2.1-or-later		
+libpacketizer_mpeg4audio_plugin	5	modules/packetizer/mpeg4audio.c	LGPL-2.1-or-later		
+libpacketizer_mpeg4video_plugin	5	modules/packetizer/mpeg4video.c	LGPL-2.1-or-later		
+libpacketizer_mpegaudio_plugin	5	modules/packetizer/mpegaudio.c	LGPL-2.1-or-later		
+libpacketizer_mpegvideo_plugin	5	modules/packetizer/mpegvideo.c	LGPL-2.1-or-later		
+libpacketizer_vc1_plugin	5	modules/packetizer/hxxx_nal.h | modules/packetizer/vc1.c	LGPL-2.1-or-later		
+libpanoramix_plugin	3	modules/video_splitter/panoramix.c	LGPL-2.1-or-later	xcb	xau | xcb | xcb-proto | xorg-macros | xproto
+libparam_eq_plugin	5	modules/audio_filter/param_eq.c	LGPL-2.1-or-later		
+libplaylist_plugin	5	modules/demux/playlist/asx.c | modules/demux/playlist/b4s.c | modules/demux/playlist/dvb.c | modules/demux/playlist/ifo.c | modules/demux/playlist/itml.c | modules/demux/playlist/itml.h | modules/demux/playlist/m3u.c | modules/demux/playlist/playlist.c | modules/demux/playlist/playlist.h | modules/demux/playlist/pls.c | modules/demux/playlist/podcast.c | modules/demux/playlist/qtl.c | modules/demux/playlist/ram.c | modules/demux/playlist/sgimb.c | modules/demux/playlist/shoutcast.c | modules/demux/playlist/wpl.c | modules/demux/playlist/xspf.c	LGPL-2.1-or-later		
+libpng_plugin	5	modules/codec/png.c	LGPL-2.1-or-later	png	png | zlib
+libposterize_plugin	5	modules/video_filter/posterize.c	LGPL-2.1-or-later		
+libprefetch_plugin	5	modules/stream_filter/prefetch.c	LGPL-2.1-or-later		
+libprojectm_plugin	2	modules/visualization/projectm.cpp	LGPL-2.1-or-later	projectM	glew | projectM
+libps_plugin	5	modules/demux/mpeg/pes.h | modules/demux/mpeg/ps.c | modules/demux/mpeg/ps.h	LGPL-2.1-or-later		
+libpsychedelic_plugin	5	modules/video_filter/psychedelic.c	LGPL-2.1-or-later		
+libpuzzle_plugin	5	modules/video_filter/puzzle.c | modules/video_filter/puzzle.h | modules/video_filter/puzzle_bezier.c | modules/video_filter/puzzle_bezier.h | modules/video_filter/puzzle_lib.c | modules/video_filter/puzzle_lib.h | modules/video_filter/puzzle_mgt.c | modules/video_filter/puzzle_mgt.h | modules/video_filter/puzzle_pce.c | modules/video_filter/puzzle_pce.h	LGPL-2.1-or-later		
+libpva_plugin	5	modules/demux/pva.c	LGPL-2.1-or-later		
+libqsv_plugin	2	modules/codec/qsv.c	LGPL-2.1-or-later	vpl	vpl
+librawaud_plugin	5	modules/demux/rawaud.c	LGPL-2.1-or-later		
+librawdv_plugin	5	modules/demux/rawdv.c | modules/demux/rawdv.h	LGPL-2.1-or-later		
+librawvid_plugin	5	modules/demux/rawvid.c	LGPL-2.1-or-later		
+librawvideo_plugin	5	modules/codec/rawvideo.c	LGPL-2.1-or-later		
+librecord_plugin	5	modules/stream_filter/record.c	LGPL-2.1-or-later		
+libremap_plugin	5	modules/audio_filter/channel_mixer/remap.c	LGPL-2.1-or-later		
+libremoteosd_plugin	5	modules/spu/remoteosd.c | modules/spu/remoteosd_rfbproto.h	GPL-2.0-or-later | LGPL-2.1-or-later	gcrypt	gcrypt | gpg-error
+libripple_plugin	5	modules/video_filter/ripple.c	LGPL-2.1-or-later		
+librist_plugin	5	modules/access/rist.c | modules/access/rist.h	LGPL-2.1-or-later	librist	gmp | gnutls | librist | nettle
+librss_plugin	5	modules/spu/rss.c	LGPL-2.1-or-later		
+librtp_plugin	5	modules/access/rtp/input.c | modules/access/rtp/rtp.c | modules/access/rtp/rtp.h | modules/access/rtp/session.c | modules/access/rtp/srtp.c | modules/access/rtp/srtp.h | modules/access/rtp/xiph.c		gcrypt	gcrypt | gpg-error
+librtpvideo_plugin	5	modules/codec/rtpvideo.c	LGPL-2.1-or-later		
+librv32_plugin	5	modules/video_chroma/rv32.c	LGPL-2.1-or-later		
+libsapi_plugin	3	modules/text_renderer/sapi.cpp			
+libsatip_plugin	5	modules/access/satip.c	LGPL-2.1-or-later		
+libscale_plugin	5	modules/video_filter/scale.c	LGPL-2.1-or-later		
+libscaletempo_pitch_plugin	5	modules/audio_filter/scaletempo.c	LGPL-2.1-or-later		
+libscaletempo_plugin	5	modules/audio_filter/scaletempo.c	LGPL-2.1-or-later		
+libscene_plugin	5	modules/video_filter/scene.c	LGPL-2.1-or-later		
+libscreen_plugin	5	modules/access/screen/mac.c | modules/access/screen/screen.c | modules/access/screen/screen.h | modules/access/screen/win32.c	LGPL-2.1-or-later		
+libscte18_plugin	5	modules/codec/atsc_a65.c | modules/codec/atsc_a65.h | modules/codec/scte18.c | modules/codec/scte18.h	LGPL-2.1-or-later		
+libscte27_plugin	5	modules/codec/scte27.c	LGPL-2.1-or-later		
+libsdp_plugin	5	modules/access/sdp.c	LGPL-2.1-or-later		
+libsecuretransport_plugin	2	modules/misc/securetransport.c	LGPL-2.1-or-later		
+libsepia_plugin	5	modules/video_filter/sepia.c	LGPL-2.1-or-later		
+libsftp_plugin	5	modules/access/sftp.c	LGPL-2.1-or-later	ssh2	gcrypt | gpg-error | ssh2
+libsharpen_plugin	5	modules/video_filter/sharpen.c	LGPL-2.1-or-later		
+libshm_plugin	5	modules/access/shm.c	LGPL-2.1-or-later		
+libsimple_channel_mixer_plugin	5	modules/arm_neon/simple_channel_mixer.S | modules/audio_filter/channel_mixer/simple.c | modules/audio_filter/channel_mixer/simple_neon.h	LGPL-2.1-or-later		
+libskiptags_plugin	5	modules/stream_filter/skiptags.c	LGPL-2.1-or-later		
+libsmb_plugin	3	modules/access/smb.c | modules/access/smb_common.h	LGPL-2.1-or-later		
+libsmf_plugin	5	modules/demux/smf.c	LGPL-2.1-or-later		
+libspatialaudio_plugin	5	modules/audio_filter/channel_mixer/spatialaudio.cpp	LGPL-2.1-or-later	spatialaudio	mysofa | spatialaudio | zlib
+libspatializer_plugin	5	modules/audio_filter/spatializer/allpass.cpp | modules/audio_filter/spatializer/allpass.hpp | modules/audio_filter/spatializer/comb.cpp | modules/audio_filter/spatializer/comb.hpp | modules/audio_filter/spatializer/denormals.c | modules/audio_filter/spatializer/denormals.h | modules/audio_filter/spatializer/revmodel.cpp | modules/audio_filter/spatializer/revmodel.hpp | modules/audio_filter/spatializer/spatializer.cpp | modules/audio_filter/spatializer/tuning.h	LGPL-2.1-or-later		
+libspdif_plugin	5	modules/codec/spdif.c	LGPL-2.1-or-later		
+libspeex_plugin	5	modules/codec/speex.c	LGPL-2.1-or-later	ogg | speex	ogg | speex
+libspeex_resampler_plugin	5	modules/audio_filter/resampler/speex.c	LGPL-2.1-or-later	speex | speexdsp	speex | speexdsp
+libspudec_plugin	5	modules/codec/spudec/parse.c | modules/codec/spudec/spudec.c | modules/codec/spudec/spudec.h	LGPL-2.1-or-later		
+libstereo_widen_plugin	5	modules/audio_filter/stereo_widen.c	LGPL-2.1-or-later		
+libstl_plugin	5	modules/codec/stl.c	LGPL-2.1-or-later		
+libstream_out_autodel_plugin	5	modules/stream_out/autodel.c	LGPL-2.1-or-later		
+libstream_out_bridge_plugin	5	modules/stream_out/bridge.c	LGPL-2.1-or-later		
+libstream_out_chromaprint_plugin	5	modules/dummy.cpp | modules/stream_out/chromaprint.c | modules/stream_out/chromaprint_data.h	LGPL-2.1-or-later	chromaprint	amf | chromaprint | d3d11 | ffmpeg | gsm | lame | openjpeg | zlib
+libstream_out_chromecast_plugin	5	modules/misc/webservices/json.c | modules/misc/webservices/json.h | modules/stream_out/chromecast/cast.cpp | modules/stream_out/chromecast/chromecast.h | modules/stream_out/chromecast/chromecast_common.h | modules/stream_out/chromecast/chromecast_communication.cpp | modules/stream_out/chromecast/chromecast_ctrl.cpp	LGPL-2.1-or-later	protobuf	protobuf | zlib
+libstream_out_delay_plugin	5	modules/stream_out/delay.c	LGPL-2.1-or-later		
+libstream_out_description_plugin	5	modules/stream_out/description.c	LGPL-2.1-or-later		
+libstream_out_display_plugin	5	modules/stream_out/display.c	LGPL-2.1-or-later		
+libstream_out_dummy_plugin	5	modules/stream_out/dummy.c	LGPL-2.1-or-later		
+libstream_out_duplicate_plugin	5	modules/stream_out/duplicate.c	LGPL-2.1-or-later		
+libstream_out_es_plugin	5	modules/stream_out/es.c	LGPL-2.1-or-later		
+libstream_out_gather_plugin	5	modules/stream_out/gather.c	LGPL-2.1-or-later		
+libstream_out_mosaic_bridge_plugin	5	modules/stream_out/mosaic_bridge.c	LGPL-2.1-or-later		
+libstream_out_record_plugin	5	modules/stream_out/record.c	LGPL-2.1-or-later		
+libstream_out_setid_plugin	5	modules/stream_out/setid.c	LGPL-2.1-or-later		
+libstream_out_smem_plugin	5	modules/stream_out/smem.c	LGPL-2.1-or-later		
+libstream_out_standard_plugin	5	modules/stream_out/standard.c	LGPL-2.1-or-later		
+libstream_out_stats_plugin	5	modules/stream_out/stats.c	LGPL-2.1-or-later		
+libstream_out_transcode_plugin	5	modules/stream_out/transcode/audio.c | modules/stream_out/transcode/spu.c | modules/stream_out/transcode/transcode.c | modules/stream_out/transcode/transcode.h | modules/stream_out/transcode/video.c	LGPL-2.1-or-later		
+libsubsdec_plugin	5	modules/codec/subsdec.c | modules/codec/substext.h	LGPL-2.1-or-later		
+libsubsdelay_plugin	5	modules/spu/subsdelay.c	LGPL-2.1-or-later		
+libsubstx3g_plugin	5	modules/codec/substext.h | modules/codec/substx3g.c	LGPL-2.1-or-later		
+libsubsusf_plugin	5	modules/codec/subsusf.c	LGPL-2.1-or-later		
+libsubtitle_plugin	5	modules/demux/subtitle.c	LGPL-2.1-or-later		
+libsvcdsub_plugin	5	modules/codec/svcdsub.c	LGPL-2.1-or-later		
+libswscale_plugin	5	modules/codec/avcodec/chroma.c | modules/video_chroma/swscale.c	LGPL-2.1-or-later	ffmpeg	amf | d3d11 | ffmpeg | gsm | lame | openjpeg | zlib
+libsyslog_plugin	2	modules/logger/syslog.c	GPL-2.0-or-later		
+libtaglib_plugin	5	modules/meta_engine/ID3Pictures.h | modules/meta_engine/taglib.cpp	LGPL-2.1-or-later	taglib	taglib
+libtcp_plugin	5	modules/access/tcp.c	LGPL-2.1-or-later		
+libtdummy_plugin	5	modules/text_renderer/tdummy.c	LGPL-2.1-or-later		
+libtelx_plugin	2	modules/codec/telx.c	LGPL-2.1-or-later		
+libtextst_plugin	5	modules/codec/textst.c	LGPL-2.1-or-later		
+libtheora_plugin	5	modules/codec/theora.c	LGPL-2.1-or-later	ogg | theora	ogg | theora
+libtimecode_plugin	5	modules/access/timecode.c	LGPL-2.1-or-later		
+libtospdif_plugin	5	modules/audio_filter/converter/tospdif.c | modules/packetizer/a52.h | modules/packetizer/dts_header.c | modules/packetizer/dts_header.h	LGPL-2.1-or-later		
+libtransform_plugin	5	modules/video_filter/transform.c	LGPL-2.1-or-later		
+libtrivial_channel_mixer_plugin	5	modules/audio_filter/channel_mixer/trivial.c	LGPL-2.1-or-later		
+libts_plugin	5	modules/access/dtv/en50221_capmt.h | modules/codec/atsc_a65.c | modules/codec/atsc_a65.h | modules/codec/jpeg2000.h | modules/codec/opus_header.c | modules/codec/scte18.h | modules/demux/dvb-text.h | modules/demux/mpeg/mpeg4_iod.c | modules/demux/mpeg/mpeg4_iod.h | modules/demux/mpeg/pes.h | modules/demux/mpeg/sections.c | modules/demux/mpeg/sections.h | modules/demux/mpeg/timestamps.h | modules/demux/mpeg/ts.c | modules/demux/mpeg/ts.h | modules/demux/mpeg/ts_arib.c | modules/demux/mpeg/ts_arib.h | modules/demux/mpeg/ts_decoders.c | modules/demux/mpeg/ts_decoders.h | modules/demux/mpeg/ts_hotfixes.c | modules/demux/mpeg/ts_hotfixes.h | modules/demux/mpeg/ts_metadata.c | modules/demux/mpeg/ts_metadata.h | modules/demux/mpeg/ts_pes.c | modules/demux/mpeg/ts_pes.h | modules/demux/mpeg/ts_pid.c | modules/demux/mpeg/ts_pid.h | modules/demux/mpeg/ts_pid_fwd.h | modules/demux/mpeg/ts_psi.c | modules/demux/mpeg/ts_psi.h | modules/demux/mpeg/ts_psip.c | modules/demux/mpeg/ts_psip.h | modules/demux/mpeg/ts_psip_dvbpsi_fixes.c | modules/demux/mpeg/ts_psip_dvbpsi_fixes.h | modules/demux/mpeg/ts_scte.c | modules/demux/mpeg/ts_scte.h | modules/demux/mpeg/ts_si.c | modules/demux/mpeg/ts_si.h | modules/demux/mpeg/ts_sl.c | modules/demux/mpeg/ts_sl.h | modules/demux/mpeg/ts_streams.c | modules/demux/mpeg/ts_streams.h | modules/demux/mpeg/ts_streams_private.h | modules/demux/mpeg/ts_strings.h | modules/demux/opus.h | modules/mux/mpeg/csa.c | modules/mux/mpeg/dvbpsi_compat.h | modules/mux/mpeg/streams.h | modules/mux/mpeg/tables.c | modules/mux/mpeg/tables.h | modules/mux/mpeg/tsutil.c | modules/mux/mpeg/tsutil.h	LGPL-2.1-or-later	aribb24 | dvbpsi	aribb24 | dvbpsi | png | zlib
+libtta_plugin	5	modules/demux/tta.c	LGPL-2.1-or-later		
+libttml_plugin	5	modules/codec/ttml/substtml.c | modules/codec/ttml/ttml.c | modules/codec/ttml/ttml.h | modules/demux/ttml.c	LGPL-2.1-or-later		
+libtwolame_plugin	5	modules/codec/twolame.c	LGPL-2.1-or-later	twolame	twolame
+libty_plugin	5	modules/codec/cc.h | modules/demux/ty.c	LGPL-2.1-or-later		
+libudp_plugin	5	modules/access/udp.c	LGPL-2.1-or-later		
+libugly_resampler_plugin	5	modules/audio_filter/resampler/ugly.c	LGPL-2.1-or-later		
+libuleaddvaudio_plugin	5	modules/codec/uleaddvaudio.c	LGPL-2.1-or-later		
+libupnp_plugin	5	modules/services_discovery/upnp.cpp | modules/services_discovery/upnp.hpp	LGPL-2.1-or-later	upnp	upnp
+libvc1_plugin	5	modules/demux/vc1.c	LGPL-2.1-or-later		
+libvcd_plugin	5	modules/access/vcd/cdrom.c | modules/access/vcd/cdrom.h | modules/access/vcd/cdrom_internals.h | modules/access/vcd/vcd.c	LGPL-2.1-or-later	iconv	iconv
+libvdr_plugin	5	modules/access/vdr.c	LGPL-2.1-or-later		
+libvdummy_plugin	5	modules/video_output/vdummy.c	LGPL-2.1-or-later		
+libvhs_plugin	5	modules/video_filter/vhs.c	LGPL-2.1-or-later		
+libvideotoolbox_plugin	2	modules/codec/hxxx_helper.c | modules/codec/hxxx_helper.h | modules/codec/videotoolbox.m | modules/codec/vt_utils.c | modules/codec/vt_utils.h | modules/packetizer/h264_nal.c | modules/packetizer/h264_nal.h | modules/packetizer/h264_slice.c | modules/packetizer/h264_slice.h | modules/packetizer/hevc_nal.c | modules/packetizer/hevc_nal.h | modules/packetizer/hxxx_nal.c | modules/packetizer/hxxx_nal.h | modules/packetizer/hxxx_sei.c | modules/packetizer/hxxx_sei.h | modules/video_chroma/copy.c | modules/video_chroma/copy.h	LGPL-2.1-or-later		
+libvisual_plugin	5	modules/visualization/visual/effects.c | modules/visualization/visual/fft.c | modules/visualization/visual/fft.h | modules/visualization/visual/visual.c | modules/visualization/visual/visual.h | modules/visualization/visual/window.c | modules/visualization/visual/window.h | modules/visualization/visual/window_presets.h	GPL-2.0-or-later | LGPL-2.1-or-later		
+libvmem_plugin	5	modules/video_output/vmem.c	LGPL-2.1-or-later		
+libvobsub_plugin	5	modules/demux/mpeg/pes.h | modules/demux/mpeg/ps.h | modules/demux/subtitle_helper.h | modules/demux/vobsub.c | modules/demux/vobsub.h	LGPL-2.1-or-later		
+libvoc_plugin	5	modules/demux/voc.c	LGPL-2.1-or-later		
+libvorbis_plugin	5	modules/codec/vorbis.c	LGPL-2.1-or-later	ogg | vorbis	ogg | vorbis
+libvout_macosx_plugin	2	modules/video_output/macosx.m	LGPL-2.1-or-later		
+libvpx_plugin	5	modules/codec/vpx.c	LGPL-2.1-or-later	vpx	vpx
+libwall_plugin	5	modules/video_splitter/wall.c	LGPL-2.1-or-later		
+libwasapi_plugin	3	modules/audio_output/wasapi.c	LGPL-2.1-or-later		
+libwav_plugin	5	modules/demux/wav.c | modules/demux/windows_audio_commons.h	LGPL-2.1-or-later		
+libwave_plugin	5	modules/video_filter/wave.c	LGPL-2.1-or-later		
+libwaveout_plugin	3	modules/audio_output/waveout.c | modules/audio_output/windows_audio_common.h	LGPL-2.1-or-later		
+libwebvtt_plugin	5	modules/codec/webvtt/css_bridge.h | modules/codec/webvtt/css_parser.c | modules/codec/webvtt/css_parser.h | modules/codec/webvtt/css_style.c | modules/codec/webvtt/css_style.h | modules/codec/webvtt/subsvtt.c | modules/codec/webvtt/webvtt.c | modules/codec/webvtt/webvtt.h | modules/demux/mp4/minibox.h | modules/demux/webvtt.c	LGPL-2.1-or-later		
+libwgl_plugin	2	modules/video_output/win32/wgl.c	LGPL-2.1-or-later		
+libwindrive_plugin	3	modules/services_discovery/windrive.c	LGPL-2.1-or-later		
+libwingdi_plugin	3	modules/video_chroma/copy.c | modules/video_chroma/copy.h | modules/video_output/win32/common.c | modules/video_output/win32/common.h | modules/video_output/win32/events.c | modules/video_output/win32/events.h | modules/video_output/win32/sensors.cpp | modules/video_output/win32/win32touch.c | modules/video_output/win32/win32touch.h | modules/video_output/win32/wingdi.c	LGPL-2.1-or-later		
+libwinhibit_plugin	3	modules/video_output/win32/inhibit.c	LGPL-2.1-or-later		
+libx26410b_plugin	3	modules/codec/x264.c	GPL-2.0-or-later	x264	x264
+libxa_plugin	5	modules/demux/xa.c	LGPL-2.1-or-later		
+libxml_plugin	5	modules/misc/xml/libxml.c	LGPL-2.1-or-later	libxml2	libxml2
+libyuv_plugin	5	modules/video_output/yuv.c	LGPL-2.1-or-later		
+libyuvp_plugin	5	modules/video_chroma/yuvp.c	LGPL-2.1-or-later		
+libyuy2_i420_plugin	5	modules/video_chroma/yuy2_i420.c	LGPL-2.1-or-later		
+libyuy2_i422_plugin	5	modules/video_chroma/yuy2_i422.c	LGPL-2.1-or-later		
+libzvbi_plugin	5	modules/codec/zvbi.c	LGPL-2.1-or-later	zvbi	iconv | png | zlib | zvbi
