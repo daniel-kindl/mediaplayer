@@ -16,6 +16,29 @@ No package was installed in a project. No native code was executed.
 Issue #1 remains incomplete until the per-file license review covers linked components.
 The inventory must not be described as a complete redistribution clearance.
 
+## Independent reviews
+
+Separate agent sessions reviewed commit `a0439c2dd9ec657d1bf4323e4e2f6362ee48f74a` on 2026-10-15.
+
+| Review | Result and evidence |
+| --- | --- |
+| Architecture | PASS for the draft. [Review log](reviews/architecture-and-standards.md). |
+| Standards | PASS for the draft. [Review log](reviews/architecture-and-standards.md). |
+| Correctness and tests | No new defect found. Inventory and archive checks pass. [Review log](reviews/correctness.md). |
+
+All reviewers retain the open license acceptance requirement. These reviews do not approve binary redistribution or make issue #1 complete.
+
+## Remaining license evidence
+
+The [source review](linked-component-review.md) matches the official VLC source archive to the embedded revision in the examined x64 binaries.
+It also identifies FFmpeg and other dependency recipes. Those recipes do not prove the dependency inputs used for each compiled platform build.
+
+To complete the audit, obtain the exact dependency manifests, source hashes, build options, and selected license alternatives for each platform payload.
+Map those dependencies to their source license texts and the affected native files.
+The source review lists the missing records and the inspected upstream locations.
+An upstream build record or a new build from pinned sources can supply the missing evidence.
+Collecting the full corresponding-source bundle and generating release notices remain release tasks after the license mapping is established.
+
 ## Candidates and inventory
 
 [native-files.tsv](native-files.tsv) lists all 1,574 native library files in the two candidate NuGet archives.
