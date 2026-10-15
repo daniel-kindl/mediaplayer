@@ -18,16 +18,23 @@ dotnet package list --project Sonumio.slnx --include-transitive
 
 ## Planned (NOT installed)
 
+The [native audit](native-audit/README.md) records the candidate payloads and their license evidence.
+Candidate versions below were checked on 2026-10-15. They are not installed or approved for binary redistribution.
+
 Add these only in the issue that implements the feature, after the license audit:
 
-| Package | Latest stable (2026-10-14) | License | Milestone issue |
+| Package | Candidate version | License | Milestone issue |
 | --- | --- | --- | --- |
 | Avalonia, Avalonia.Desktop, Avalonia.Themes.Fluent | 12.1.4 | MIT | Avalonia application shell |
 | LibVLCSharp | 3.10.2 | LGPL-2.1-or-later | libVLC backend |
-| LibVLCSharp.Avalonia | check | LGPL-2.1-or-later | rendering. Check Avalonia 12 support first. |
-| VideoLAN.LibVLC.Windows | 3.0.24 | LGPL-2.1-or-later (plugins vary) | libVLC backend (Windows) |
-| VideoLAN.LibVLC.Mac | check | LGPL-2.1-or-later (plugins vary) | libVLC backend (macOS) |
+| LibVLCSharp.Avalonia | 3.10.2 | LGPL-2.1-or-later | Rendering. Upstream confirms Avalonia 12 support. Project placement needs an ADR. |
+| VideoLAN.LibVLC.Windows | 3.0.24 | LGPL-2.1-or-later core, GPL-2.0-or-later plugins also present | libVLC backend (Windows). 968 native files inventoried. |
+| VideoLAN.LibVLC.Mac | 3.1.3.2 | LGPL-2.1-or-later core, GPL-2.0-or-later plugins also present | libVLC backend (macOS). VLC 3.0.24, x64 and ARM64. 606 native files inventoried. |
 | Linux libVLC | system package (`libvlc-dev`/`vlc`) | LGPL/GPL per plugin | libVLC backend (Linux). No official NuGet package. |
+
+The native inventory records module licenses. Licenses of linked components and auxiliary assets still need source-level verification before release.
+Combined binary releases with GPL plugins use GPL-3.0-or-later terms under [ADR 0006](../decisions/0006-licensing-mit-with-lgpl-libvlc.md).
+Sonumio source remains MIT. Linux uses system libVLC. Flatpak and bundled Linux runtimes are deferred.
 
 ## Vulnerability checks
 

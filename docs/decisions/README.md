@@ -9,6 +9,6 @@ Each ADR records one decision: context, decision, consequences. Do not edit an a
 | [0003](0003-build-standards-and-verification.md) | Build standards and single verification script | Accepted |
 | [0004](0004-testing-xunit-v3-on-microsoft-testing-platform.md) | Testing: xUnit v3 on Microsoft.Testing.Platform | Accepted |
 | [0005](0005-versioning-nerdbank-gitversioning.md) | Versioning with Nerdbank.GitVersioning | Accepted |
-| [0006](0006-licensing-mit-with-lgpl-libvlc.md) | MIT application code with LGPL libVLC | Proposed (needs audit) |
+| [0006](0006-licensing-mit-with-lgpl-libvlc.md) | MIT source with GPL native binary distribution | Accepted |
 
 Template: copy `0000-template.md`.
